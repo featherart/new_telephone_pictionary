@@ -15593,3 +15593,76 @@ Served asset /storylines.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 13:20:50 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-10 14:14:02 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  Rendered storylines/_picture_form.html.erb (7.8ms)
+  Rendered storylines/_phrase_form.html.erb (2.3ms)
+  Rendered storylines/index.html.erb within layouts/application (43.6ms)
+Completed 500 Internal Server Error in 172ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x007fd13bb4a5c8>:0x007fd13bb4ebc8>):
+    8: </head>
+    9: <body>
+    10:   <div id="user_nav">
+    11:   <% if current_user %>
+    12:     Signed in as <strong><%= current_user.name %></strong>!
+    13:     <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    14:   <% else %>
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___267250461605202720_70268313049660'
+  app/controllers/storylines_controller.rb:13:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Processing by StorylinesController#index as HTML
+  Rendered storylines/_picture_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 34ms (Views: 8.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/phrases.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /phrases.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /storylines.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /pictures.css - 200 OK (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /storylines.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:52 -0800
+Served asset /application.js - 200 OK (5ms)
