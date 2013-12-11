@@ -5,7 +5,8 @@ class SessionsController < ApplicationController
   	redirect_to root_url
 
   	# add the turn here once Facebook auth working
-  	# @turn = Turn.create(turn_number: 1, user_id: user.id)
+  	@turn = Turn.create(turn_number: 1, user_id: user.id)
+  	#binding.pry
   end
 
   def destroy

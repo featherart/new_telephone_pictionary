@@ -1,15 +1,20 @@
-<!-- <#% if @turn.even? && @turn != 0 %> -->
+<!-- game begins -->
+Here it is: <%= @turn %>
+<% if @turn == nil %>
+	<h1>New Phrase</h1>
+	<%= render 'phrase_form' %>
+
+<% elsif @turn.even? && @turn != 0 %>
 	<div id="new_phrases">
 		<!--append here-->
 	</div>
 	<h1>New Drawing</h1>
 	<%= render 'picture_form' %>
-<!-- <#% end %> -->
 
-<!-- <#% if @turn.odd? || @turn == 0 %> -->
+<% elsif @turn.odd? || @turn == 0 %>
 	<div id="new_drawings">
 		<!--append here-->
 	</div>
 	<h1>New Phrase</h1>
 	<%= render 'phrase_form' %>
-<!-- <#% end %> -->
+<% end %>
