@@ -1,15 +1,26 @@
 class StorylinesController < ApplicationController
   def index
-  	#@storylines = Storyline.all
+  	@storylines = Storyline.all
   	@storyline = Storyline.new
+
   	@phrase = Phrase.new
     @phrase_id = @phrase.id
+    @storyline.phrase_id = @phrase_id
+    # @phrase.save
+    puts "************* @phrase"
+    #puts @phrase
+    puts "************* @phrase"
 
   	@picture = Picture.new
-    @picture_id = @picture.id
-    #@turn = Turn.last.turn_number
-    @turn = @storyline.turn #this will currently be nil
+   #  @picture_id = @picture.id
+   #  @picture.save
+    
+    @turn = Turn.last.turn_number
+    @storyline.turn = @turn
+    #binding.pry
+    #@turn = @storyline.turn #this will currently be nil
                             # it needs to get set somehow
+
   	respond_to do |format|
   	  format.html
   	end

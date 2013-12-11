@@ -15,7 +15,8 @@ class PhrasesController < ApplicationController
     @storyline.phrase_id = @phrase.id
     @storyline.turn = 2
     @storyline.save
-    
+    @turn = 2
+    binding.pry
     render layout: false
   	respond_to do |format|
   	  format.js

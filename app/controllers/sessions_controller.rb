@@ -6,6 +6,9 @@ class SessionsController < ApplicationController
 
   	# add the turn here once Facebook auth working
   	@turn = Turn.create(turn_number: 1, user_id: user.id)
+  	puts "$$$$$$$$$$$$"
+  	puts @turn
+  	puts "************"
   	#binding.pry
   end
 
