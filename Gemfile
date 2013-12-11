@@ -6,8 +6,6 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'unicorn'
 gem 'figaro'
-#gem 'devise'
-#gem 'angularjs-rails'
 gem 'omniauth-facebook'
 
 group :development do

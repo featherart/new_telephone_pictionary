@@ -15747,3 +15747,54 @@ Served asset /pictures.js - 304 Not Modified (1ms)
 
 Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-10 14:44:21 -0800
 (facebook) Request phase initiated.
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-10 17:13:20 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  Rendered storylines/_picture_form.html.erb (7.7ms)
+  Rendered storylines/_phrase_form.html.erb (2.4ms)
+  Rendered storylines/index.html.erb within layouts/application (19.1ms)
+Compiled storylines.css  (0ms)  (pid 4590)
+Compiled application.css  (0ms)  (pid 4590)
+Completed 200 OK in 150ms (Views: 78.8ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /storylines.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /phrases.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /storylines.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 17:13:21 -0800
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-10 17:13:24 -0800
+(facebook) Request phase initiated.
