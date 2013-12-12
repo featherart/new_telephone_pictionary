@@ -16,9 +16,9 @@ $(function() {
        },
        success: function( data ) {
          console.log("success");
-         $form.hide();
+         //$form.hide();
          $("#new_phrases").prepend("<li>"+phrase+"</li>");
-         $canvas.toggle();
+      
        }
      });    
     });

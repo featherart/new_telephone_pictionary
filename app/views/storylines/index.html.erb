@@ -1,20 +1,24 @@
-<!-- game begins -->
-Here it is: <%= @turn %>
+<div id="new_drawings">
+	<!--append here-->
+</div>
+<div id="new_phrases">
+	<!--append here-->
+</div>
 <% if @turn == nil %>
 	<h1>New Phrase</h1>
-	<%= render 'phrase_form' %>
+	<%= render partial: 'phrase_form' %>
 
 <% elsif @turn.even? && @turn != 0 %>
-	<div id="new_phrases">
-		<!--append here-->
-	</div>
+<!-- 	<div id="new_phrases">
+		
+	</div> -->
 	<h1>New Drawing</h1>
-	<%= render 'picture_form' %>
+	<%= render partial: 'picture_form' %>
 
 <% elsif @turn.odd? || @turn == 0 %>
-	<div id="new_drawings">
-		<!--append here-->
-	</div>
-	<h1>New Phrase</h1>
-	<%= render 'phrase_form' %>
+
+	<h1>New Phrase of Phrase!</h1>
+	<%= render partial: 'phrase_form' %>
+	
+
 <% end %>

@@ -2,24 +2,9 @@ class StorylinesController < ApplicationController
   def index
   	@storylines = Storyline.all
   	@storyline = Storyline.new
-
+    @turn = @storyline.turn
   	@phrase = Phrase.new
-    @phrase_id = @phrase.id
-    @storyline.phrase_id = @phrase_id
-    # @phrase.save
-    puts "************* @phrase"
-    #puts @phrase
-    puts "************* @phrase"
-
   	@picture = Picture.new
-   #  @picture_id = @picture.id
-   #  @picture.save
-    
-    @turn = Turn.last.turn_number
-    @storyline.turn = @turn
-    #binding.pry
-    #@turn = @storyline.turn #this will currently be nil
-                            # it needs to get set somehow
 
   	respond_to do |format|
   	  format.html
@@ -29,11 +14,20 @@ class StorylinesController < ApplicationController
   def create  	
   	# need to add all the pictures & phrases before 
   	# creating and saving the storyline
-  	@picture = Picture.new(params[:picture])
-  	@phrase = Phrase.new(params[:phrase])
-  	@storyline = Storyline.new(params[:storyline])
-    @storyline.picture_id = @picture.id
-    @storyline.phrase_id = @phrase.id
+    puts "**************"
+    puts "in storyline controller"
+    puts "**************"
+  	#@storyline = Storyline.new(params[:storyline])
+    @storyline = Storyline.includes(phrases: :phrase_id).first
+    
+    #@project = Project.includes(tasks: :logs).first
+
+    # @picture = Picture.new(params[:picture])
+    # @phrase = Phrase.new(params[:phrase])
+    # @storyline.picture_id = @picture.id
+    # @storyline.phrase_id = @phrase.id
+    @turn = Turn.last.turn_number
+    @storyline.turn = @turn
   	@storyline.save()
   	binding.pry #this never executes - why?
   	render layout: false
