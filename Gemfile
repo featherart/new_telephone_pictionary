@@ -7,6 +7,7 @@ gem 'pg'
 gem 'unicorn'
 gem 'figaro'
 gem 'omniauth-facebook'
+gem 'twilio-ruby'
 
 group :development do
   gem 'pry-rails'
