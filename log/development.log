@@ -18076,3 +18076,814 @@ Served asset /application.js - 200 OK (0ms)
 
 Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-11 16:35:02 -0800
 Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 17:42:49 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (2.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (9.4ms)
+  Rendered storylines/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 160ms (Views: 80.0ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /storylines.css - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /phrases.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:50 -0800
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-18 17:42:53 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQAphk2mTtqruIDayqqE_OhMylzd3-bx0xtIKMD-MmwTyRjDrsxP-6wasuIDOWt7JBbHuAgjRWJgy4Sa-lQlSqZpZXT09W3LBJloUBuBwq_3j4HDAHIllUYnUQcAhuXrr63ZFpnaOXupwYlQSOKqJHdfbwQfXBAWqWvUFxtQ7d8CBZQTPb9TiJF-i9xyJmYuq3w76R2kty6f5BoiTmuPdz-G2tgAzqshoOC4EpAH60JhP_NtYSjMNbkMGwKnWxJAQs1am6eHU4wywEjK-czyAnZDrdYxMGgi0z29ueXEhCUVjHAnVvoAR2KNxVMRisLutIs&state=b5ea3a2e794c21ccbde937719449c69ac714e011fe3afc98" for 127.0.0.1 at 2013-12-18 17:42:54 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAphk2mTtqruIDayqqE_OhMylzd3-bx0xtIKMD-MmwTyRjDrsxP-6wasuIDOWt7JBbHuAgjRWJgy4Sa-lQlSqZpZXT09W3LBJloUBuBwq_3j4HDAHIllUYnUQcAhuXrr63ZFpnaOXupwYlQSOKqJHdfbwQfXBAWqWvUFxtQ7d8CBZQTPb9TiJF-i9xyJmYuq3w76R2kty6f5BoiTmuPdz-G2tgAzqshoOC4EpAH60JhP_NtYSjMNbkMGwKnWxJAQs1am6eHU4wywEjK-czyAnZDrdYxMGgi0z29ueXEhCUVjHAnVvoAR2KNxVMRisLutIs", "state"=>"b5ea3a2e794c21ccbde937719449c69ac714e011fe3afc98", "provider"=>"facebook"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (21.1ms)[0m  INSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "provider", "uid", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", Thu, 19 Dec 2013 01:42:55 UTC +00:00], ["name", "Feather Knee"], ["oauth_expires_at", Mon, 17 Feb 2014 01:42:54 UTC +00:00], ["oauth_token", "CAAAANfXbNS4BAAKS8sY72E1iDvyUG1BPobiz2AQs4VabehKNyob2SqVg2VjmoA76pOGtYvRGyO4iysZC2EBYUGBM8Y1VYv1UM7Fq43D8L702OTvTrWVNfWtfOoJSKTa1Qkm1Rlhs5NQ9jeZBgwuWKop2fBYHAuZARNPCjdlnBXjnlngaZAmZBhIAE96gYACIZD"], ["provider", "facebook"], ["uid", "745971784"], ["updated_at", Thu, 19 Dec 2013 01:42:55 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 89ms (ActiveRecord: 26.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 17:42:55 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 17:42:55 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:55 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:55 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:55 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:55 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 17:42:55 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-12-18 17:47:16 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 17:47:16 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 17:47:16 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:16 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:16 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:16 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:16 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:16 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-18 17:47:20 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQDMWCnjh316Kyn_XpKMG0Jrd40fptWiEIP0gfcPFkAdQJhLpmZ3emBjERi_lnewVESgFtIyfn8TqCtOiJQ_ubKXhsOnFuq8FFijlFFs8QOGiDS-0qKZ8OUN4K49gEfF6qYE9cqsjoLPAxOpmAco1CjlLsguL3UFPuT4z_c_nTgPn4UFI15fBWvSjZtGVatlO8aEImBKlSxBD2ztStYr62UxTv2WU1Bkk-zENX6CMdKMoiAoWPztekb9BIOwfenVJ-IjViBVnIRI0CkHAcEKZiqCKoYY9Hm2qmPi0HvHneMaxUo6K1JCeuzv6eZtQKFVBLo&state=3f247290744e66cbe4ffed8c2acb75b47b888690301538cb" for 127.0.0.1 at 2013-12-18 17:47:20 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDMWCnjh316Kyn_XpKMG0Jrd40fptWiEIP0gfcPFkAdQJhLpmZ3emBjERi_lnewVESgFtIyfn8TqCtOiJQ_ubKXhsOnFuq8FFijlFFs8QOGiDS-0qKZ8OUN4K49gEfF6qYE9cqsjoLPAxOpmAco1CjlLsguL3UFPuT4z_c_nTgPn4UFI15fBWvSjZtGVatlO8aEImBKlSxBD2ztStYr62UxTv2WU1Bkk-zENX6CMdKMoiAoWPztekb9BIOwfenVJ-IjViBVnIRI0CkHAcEKZiqCKoYY9Hm2qmPi0HvHneMaxUo6K1JCeuzv6eZtQKFVBLo", "state"=>"3f247290744e66cbe4ffed8c2acb75b47b888690301538cb", "provider"=>"facebook"}
+  [1m[36mUser Load (9.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.2ms)[0m  [1mUPDATE "users" SET "oauth_token" = 'CAAAANfXbNS4BAFqDTPnciuSrwdEtek05Tf0VrGQqtcJ6jgZCSAC87cwOFf3RRnUKkUyqMKwjMlHfzBhuK5X6zlX0JICWHMUoDHlKWnX5JfC1xZAogB1A676wPZBghqXTj0CQJv40ED9rdodkNAENMWJlbKxuHOuGZBgomFhgzakvix4JBl4LYkHk4ONmhHoZD', "updated_at" = '2013-12-19 01:47:21.680741' WHERE "users"."id" = 2[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 17:47:21 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 17:47:21 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:21 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:21 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:21 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:21 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:21 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-12-18 17:47:49 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 17:47:49 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (2.3ms)
+  Rendered storylines/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 17:47:49 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:49 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:49 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:49 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:49 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 17:47:49 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-18 17:47:53 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQDf5rMBTHybFCHvPiSybKQeA-dKbazvalFU25F13-qEcH7vcaxLVaHJndRp-ziCja5JaxyU2iCtCuu5cNulCPyNODlj4Daj6rvIAlDh9SxzCFN3Vh4HrAPIy1I_ROSJlPYlGrZVHHywwMQtnAd3FJ-E4bmKgj5Lo-NxMoFTmEGsABoPOnlIofjs1BcQ9F0whISaqJ4KecP13Wp_Xb6gQuW2Yn5PHE-S00sU8I8FAhzqozTbXziDd2-jVH0Yz5tXjwkN7LQ15gC0jRFZeIAFBfCIF6O33J3EDoramgrMq7tnMOkQo6Swor4XltNeQu2Ephg&state=5588c4b8996f505a176a47b4940b36236b7165ca207bfbfa" for 127.0.0.1 at 2013-12-18 17:47:59 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDf5rMBTHybFCHvPiSybKQeA-dKbazvalFU25F13-qEcH7vcaxLVaHJndRp-ziCja5JaxyU2iCtCuu5cNulCPyNODlj4Daj6rvIAlDh9SxzCFN3Vh4HrAPIy1I_ROSJlPYlGrZVHHywwMQtnAd3FJ-E4bmKgj5Lo-NxMoFTmEGsABoPOnlIofjs1BcQ9F0whISaqJ4KecP13Wp_Xb6gQuW2Yn5PHE-S00sU8I8FAhzqozTbXziDd2-jVH0Yz5tXjwkN7LQ15gC0jRFZeIAFBfCIF6O33J3EDoramgrMq7tnMOkQo6Swor4XltNeQu2Ephg", "state"=>"5588c4b8996f505a176a47b4940b36236b7165ca207bfbfa", "provider"=>"facebook"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "oauth_token" = 'CAAAANfXbNS4BADloXdV65sGrC8R4EZClZCXSmsQOTX7I1EXTuLR8BhB9cxIRcXCJZBbbhPFcwg3K0FAhCZC4wDZBo8UNcLKAyazaXEZB5ZBcYtOGOkZACfzcNclZCjouZCKy8ZCSvovleoByiQFqLtvzWEaWymnblU0PZCbRwdxQu3nqXbED5JNAexMkmiC4uIM5qpUZD', "updated_at" = '2013-12-19 01:48:00.528698' WHERE "users"."id" = 2
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 17:48:00 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 17:48:00 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 17:48:00 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 17:48:00 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 17:48:00 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 17:48:00 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 17:48:00 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_phrase_form.html.erb (1.8ms)
+  Rendered storylines/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:09 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-18 18:02:15 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQBqtmQHzs9ryjgB2OUuIvHIfUkAuDrNu_HW9bwXRst0U_L_3u49dRdnexwIk2DfDVk1BiNP8MUWI8ORHzToDm8GEOiFgMP8AVxdfU7jv3CkNQMHcuVZqtMa36ZLSv26nNBGUNMBSukniP25olmJ2gleLfxwz7eTEXEkMvo8o-bMGyXJVT-CFwEgFz67mBqFI3Kk-iUJF6WD9gz1USy8v8Bg5WfGGVxFQ41VFxQovDt4XXQOpIvAl84qq58sYEl6FztgvDBK4a4kpN2vcng7FTfHk2bkcc3Mfuu7as1ggtO0EEvNBN8yC5tXNl1XPjRwfDY&state=1025ce74a83dae6b2c5d1080b67c14f0433ee8cbc550a886" for 127.0.0.1 at 2013-12-18 18:02:16 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBqtmQHzs9ryjgB2OUuIvHIfUkAuDrNu_HW9bwXRst0U_L_3u49dRdnexwIk2DfDVk1BiNP8MUWI8ORHzToDm8GEOiFgMP8AVxdfU7jv3CkNQMHcuVZqtMa36ZLSv26nNBGUNMBSukniP25olmJ2gleLfxwz7eTEXEkMvo8o-bMGyXJVT-CFwEgFz67mBqFI3Kk-iUJF6WD9gz1USy8v8Bg5WfGGVxFQ41VFxQovDt4XXQOpIvAl84qq58sYEl6FztgvDBK4a4kpN2vcng7FTfHk2bkcc3Mfuu7as1ggtO0EEvNBN8yC5tXNl1XPjRwfDY", "state"=>"1025ce74a83dae6b2c5d1080b67c14f0433ee8cbc550a886", "provider"=>"facebook"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "oauth_token" = 'CAAAANfXbNS4BAHKAE9wblRJ7QUqrNyRw7WAKzEXMCUfZBaZBIWEgFFFpab43iupFD6EZB0AYlQh0CJ9LshXbLQAVGbZBpI0kAzyZArFdlmRl0iKZBEjD21U9eKcbR7I04OZB2gPDVzjqZAIwmiiVfq8gckmg2lLEZAKnCfutfYiYPu15ZBt0ZAHF8AoVZBlZCMsHran4ZD', "updated_at" = '2013-12-19 02:02:17.084836' WHERE "users"."id" = 2[0m
+  [1m[35m (7.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:17 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:19 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-18 18:02:41 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQCNBwZIqA8qeRIxQ8nXoR8-A8A3ekx_LQd978pPZf3PAUnfRtArOIZl5Pn31A8sj1RYiWpEhR0Fdmzcq-xjIsr-GtemJlAlWLFBiIBFTmD2dqAJWYp5hFLgVJS1jVIryz7P578CJKr6tQe0fqDjiUiIHxYEh0MxqVtBhLVJz8GQwrKKCsOptwp9qCj7uWstXxLwdc8UdY7BMwCzSIEZTwZEnz3BlTtvrPXKUrh3AljbQPXSIQRpHFZFB_DdK5v09H5pg4IvC-MkmgmXwmIyYIxTd0LD_llXA_KKBL-OBdbVLxR9QoVy2EF8DHZoKqbQ5Ss&state=da8d7028b97742843defc6a297b4edec255f3d776975bde7" for 127.0.0.1 at 2013-12-18 18:02:42 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCNBwZIqA8qeRIxQ8nXoR8-A8A3ekx_LQd978pPZf3PAUnfRtArOIZl5Pn31A8sj1RYiWpEhR0Fdmzcq-xjIsr-GtemJlAlWLFBiIBFTmD2dqAJWYp5hFLgVJS1jVIryz7P578CJKr6tQe0fqDjiUiIHxYEh0MxqVtBhLVJz8GQwrKKCsOptwp9qCj7uWstXxLwdc8UdY7BMwCzSIEZTwZEnz3BlTtvrPXKUrh3AljbQPXSIQRpHFZFB_DdK5v09H5pg4IvC-MkmgmXwmIyYIxTd0LD_llXA_KKBL-OBdbVLxR9QoVy2EF8DHZoKqbQ5Ss", "state"=>"da8d7028b97742843defc6a297b4edec255f3d776975bde7", "provider"=>"facebook"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "oauth_token" = 'CAAAANfXbNS4BAIWZBG0VzlSvjl5BQmsPB6DiTbszeFVIZB5PGCmIU1bSavv4nDS9ssleZBS47jZArCe3sgfM0PaFp4gBNQfwOej7Wm2GRp8KFkNX4wblfHe9AmeSTIjDDOACc1055apEndNOM4r6OFcwQDIpZCi14FfjnM3UUsg6V6wjjGGnsfVQI9rKSuK8ZD', "updated_at" = '2013-12-19 02:02:43.183265' WHERE "users"."id" = 2
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:43 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:44 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /storylines.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:02:47 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:03:06 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-18 18:03:07 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:01 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:03 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-18 18:04:04 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQB-Vpyp8MvRhbHrR3Zmk_2wwigTfluIQ6PoQcDoa741cYrrx1x7KYUk1dLUk6yJOLF1I-eIzhPTR8l8u7XMPaa-9LU9N37TEC-VL_9AC4Y1mADAPOV7St4vyW2eoCBYYoZg-qsUgBgPgsuDXEy1vIAtvgIytquvUK0RVa7oxxs_TOydEVld-ZcIVzEo25mey_iAj_WmtLgSNDolSVSA7h1a8Hn5z-OAJGUxpZU-vPi58p03JPz9fEOn_0GAVMWZ65lhrowFdN041R7BO5I_9FO7nFdKN2eR88If8DtSaZ_hVWBiIQD4Qe0dNaQdJPgLJsE&state=51bc64a645a201100fc026569828688b24aae1a8dda42dd3" for 127.0.0.1 at 2013-12-18 18:04:10 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQB-Vpyp8MvRhbHrR3Zmk_2wwigTfluIQ6PoQcDoa741cYrrx1x7KYUk1dLUk6yJOLF1I-eIzhPTR8l8u7XMPaa-9LU9N37TEC-VL_9AC4Y1mADAPOV7St4vyW2eoCBYYoZg-qsUgBgPgsuDXEy1vIAtvgIytquvUK0RVa7oxxs_TOydEVld-ZcIVzEo25mey_iAj_WmtLgSNDolSVSA7h1a8Hn5z-OAJGUxpZU-vPi58p03JPz9fEOn_0GAVMWZ65lhrowFdN041R7BO5I_9FO7nFdKN2eR88If8DtSaZ_hVWBiIQD4Qe0dNaQdJPgLJsE", "state"=>"51bc64a645a201100fc026569828688b24aae1a8dda42dd3", "provider"=>"facebook"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '1405182' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "provider", "uid", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", Thu, 19 Dec 2013 02:04:11 UTC +00:00], ["name", "Marco Cerna"], ["oauth_expires_at", Mon, 17 Feb 2014 02:04:09 UTC +00:00], ["oauth_token", "CAAAANfXbNS4BAPdrOpOhjrVtQE8nvXguMWWYcubQiMzQkZCBlPBzxtF0Bmkb8AyBLxZCy0jsi5ZC3QLr9kYZBPTppvD02dFRzjIaEf5YxyuPrsMamA9NMFiCa3HSYwGw14ihNlr8WgZB4ms7QTymdHskhkdz0BIkjtAKHKa5LIQZB9UOcDElOtZBT7mTpDWBmsZD"], ["provider", "facebook"], ["uid", "1405182"], ["updated_at", Thu, 19 Dec 2013 02:04:11 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:11 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (1.7ms)
+  Rendered storylines/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
+Served asset /application.js - 304 Not Modified (0ms)
