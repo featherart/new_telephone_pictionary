@@ -5,6 +5,7 @@ class StorylinesController < ApplicationController
     @turn = @storyline.turn
   	@phrase = Phrase.new
   	@picture = Picture.new
+    @player = Player.new
 
   	respond_to do |format|
   	  format.html

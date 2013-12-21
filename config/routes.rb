@@ -9,4 +9,5 @@ TelephonePictionary::Application.routes.draw do
   resources :pictures
   resources :phrases
   resources :storylines
+  resource :players
   end

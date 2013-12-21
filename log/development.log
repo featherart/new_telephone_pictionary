@@ -18908,3 +18908,117 @@ Migrating to CreatePlayers (20131221210440)
   [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
   [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
 Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-21 13:33:30 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (4.8ms)
+  Rendered storylines/index.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 115ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@player) do |f| %>
+    2: <%= f.label %>
+    3: <%= f.text_field :name %>
+    4: <%= f.submit %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb__3952083800900940056_70235799266960'
+  app/views/storylines/index.html.erb:7:in `_app_views_storylines_index_html_erb___229555659049191138_70235785329660'
+  app/controllers/storylines_controller.rb:9:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-21 13:35:44 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (9.8ms)
+  Rendered storylines/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 59ms
+
+ActionView::Template::Error (undefined method `players_path' for #<#<Class:0x007fc217b41fa0>:0x007fc217aaa5b0>):
+    1: <%= form_for(@player) do |f| %>
+    2: <%= f.label %>
+    3: <%= f.text_field :name %>
+    4: <%= f.submit %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb__3952083800900940056_70235799266960'
+  app/views/storylines/index.html.erb:7:in `_app_views_storylines_index_html_erb___229555659049191138_70235785329660'
+  app/controllers/storylines_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (28.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-21 13:36:59 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.2ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  Rendered storylines/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 58ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1)):
+    1: <%= form_for(@player) do |f| %>
+    2: <%= f.label %>
+    3: <%= f.text_field :name %>
+    4: <%= f.submit %>
+    5: <% end %>
+  app/views/storylines/_player_form.html.erb:2:in `block in _app_views_storylines__player_form_html_erb__3952083800900940056_70235799266960'
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb__3952083800900940056_70235799266960'
+  app/views/storylines/index.html.erb:7:in `_app_views_storylines_index_html_erb___229555659049191138_70235785329660'
+  app/controllers/storylines_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (15.5ms)
+  Rendered storylines/_phrase_form.html.erb (2.2ms)
+  Rendered storylines/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /storylines.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /phrases.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-21 13:38:36 -0800
+Served asset /application.js - 304 Not Modified (6ms)
