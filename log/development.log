@@ -18887,3 +18887,24 @@ Served asset /storylines.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-18 18:04:27 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (3.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePictures (20131113020236)
+Migrating to CreatePhrases (20131115235305)
+Migrating to CreateStorylines (20131115235642)
+Migrating to CreateTurns (20131115235751)
+Migrating to AddTurnToPictures (20131124021441)
+Migrating to AddTurnToStoryline (20131125011831)
+Migrating to DropTurn (20131125012700)
+Migrating to DeviseCreateUsers (20131125190553)
+Migrating to AddTurnTable (20131210005919)
+Migrating to DropDeviseUsers (20131210211751)
+Migrating to CreateUsers (20131210224132)
+Migrating to CreatePlayers (20131221210440)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (23.1ms)[0m  [1mCREATE TABLE "players" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "phone" integer, "turn_number" integer, "storyline_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20131221210440')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
