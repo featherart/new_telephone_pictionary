@@ -1,5 +1,6 @@
-<%= form_for(@player) do |f| %>
+<%= form_for(@player) do |f| %>  
   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
-  <%= f.text_field :phone, placeholder: "enter player's text number", required: true %>
+  <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+  <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
 <%= f.submit %>
 <% end %>

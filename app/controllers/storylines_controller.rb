@@ -6,6 +6,9 @@ class StorylinesController < ApplicationController
   	@phrase = Phrase.new
   	@picture = Picture.new
     @player = Player.new
+    puts "**************"
+    puts "in storyline index"
+    puts "**************"
 
   	respond_to do |format|
   	  format.html
@@ -16,7 +19,7 @@ class StorylinesController < ApplicationController
   	# need to add all the pictures & phrases before 
   	# creating and saving the storyline
     puts "**************"
-    puts "in storyline controller"
+    puts "in storyline create"
     puts "**************"
   	#@storyline = Storyline.new(params[:storyline])
     @storyline = Storyline.includes(phrases: :phrase_id).first

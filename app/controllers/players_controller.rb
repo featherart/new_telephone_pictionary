@@ -2,9 +2,14 @@ class PlayersController < ApplicationController
   require 'twilio-ruby'
 
   def create
+    puts "*"*50
+    puts "in players create"
+    puts "*"*50
     @player = Player.create(params[:player])
-    text = "Hi #{@player.name}. #{current_user.name} has invited you to play Telephone Pictionary. Please reply with 'ok' to accept."
+    text = "hi"
     @player.send_text(text)
-    render :json => @player
+    binding.pry
+    #render :json => @player
+    render nothing: true
   end
 end
