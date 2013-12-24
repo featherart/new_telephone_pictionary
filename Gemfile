@@ -9,9 +9,12 @@ gem 'figaro'
 gem 'omniauth-facebook'
 gem 'twilio-ruby'
 
-group :development do
+group :development, :test do
   gem 'pry-rails'
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'sms-spec'
+  gem 'shoulda-matchers'
 end
 
 group :assets do

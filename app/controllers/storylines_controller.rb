@@ -6,10 +6,11 @@ class StorylinesController < ApplicationController
   	@phrase = Phrase.new
   	@picture = Picture.new
     @player = Player.new
+    @player.turn_number = 1
     puts "**************"
     puts "in storyline index"
     puts "**************"
-
+    #binding.pry
   	respond_to do |format|
   	  format.html
   	end
@@ -21,8 +22,8 @@ class StorylinesController < ApplicationController
     puts "**************"
     puts "in storyline create"
     puts "**************"
-  	#@storyline = Storyline.new(params[:storyline])
-    @storyline = Storyline.includes(phrases: :phrase_id).first
+  	@storyline = Storyline.new(params[:storyline])
+    #@storyline = Storyline.includes(phrases: :phrase_id).first
     
     #@project = Project.includes(tasks: :logs).first
 
@@ -30,7 +31,8 @@ class StorylinesController < ApplicationController
     # @phrase = Phrase.new(params[:phrase])
     # @storyline.picture_id = @picture.id
     # @storyline.phrase_id = @phrase.id
-    @turn = Turn.last.turn_number
+    Turn.last.turn_number ? @turn = Turn.last.turn_number : @turn = 1
+    
     @storyline.turn = @turn
   	@storyline.save()
   	binding.pry #this never executes - why?

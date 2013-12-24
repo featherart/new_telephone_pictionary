@@ -1,10 +1,12 @@
 class Player < ActiveRecord::Base
-  attr_accessible :email, :name, :phone_number, :storyline_id, :turn_number
+  attr_accessible :email, :name, :phone_number, :storyline_id, 
+                  :turn_number, :accepted, :start_time
   belongs_to :storyline
+  before_save :clean_phone_number
+  #has_one :turn_number
 
-  def joining
-    start_time = Time.now
-    self.update_attributes(accepted: true, start_time: start_time)
+  def join_game
+    self.update_attributes(accepted: true, start_time: Time.now)
   end
 
   def send_text(text_message)
@@ -17,7 +19,7 @@ class Player < ActiveRecord::Base
       :from => ENV["PHONE"],
       :to => self.phone_number,
       :body => text_message})
-    puts message
+    #puts message
   end
 
   def clean_phone_number

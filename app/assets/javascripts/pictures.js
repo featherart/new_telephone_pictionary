@@ -38,12 +38,6 @@ $(function() {
     }
   });
 
-// // inside your view
-// events: {
-//   'submit form': 'handleFormSubmission'
-//   'click button.btn-default'
-// }
-
   $form.on("submit", function(event) {
     event.preventDefault();
 

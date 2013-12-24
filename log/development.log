@@ -19952,3 +19952,1418 @@ Processing by PlayersController#create as HTML
   [1m[35m (0.5ms)[0m  COMMIT
   Rendered text template (0.0ms)
 Completed 200 OK in 36364ms (Views: 11.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 15:54:19 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (32.3ms)
+  Rendered storylines/_phrase_form.html.erb (2.8ms)
+  Rendered storylines/index.html.erb within layouts/application (45.6ms)
+Completed 200 OK in 211ms (Views: 90.2ms | ActiveRecord: 23.3ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /storylines.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /storylines.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 15:54:20 -0800
+Served asset /application.js - 200 OK (10ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:21:24 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (5.3ms)
+  Rendered storylines/_phrase_form.html.erb (3.0ms)
+  Rendered storylines/index.html.erb within layouts/application (19.5ms)
+Compiled pictures.js  (0ms)  (pid 34917)
+Compiled application.js  (3ms)  (pid 34917)
+Completed 200 OK in 193ms (Views: 98.5ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /storylines.css - 200 OK (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /storylines.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 16:21:25 -0800
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:22:37 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (2.6ms)
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 134243ms (Views: 11.2ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-23 16:24:52 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-23 16:24:52 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-23 16:24:52 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQDVghOHxH3lfJjjKVMtXIoKBcaVlhlEc2PMSTmwOWneWFSG0poVWzRDhqc8R3WQyGsSzUb5NKDxou4m0DDKMFDlx4wQAsIL6nj8fUR1_Y6EzDuC8TUDb2AaTXx-copTVWXyeCdiTPXArNOhIg9VBhU21SzQJN2AvzDC_jY_CTbbg9mn7lD9i0dn5FMg8uaFsPT47An0PvTd1vuSpp9U6ulNRA4Ul3MxEiqZSSdfx-RTHajslwlnyzx2KCcJ_taypTm2m59DiHZeAwiVe3gUc2lV21IN9Z7R_udTT3tfwqS_OK48vTfefMv05YObXpxrVi8&state=ec26931fe772edfd73a0745234240a1e6722910a19c19aeb" for 127.0.0.1 at 2013-12-23 16:24:58 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDVghOHxH3lfJjjKVMtXIoKBcaVlhlEc2PMSTmwOWneWFSG0poVWzRDhqc8R3WQyGsSzUb5NKDxou4m0DDKMFDlx4wQAsIL6nj8fUR1_Y6EzDuC8TUDb2AaTXx-copTVWXyeCdiTPXArNOhIg9VBhU21SzQJN2AvzDC_jY_CTbbg9mn7lD9i0dn5FMg8uaFsPT47An0PvTd1vuSpp9U6ulNRA4Ul3MxEiqZSSdfx-RTHajslwlnyzx2KCcJ_taypTm2m59DiHZeAwiVe3gUc2lV21IN9Z7R_udTT3tfwqS_OK48vTfefMv05YObXpxrVi8", "state"=>"ec26931fe772edfd73a0745234240a1e6722910a19c19aeb", "provider"=>"facebook"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "oauth_token" = 'CAAAANfXbNS4BAD2bFqRu0WHLYR0mVZCNqzltHrwoPb8NQsF8Y7MTKMzpF1n6RreAnZAfjHVYSW0aOkhFCpGtA3PioqgSGZCo4FH4wlo0TlHbpI0wiVHWR2biXWsyGSB069glma82WZC3HZA3h3bomWxOi9dPb8hoiBzC2p5fuBszyZCjGB8oR8ZBc7ljaz3uGwZD', "oauth_expires_at" = '2014-02-22 00:24:58.000000', "updated_at" = '2013-12-24 00:25:00.119953' WHERE "users"."id" = 2[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 41ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:25:00 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.2ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (4.9ms)
+  [1m[35mUser Load (9.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 99ms (Views: 10.4ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 16:25:00 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2013-12-23 16:25:23 -0800
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "player"=>{"name"=>"fana", "phone_number"=>"5108477006", "turn_number"=>"2"}, "commit"=>"Create Player"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "players" ("created_at", "email", "joined", "name", "phone_number", "storyline_id", "time_start", "turn_number", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Tue, 24 Dec 2013 00:25:23 UTC +00:00], ["email", nil], ["joined", nil], ["name", "fana"], ["phone_number", "+15108477006"], ["storyline_id", nil], ["time_start", nil], ["turn_number", 2], ["updated_at", Tue, 24 Dec 2013 00:25:23 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 24363ms (Views: 9.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:27:59 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.2ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 61ms (Views: 18.1ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 16:27:59 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 16:27:59 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 16:27:59 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 16:27:59 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 16:27:59 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 16:27:59 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 16:27:59 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (4.8ms)
+Compiled phrases.js  (0ms)  (pid 34917)
+Compiled players.js  (0ms)  (pid 34917)
+Compiled application.js  (10ms)  (pid 34917)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 69ms (Views: 66.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /storylines.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /phrases.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 16:31:49 -0800
+Served asset /application.js - 200 OK (7ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 16:31:58 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"hi have a sammie"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" WHERE "storylines"."id" = $1 LIMIT 1[0m  [["id", ""]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Storyline with id=):
+  app/controllers/phrases_controller.rb:7:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 66ms (Views: 19.5ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /storylines.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:06 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 16:33:09 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"asdgafd"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  Rendered phrases/create.html.erb (9.9ms)
+Completed 500 Internal Server Error in 14663ms
+
+ActionView::Template::Error (undefined method `turn=' for nil:NilClass):
+    1:  <% @storyline.turn = 2 %>
+    2:  <%= @storyline.turn %>
+    3:  <%= render @picture_form %>
+    4: 
+  app/views/phrases/create.html.erb:1:in `_app_views_phrases_create_html_erb__4267073347225474270_70341450340560'
+  app/controllers/phrases_controller.rb:16:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:33:42 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 64ms (Views: 20.1ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:43 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:43 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (2.2ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /storylines.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 16:33:45 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 16:33:48 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"safasdf"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  Rendered phrases/create.html.erb (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `turn=' for nil:NilClass):
+    1:  <% @storyline.turn = 2 %>
+    2:  <%= @storyline.turn %>
+    3:  <%= render @picture_form %>
+    4: 
+  app/views/phrases/create.html.erb:1:in `_app_views_phrases_create_html_erb__4267073347225474270_70341450340560'
+  app/controllers/phrases_controller.rb:16:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:45:32 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+ERROR: compiling _app_views_storylines_index_html_erb__4301983401766511232_70114723221940 RAISED /Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views/storylines/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_storylines_index_html_erb__4301983401766511232_70114723221940(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "storylines/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="new_drawings">
+	<!--append here-->
+</div>
+<div id="new_phrases">
+	<!--append here-->
+</div>
+');@output_buffer.append= ( render partial: 'player_form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('<#% if @turn == nil || @turn == 1 %>
+	<h1>New Phrase</h1>
+	');@output_buffer.append= ( render partial: 'phrase_form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+<#% elsif @turn.even? && @turn != 0 %>
+<!-- 	<div id="new_phrases">
+		
+	</div> -->
+	<h1>New Drawing</h1>
+	');@output_buffer.append= ( render partial: 'picture_form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+<#% elsif @turn.odd? || @turn == 0 %>
+
+	<h1>New Phrase of Phrase!</h1>
+	');@output_buffer.append= ( render partial: 'phrase_form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	
+
+'); end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `module_eval'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `compile'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/template.rb:232:in `compile!'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/template.rb:144:in `block in render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/notifications.rb:125:in `instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/template.rb:143:in `render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:19:in `render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/controllers/storylines_controller.rb:14:in `index'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:414:in `_run__527964098599213592__process_action__4340858248550069976__callbacks'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:121:in `process'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_controller/metal.rb:246:in `block in action'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/omniauth-1.1.4/lib/omniauth/strategy.rb:184:in `call!'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/omniauth-1.1.4/lib/omniauth/strategy.rb:164:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/omniauth-1.1.4/lib/omniauth/builder.rb:49:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.14/lib/active_record/query_cache.rb:64:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activerecord-3.2.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `_run__3243632979559183665__call__3550411800065951102__callbacks'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered storylines/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 137ms
+
+ActionView::Template::Error (/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views/storylines/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting $end):
+    23: 	
+    24: 
+    25: <% end %>
+  app/controllers/storylines_controller.rb:14:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 16:45:46 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (9.8ms)
+  Rendered storylines/_phrase_form.html.erb (2.1ms)
+  Rendered storylines/_picture_form.html.erb (3.2ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (30.5ms)
+Compiled players.js  (0ms)  (pid 35131)
+Compiled application.js  (4ms)  (pid 35131)
+  [1m[36mUser Load (5.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 125ms (Views: 113.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 16:45:46 -0800
+Served asset /phrases.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 16:45:46 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 16:45:46 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-23 16:46:00 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"image"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAADICAYAAAAeGRPoAAAgAElEQVR4Xu1daex3R1UuLd0sdKG0CDSatIjQorRlMRrcCJUETfwgqIQi4hejUhRRE+JCcU1URAUlfsHYlqCCMSZKoihBJUahtIC0INgmKqUtpXShpWBxOed9f4fOe3uXWc6ZOTP3+SWT//KbOXPmOWfmmTl37swjjsPHIwK/SUq9OlDs3+j3pzRS9EGq938pndyoflQLBIAAEAACEQg8IiIPstRD4G1U1fcH1V1Lvz+rXvWzNb2R/vsKSmdSuqexLqgeCAABIAAEFhAAoftwjXeRGs8LVPlb+v0yH6od0YJX6HdROtuRTlAFCAABIAAEAgRA6G3d4f1U/TMDFf6Yfn9xW5Vma38f/ZcjBfAXh8aBSkAACAABRgADdBs/+BhV+7VB1a+n33+qjSrRtf4f5byR0kXRJZARCAABIAAEqiEAQq8G9ZGK/oPSVx2qZIJ8JaU31VUhu7ZbqeTjKB2fLQEFgQAQAAJAwAwBELoZtMcIvp3+Ojcg8ufT7/zcvLcPT0L+lNL39aY49AUCQAAIjI4ACN3WwryRjHeH84fJkEn9M7ZVmkr/PEk/idIjTWuBcCAABIAAEEhGAISeDFlUgc9RrkcFRD5KmPpyatPVlF5K6ZooJJAJCAABIAAEqiAAQteFmVewpw5I5CFKX6I//pvSV+hCB2lAAAgAASBQggAIvQS9h8p+kX7lUDR/+J3tE3TEupTyJ6TV91KC77g0D5QCAkBgrwhgUC6zPJO3YPg/9Pteni1zu3mj3+PL4ENpIAAEgAAQ0EIAhJ6PpJA5b3Yb5Rl5LBo3UMYLsUqPhQv5gAAQAAL2CIDQ8zBmEufPf1L66jwR3ZdiDPiku2d33xI0AAgAASAwAAIg9DQjnkbZ7zsUeR39vDKt+FC576TWnEVpb9GJoYyIxgABIDAOAiD0eFu+h7J+6yE7cDvuuDMIi7sp8Ul3V8TDiJxAAAgAASBggQCIKQ7Veynboynt8Xn5GkK8u59X6CfGwYhcQAAIAAEgYIUACH0bWd69zqQ1+uto20g8PMdr6F+/SukbKf1zjgCUAQJAAAgAAR0EQOjrOMpOdj757XQdyIeTwhjxvgLgM5xp0SAgAAR6QgCEvmwt2cn+95Tl23oyamVd+ZKZ51GCL1UGHtUBASAABEIEMAg/3B+upH+99vBvPo/9frjMJgI8+XmAEo6D3YQKGYAAEAACNgiA0I/FNbyvHNjE+9yDh6zYHBePGXICASAABFQRAGk9BKecx46d7Oku9pNU5PWU4E/p2KEEEAACQEAFAQzAR2GUzW98i9jJKsjuTwhPhH6D0s/sr+loMRAAAkCgPQIg9KPvlvNnz8e4angiRzjuoHSehjDIAAJAAAgAgTQE9kzoOMY1zVe2cn+IMlxEaS83zm3hge+BABAAAlUR2Cuhv4dQxjGuuq72QhL3dkp79SldNCENCAABIJCIwB4HXxzjmugkCdn58cVVlF6WUAZZgQAQAAJAQAGBvRE6jnFVcJoVEfzOPr+P/ljbaiDdGQK8qZQ/uHnPmWGgzr4Q2BOh4xhXe99+L1XxTRjY7YF2VIP0K1ZpT+OJIxNAFSBwFIG9dEAc41rH4y+haq6jxDfTyb3xdWpGLa0QkL7F9eMMh1ZWQL1AYAeEfiW1Ece41nV1XrG9k9J31a0WtTVCQAidH2edQIl/4k2HRsZAtftGYOQVOo5xbePb9xyqPaNN9ai1MgJC6DyWSPh95HGlMryoDgjEIzBqx5OBBSHAeF/QyvmXJOgFlLBBSgtR33JCQmdN+W/0O982g3aDIjAioV9DtnoJBpVkj/3SIWQ6V1AG6dvpyydsSOYb6vj++EspXZ+sBQr0hsCU0LFK782C0HcYBEYk9OkAM4yxjBsSbm6KqSrMz4M4n4Mv16fy3/9E6TkxgpCnawTm+hv/j32An6njAwSAQCUERiN0rA7yHScmVPopEv84Suw3sb6TsrrP1x4lWyEw5zeYVLeyBurdNQKxg3IPIHGYl8O9N1F6Ug8KO9NRY1X1eWrTSZT4+Tn7Fsuc8zGQvDPjF6gzR+jy+OY2kvv4AtkoCgSAQAICoxD6V1Kbbz0QCDZjJThAkJUHZr4x7ZS84g8rxfJeROkdh2+2VvcgeSXgK4thuz14mMiFVcdEfCqriuqAwNgIjELoCPGV+ekXqDjfA6/pD7xKu4HS01dUiyF5JgvcUV9mX6vSvG/ixAW/weMvK9QhFwgsIKA5gLcCWQYODu1xiA+fdATkjHtNf/gkqXFOBhkvkbw8EsChJen2tSqxRdoaj3GsdIdcIDAcApoDeAtw/p0qvYASHzPKx43ik4fA1sCcI/XXqdBPL6zeUuT9HWX+9hk52EWdgqJN3i2/2freRitIBQI7RaB3QsdzOh3HtRp42T6vpvRbOmoekSLRhFAk18PEf5liPRC1jcDWoy7ek8GbJDk0j8cm23giBxAoQqBnQt8aTIqA2VlhK0Ln5998nerpRnjyc3rZUS9VsF8w6fOzXXxsEYjpg14n3ezz2EBr6x+QXhmBXgldXou5ivB6WWXMRqyOXzc79UC+cjiMRjvvJiH8zJtfJ7T+8GpwboMWE8oHKD3LWoEdyo8hdIv9GaVQx+hdWgfKA4HqCPRI6FcTSpdTwq1Ouu5isZJ6Ian4dkot/Iz9Y3oAjrQRJ5jp+E4sMVr4VkkLRG/+iVV6CZIo6wqBFgNtKQCxg0hpPXsrbxV2Z7m/ROm1DQHlsP/ca3ny7j1HJ/BJRyC2L1r5VrrGR0uI3vx7j2NgbrtRbnAEenNmbwPDSO4hYXf+eZpiwz5Nsjj0/mRFmaWisHovRfBYYtwaR/jQJz78yUtULSR0rNJ1fAFSHCCw1REdqPhlFXC0q701LEKjbyO1v4cS73b2+Hk/KfWMmZUaBvpta8Wu0FlSSt7tmstyhNcrp9xLUFYrSgMBYwR6IXQc7WrsCAfxFhGQJ5JsPmSGf/KhMd4/vDOfn7FL3wCxL1sshaQ9bY4LN4Hy4xbY2HuvhH5RCPRC6CkDR1TDkWkWAavd7vwe8p9RenFnuMsEh9XGQTYPN15qv7SIAOW6lOjC5bFKz0UR5Vwh0AOh42jXui5jMeh+nJpwJqVz6zZFrTYQ+zyUqYRuEQHKNXKoi4XP5+qFckAgGwHvhI6jXbNNm13QYtD9RdLm5yj1/IoQXzTz1MNqjsHlsxD2eHgN+wcT4O2U5GrU2HGEH2fwuQSx+bOdOKLg/ZSHz1yQNyDYN7U3hEaogSxAQA8BDx1rrTVeZ87him2qv3dMt7zHKuzOtuT30jn03vNHbqaTNmheOesdl3B3eKhryjNozuvl8UU4vqRGG7zbCvrtEAHP5OOxg72RfOQVEX7iGdcI9Y+swFIG6RiZfIHOByk9JyZzB3lktcmqMlYfpXRRB3qXqBj2Sd7gKCt0wSAmAmPhW7ltCqNRYk8vr9bltgnldoyAV+KRo12vIdu81Il9wlX5m0inK2b08jgJyYHPIuz+XlLkYko1joHNaXNumfCyGO1JUK5OVuWm/i1/MwZy+t7WmGLhW7ntne6896RbbptQbscIbHW+FtDw+exM4l5myuGqfGvAHoXQw+eLWme787vo76Dk0ec0/HwPxL5E6OErfozlWt+9l77nq4755xkawBfK4DaFt8F5iiAUNg3F94aAx8HVEynGrMpDn/Gke6kvWwxsjOcvU/qFUuUclw99ZmsC6LgZs6ptEToXCg9tWQrBW/hWLpZTXbBKz0US5Zoj4I3QvXSmlFV5C0KvgZNFHbwz+h5Kno6BteqEMcRmVbeV3BhCjyF1C9/KbfPcJNzThCO3XSi3QwQ8EbqXo11TV+U1CX26u97SfhZhd+/HwGoPAbIXhOVa2kpb7yV5c4S+FIWQRxBz33s6NW5ucuFpwlHLtqhnAAS8DDIejnbNXZXXJPTaKwft+p5AYN1C6bzDzwG60GYTbqIc5x9y8U5qr2fabzaEMqQQOstbm9CwLA/v8vNrh2yT6Vio7fsx+CIPEChCwAuht372XLIqr0XoLVYNUqfme8O9HgNb1NECMtTEslSn1PLiD7KJjPvt1iRFCJPrCscbT4TJukztIpMRD5OOVDsh/04R8EDoMkjwO623NbCDTCY0NjBZTkxaDYDTQbzURL0fA1vS/hGeq4uPM5HzSXmxY8i0b7SYoC7ZbqlvWfbnEj9CWSAwi0BsZ7SCr+XRrrw56/RDw7ReobEi3daDn+bA9jrC/OcpxRxCYuV3LeWGr7e17n+5OIifp15qIn7EK3y2v5djYJf6l+wj6TmqkmtjlOsQgdYDihUBbpkiDLFrYmDVHiu5WziF32uSOst6ESV+L32PHyY0OQf+Zvr9gs5AKJmUiB/JYTQeyHJtwtx6Mt2Za0DdlghokllqOzQJIqVuzRD7tF6WrX0gjqcdwVo242Ng+a2G8OjQFBuOkjckN16t9vQp8QVv7+pvXRrjYULdk29A10YItCJ06dBvpXZfXqntFiH2UPUX0B9/Rek7Kb1TsU2eBhPZ4FS63+AThA+fFsZvN+z90+tzdSF0tl/OOGIVJcv1J24P37w2dzIiVum5qKJcVQRyOmKpgny4CN+LXUoKKXrUGDxkV6wmpiKTV7PyvD+l3RZ5194vjq2Pz3PnNn0dpY/EFho4X4+Ewf1XNsbl9mVptwf/5jashf8tom8DuzSa1gIBTfKJ0f9HKNPvVyZzyxB72GaLQbkkrBljj9w8Gq+z8YZIvn2Nr1TF5+gEV/txjRWusgeAx4/SCIMXH9+KhHnR08qmkDsAArUJvWanuJvsI5c/aO1iXzO5NqHLJRZeB/nS19muJDBfFdhogO5U1ISafaNI0YDEZfwoIXWNyWFpe7j8Fv6e9rJotBcyBkSgJqFvdRhNeGuE2Kf6bs3wU9unPUFIrT8mf6lN+ZHCd1PivQd7//REGHO+mUvqJTvmNX0mpr9p93FN/SELCGRtZsmBTTrLK6kwH7Fq+akVYg/bcCP98VRKHzv81Gjf1jM9jTo0ZJSQ+nWkAEdSnquhyAAyeiGMJT1jSHHOTC367FSPmAlVbvsGcE00oQcEaqzQZWPXpwmQxxmCEs7030f1fINhXVPR2h1dW541FLmk/sOk2O9QOsVawU7k92L3tYlHzqREyvB49HlKpzWwlxwiszUm9rTXoQGMqLIlAlvOW6qb7Gi3fg6cG+4rbZ+UzxnE1urOJUit9qTKKXmd7QtU2Y9T+oPUSgfMz1icTInx9DzJWYseyQQ+pc+Hj8jYrNbj0pLrcLu2zm7vrW8O2E3QpCUELDvOj1Klv0cp95WWGKuFJ25tXRIRIy8nz0ep0FMo8c8LcwTMlOlx0Mh9ne3d1P4zKV2qhF3vYrQnhxZ4bBFfTqQhXKWvvT5m0R6RGYN9TGjeUkfIBgKLCFgSujUptV6VC6g5g9eWS1pjt1V/7vc5O5b5IJ6/oNTbSWm5GG2VK/Wn6Wp3q77weyE0DnvzwT9zn7fQP19O6Q8p/dCK8BhyDIuH/Tn1jPiUNq7ljdU5Np+WXpADBKIQsCJ0S0L6F2rZsw+tazWTnxsENS8bscQvyjEKMuW8zsan+L2B0pUF9Y5UNHdDpPiNJhYik0PRfG/41jGpUnfOxETazX3JMrK3hE+szrH5NO0AWUBgEwELQhdn/zGqnQ+R0fy0eB1tS//cwXdrpcDfW9hnqz0a36dOSPiSlospPUmj8gFkpBKGkCw3XevRE4eW11bK4vdLkZWckxPDCA+T+tbzbG1Tp+CuvUr3EnHUxhTyKiKgTRiWO9qFJFrM3LfIl48v5WNMtT6phKhVr6aclDYwdh+mxGFevrhl758UMqw5yWW9mGiXxg0huRMOBuS/UzbHyX0LchMbi9Eeo9Z8K4XQ5Vm61qQjjK58hpQ8Z++dAO1PR0Czs1jtaL+TmvWYQ9M+Sz/PTm+mWQmrDTIpZGjWOAXBKe24jer7c0p8PDA+R0POMZPXFBLSwHVaH29MlVX63HjCbfhZSr8WWXnoM7EYRIrezJaKZYp/x04ktGRuNhYZxkNAi9CvIGh+N3IASkGx5uojRS/JmzoAxNYxSqdOeZ3tzSDzY9wjlsysJpVLvhqjF1+2wreWTfeVxOx5kTdXwmf1WuPUVv9LxZIXGGdRimnXUt3TUPsdlPGxBmPpVtvx/QAIaHUUCwLyGmIPzR4zuOW4iQWeOXpolMl9nU2j7p5lxPrWp6iRfK/8rZSeYNzgnEcBPMYwOXMYXsYbCcWfuKDvdJWeErYvgSB2w19YR+mkfs7OI/X/EnugbCICGoSu7XyeQ+xTeGMH3USzbF4UkSqvdX7vkZbW+MzVn+JbnLdklRjb/pS+vqR/eKIj1zsXkpeJA19QxNcGxzx6iG3DWj65ECl1XEyxVcxkIAVnjXZDxiAIpDrutNkyUPMhMhwyLf30NvBzx9PaFBNiN2KHllPQuJ01yKfUF1uXTyGJlLwl7YqdOMSsWl9DivwKpXAMCv1C2iRkXjpWxbab60u9n10mKXwvAYfgYz9Ldhux/8dignwFCJR0Eum0Gme0h0ReazZeANuRojnhudg6R+7QeD0nzgtSSFowTSWUOE2O5toiad4vwSH0MKweezbDXEg+JPIULFLaNJc3d5Ke2mfX8EyVVdpmlB8EgRJC1+hkPRK5mH5rgCtxkdE7dBh2tYhwlGDvpWzsalj0tfaZ2BB6afRlLiTPbax1elwq7oK/TPBj2782flrb0ouPQw9lBEoJ/QHSh3ezpn56JnIQeqq1l/PLwNVLVEav5duSGJOUzWB3UX4+E98Cy+mlMdNDZ7hOJjS+WEbrMxeSzx1vUnQqWajETvK38oHQUyyGvF9GIJfQv5kk/AOlb6H0j5F4loTkIquomq2k428puqcO3du+iS3baX2fE/q1wHLab8P2WUwepvhJPwtD+azTqVpAT+SU9uuY8lt59tT/jcy4T7G5hM4zZb7ecat8OMAIwjUGgRrWzA3Nxei2tw4tq0vGJjZkGYNjz3nYB3JWpOENhCmPM3gVHj4DXzokRnslvmWjcM/FVKeUCMZWPeH4VDJGba2+uZ6tsWNv/T/WNsi3gcAWIS8VnyPqpbwW4bjWhv1XUuBpEROaXD332qGxYe4hj2EfyO2fQhq5/iflxQ/XjnstqSOmLN/8xqtxntzwT/YR1kuOl2UZmpPArdVzjM5rMq4jAZdQup7S0pXBe+3/MdgizwoClgNGySzXu9FST5RKbc+eO7S8g8yYWazAUm3RIr+QWEn/FKJbO3ddiJtX3Rxxm/toEFwphtOwu7SJSZ6f2+fsrF/SSaPviQ/P+W/M2KGhQynmKN8hAqUDRodNVlE5JqxWUhE69EOvSY08MVzyEctXIlP9kvFvPbGS/iaXtsyNW1obbbX63tIYETN2aOmQamvk7xwBEHqeAa07nLX8vFbXLxW+wmT5jnX9lq3XmHLEqqXuMeRjWb/Inobd1yZ5IbHnhOI1+95cdCMm4qGpQw37oA4nCIDQ8wxh3eGs5ee1ul0pwWMvq/WYsKy1NWRS4QVzIUJud8w76SGxp0QYNPvedE9IODFZe91XUwdrP4F8RwiA0POMYd3hrOXntbptKYtXstq2aLn21ivjm0i18yl5IXNGSjDhu8L5NrKYHfxyG5ogzW9TyFXMS+hr9725DcRb4662Dl79HHopI7DlWMrVDSPOusNZy+/VEPJsWQb4cKdzr22a07s1oXv0v5Sw+xTTcKPl1iTFou2pz/ctdBipf6AtCwiA0PNcw7rDWcvPa7WfUqO/3taS0D37noTdhZRTx69wT8YSsXtovwcd/PR2aBKNQGqHiBY8eEbrDmctfwTzhIMznxy29NpVj21tRehSL0dCTnIIXIgL95GcTW8S3ZGxbxqG99D3POjg0PxQaQsBEPoWQvPfW3c4a/l5rfZZKtww9yFSkQ/t6P3TgtBlgpRLkjUwD8PuclJl7hgWPl9nH+KT8nijmoe+50GHGvZEHcoI5HYGZTW6E2fd4azldwf4hsLTjUdbz0m9t19Cy7HXj5a2R46L7QE3wUZ2rvMmuXMKAFg69bLl2Ij+X2DQPRdt6bQ9427d4azl94z9mu7Te7U5b8orS15wqU3oPfnbNOyuNQnh1X94P0XLsbEne3jpM9CDEGjptD0bwLrDWcvvGftY3efu1ba8pStWr5h8bP9az7F78zXNsPucLXjCUCsysuQLvdkkxqeRpwICIPQ8kK07nLX8vFb3W6qnkLyEv2v0TcHlZjLtBR2ZN4xg8O89RmHW4Eb/78gZPalaY9Dw1F4tXaw7nLV8LRx6kzO9zIP197YJrNaGuPB89Ed2Zshp2J3VH2ksQ//vzCG9qDtSJ6iJqXWHs5ZfEyuvdYWHjbCOstLjO8FbfiwJfe4xROvwci7WbC/Gij8tr3fN1R8rdAvkdi4ThJ7nANaEazmo57V47FJzIXluMT/H5us5a34sNsRN2+ctKpGDr9XmuBxdtMtYjy/a+kKeEwRA6HmGsO5wsZc45GmPUksIXE9fPJ3S2h3ibPv7KZ1uBKMWoc9FIHpdjc9BzRsc+fCbcM/BKOOZ9fhi5LoQ2xqBUTpAbRxrdDitgb02NqPVJ6/Ccbu2iF7jbPnSHe4jrsaXfEr6CB8Kc+qB3GtHVCz8vcb4YqE3ZDZGAISeZ4AaHQ5h9zzb1CrFz6PXrvEUH+F8sc/lc3e4j/RsPMV+4TWzI02Aa4wvKTgjbycIgNDzDFWjwyHsnmeblqXupcpP2yB6S/1Ge30rBishcomgjDCm1RhfYrBFns4QGMH5W0Beq8ONtOpoYScvdfLzXlmla/c59pGRno2n2kzrwpbUei3z1xpfLNsA2Q0Q0B5cGjShSZW1wuG16mkCIip9GAKYwKU7hUSy5OfaY5B06W1KgNDb4N59rSD0PBPWIlqE3fPs02spEHqe5QQ3eR2v93ENhJ7nB7sv1bvjtzJgLULn9mGQb2Xl+vXm7nB/Lqn614fQ+1qfDonvY5T/6+s30aTG0d5JB6GbuMn4QkHoeTauSeg168pDA6U0EIjd4c6v0dU8qrWHZ/RhJItfX+NPz2MbCF2jR+1QRs9O39JcNUkWYfeWlq5Xd6xPyWAfrrafT2q+O0PVD1OZpwQr+7nxQP7n/XQ5wUP07XlsA6FnODOK9D2LbWm/8P3XGnog7F4D5bZ1xBJ6bD7N1oSH1fBpepdqCleSNT1QB4SuBCzE9INAz07fEuXahN5iEG+J7x7rTpm0peTVwjIM9XsNw4ek3vPYhhW6ltfuTE7PTt/SVDK41cIPYfeW1ravO3WCKMTVgljDU+k8huFZp97fyweh2/e5IWuoRUijgccngj2aUk38WqzKRrOb1/bkDODharQFsYf180UwscfberWBJ71y/MGT/tClEQI1CalRE02qvYqkvrQyocsAyruhR7iAwsQwnQrlATx3tduS2K8jvS85YN5iUtGpuTfVBqFvQoQMcwiA0PP9gjvd1ZR+IF9Eckl09GTI3BfQ2h/RktjDMDyIvdzl0M/LMdylBBB6vtm5032OktW92EuaIfSebzOPJbXtGRJ77ctapO7LCei3egS7E51A6J0YypuaIPR8i3Cna/HsUFZDuSHa/BajpDYCqZvhUupvtXEOZJRipfm8wLAcw11KAKHnm73kuWd+rUdLaoVpS/VA+TIErAdunnCecFCxViicb5Y76eCjUncZSvsrbe0X+0N0Jy0GoecbuiWhs9bo9Pm281KSbVgjLD59vn4r1ftEQxAw4SwDF327DL/dlgah55te+9lnqiayEqq18krVD/nXEWhBeuHmNdbOcjLRun/07H8g9J6t11B3EHo++B4GLLzKlm+/1iVb+k8YimccLPZjSB0Wslvbzrp+ELo1woPKB6HnG7blgBxqjc6fb8NWJYXsWve/WwiAx1MSPbSjPS2iEK1sqlkv+rQmmjuS1XpA6RlqL4TOGHrSpWeb1tLd44Bt9R47fDPdqzz6R3orUKI6AiD0fMg9DVR4lS3fji1Ktt5QudZmbWIX37R8Xt/ChpZ1gtAt0R1YNgg937jewone9MlHduySvdhJk9h7abMXzwOhe7FEZ3qA0PMNdicVfQyld1H6jnwxqiUxEKjCqS5MbunTflatrmggcErsfH77MzMq9BTRylC/ahFgVRXucSoDoZfZ0lvHw6tsZfa0Lt3zhCskdsYpdVIioXf20VOsge5YvuXpgR3DAtVjEAChx6C0nMdjKLHVkZ9lSI5fumcyD63Dt/09klI4dsS+mjYKBpbeCows0R1cNgi9zMA8uPE90N5wDA8Q8aZbGeJ9lpZJVouz/y0R4/YcH/i/bPZjwp/7vIT+eU3G6t6yDZ5k82VPj6I0mp94wnhoXTDYl5vXW9hdWiSDA/99H6VHlzcVEjIQ6PG5eUYzj5w6x+QuH+4XTEx8rnv48RjVymmvRRlgY4HqjmSC0MuN7b0TSggvNixajggkhAjsMYQ697ydJzYnU/LeX1p6r9fFQUtMUHcCAiD0BLAWsno59WutJXiuXm7nHAl7JPMQp2vpj0spheMMY8J/Y+xB5CKnT6HMCgLoVDru0cPMGqSuY+tYKaM+N49t/zTfD9I/3jJD5IgcHUWqhzEk1/YoVwkBELoO0L2EEbFZTsfeW1L28tx8C4e578NTDcNn7kJqL6df/ihHcMdlxF+w16VjI3pQHYSuY4We3h3FZjkdm69J2XuofQ2buUdU093yQu5zm+rsrVe/BvhLfcyHrBGErmdWz+dzz7USm+X0bB9KwuC8juvWq5588Mz0VVAJR59gY7LmUnsbO5oDBgXmEQCh63lGjwM5nqvr2Z8l4bn5Np4foSwXUYode6Y75mX1Pg3Xb9fsM0cvj+t8ogetjkEgtlMBtm0Eegq7h63RvIRjG6Vxc+C5ebxtefJ7A6WnxRc5kpP72HSHfOoRtIlVmmfHZjhziPdTAQhd19Y9h85CYsfO46XU5gAAAAeISURBVHS/6DFCk95KnRKMFU+ApofOpEifHkF7MxW+IEWAg7xYnTswwkgqgNB1rTnCoB4SO+6wjvOPEewe11KdXIyXlm99nGR9zUGt3lbrWJ3r+BOkHBAAoeu6Qq9h9ykKd9E/zgz+Wbqa0kXZlzQ8N0+3h0UkK5yIfoJUenK6WlVLjDJWVAUNla0jAELX9xCLwUpfyziJsiNZct9Nv5wVV3T4XOE7/b2tDFsbx2plehM17PxOVutWGLS2LepviAAIXR/8ETuqvDvMaO2dvGTzG7DI7zvWfcT72xviQ18gCE/NhxElgcCxCIDQ9T1i5I0ue16VfnYSneDHEo/Rd59dSLQmdAbR86mI2HOxCzev30gQug3mmpt+bDQskzp91Y3/XroDu6wmH6WxUVDXDjUInTX2eCriA6TXKYcJx8h9RtdjIC0KARB6FEzJmWoNWMmKKRdYOvRjFILHq3zKDnMQV7t/eDoVceQIno23QGo0AiD0aKiSMu6x086dx82gySbBnlYje360kOToGZnfQGV+ghJvuOT70Wt9vDxXH2nTbC3boZ5IBEDokUBlZNM4PCOjWjdFeiR4bP6zd5+Wk93WpN6y7faWRQ3NEQCh25mgdljRriU6ktcIXlbyvPuXny/W/kzfu8eGNzsLtO4XLUm9ddvtrArJLhAAoduZAbPxdWyXCH5aSp5/SsRDm/Cx4c2uD8xJ9rBhtAWpYzyo62e7rA2Ebmf2vyHRl1Hi153OtqtmOMn8bm54fWYNH8XZ9XXcyBOp1ST1TxK8T6S09zMc6njZjmupMVjuGN4jHRidWNcD+L5s3mAnvlviw7CNrm22pHnrD7VIHe+db3kGvldBoGQwVFFgcCEyYNxC7Txv8LaieUBgCwGPO7ytSR1jwJZX4Hs1BEDoalAuCsLs3B5j1OAfAc+XkViROkLt/v1yKA1B6HXM6S3UWKfVqAUIPISAp+fnc3YR/TTfj8dkHj2gKgIg9Dpwy+qEd3bzhi98gMDeEOhhUqtJwAi1783DHbQXhF7PCN5XKPWQQE17Q0AO7OlhvCmdeIRXDmPT5d48vXF7e+hgjSFSrb50sFBVBsKAQCUEeprMSjQt51XG8EwDjK2VnAvVPIQAnK6uN5QMFnU1RW1AQA+B3iayqROQ8Oz/nImAHtKQtGsEQOj1zZ86WNTXEDUCAT0E+NyAkyj9NqVX6Yk1lxT7PD08yfB4c61QARBYQQCE3sY9eluxtEEJtY6AQK8TWJmIxNiA7yDgSQs+QKApAiD0NvDzAMCnnSE81wZ/1FoHAav3u+tof7R/ro2R2PRWyxKoJwoBEHoUTCaZel25mIABocMhIP6NSetwpkWDvCIAQm9rmdjndG21RO1AIA0BkHkaXsgNBFQQAKGrwJgt5L+oJJ/xjtBdNoQo6AwBIXPe+c2PlfABAkCgEgIg9EpAr1SDd1fb2wAa6CAgESdsEtPBE1KAQBICIPQkuMwyh6dLYWVjBjMEGyIgZH4H1XGuYT0QDQSAwAICIHRfrtH7rmBfaEKbWghgL0gtpFEPEFhBAITuzz0QgvdnE2i0jADIHN4BBJwgAEJ3YoiJGjfR3+cf/ofXfnzaaO9afZoAOOcAAsaRvXsD2u8CAXREF2ZYVAIheN/22at24Z4PjCF79QK02x0C6IzuTPIwhcKLHy6ib2/0rzI0HBgBuQoVr1oObGQ0rU8EQOh92O1CUvMGhOD7MNbAWsrkEmQ+sJHRtH4RAKH3ZTuE4Puy10jagsxHsibaMiQCIPT+zBqG4G8m9S/orwnQuDMEMJHszGBQd58IgND7tTvuYe7Xdj1ofhcpeQYlGSMQZu/BatBx1wiA0Ps2P1ZOfdvPo/ZhBIj1w2uTHq0EnYDADAIg9P7dQnYdc0twhnb/9mzVgund3+xXJ7ZSBvUCASCQjgAIPR0zryUQgvdqGd96hUSOsLpvW0E7ILCKAAh9LAeZDs68Yj95rCaiNQoIsF+EV5uCyBVAhQgg0BoBEHprC9jUj+egNrj2LhV+0bsFoT8QWEEAhD62e3yRmsfPQbFTeWw7L7XuA/TFxQf7hz5wD/3vrH1CglYDgXERAKGPa9tpyxCOH9vW91LzHnVo4ly/Rlh9bPujdUDgyys3QLEfBBB27d/WfDmKPANfIm8m8GdSur7/5qIFQAAIxCCAFXoMSmPmmQvHM9njVSVf9uYNbCdsrLyZvCWPL+2hDRAAAtUQAKFXg9p1RdN3kFlZHChS32T87vfxlJb6JRM32yXcoV5fS9QIBICASwRA6C7N0lSpaUielWEiwepd1yyMJ/e/pZA51wbMdTGHNCAwNAIg9KHNW9w4CfdO/QSr93hoL6Gs10aQN6/OT4oXi5xAAAgAgWMRAKHDI1IQWFq9iwxeyctqfuQDbe6gdp4ZkPRcP1pbed9HZU9PAR55gQAQAAJbCIDQtxDC90sILK3egdhRBGRy80H6/RkABQgAASBgjQAI3RrhfcvnnfS8+3r6rNir38l5+KHVhJj5592Uztm3SdF6IAAEvCLgdWD1ihf0AgJAAAgAASDgEgEQukuzQCkgAASAABAAAmkI/D/zfhxBb6bR5wAAAABJRU5ErkJggg=="}
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.5ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.9ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 17:49:02 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (6.8ms)
+  Rendered storylines/_phrase_form.html.erb (2.0ms)
+  Rendered storylines/_picture_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (19.2ms)
+  [1m[35mUser Load (5.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 214ms (Views: 100.6ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 17:49:05 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/_picture_form.html.erb (1.0ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (8.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /storylines.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /phrases.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /players.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /storylines.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 17:49:06 -0800
+Served asset /application.js - 200 OK (6ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 17:49:15 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"asfsdg"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/_picture_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (7.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 76ms (Views: 28.3ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /storylines.css - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 17:50:26 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 17:50:29 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"sFDASDG"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Tue, 24 Dec 2013 01:50:29 UTC +00:00], ["text", "sFDASDG"], ["updated_at", Tue, 24 Dec 2013 01:50:29 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  Rendered phrases/create.html.erb (5.5ms)
+Completed 500 Internal Server Error in 102663ms
+
+ActionView::Template::Error (undefined method `turn=' for nil:NilClass):
+    1:  <% @storyline.turn = 2 %>
+    2:  <%= @storyline.turn %>
+    3:  <%= render @picture_form %>
+    4: 
+  app/views/phrases/create.html.erb:1:in `_app_views_phrases_create_html_erb___2592973782601835351_70152531426560'
+  app/controllers/phrases_controller.rb:16:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (5.6ms)
+  Rendered storylines/_phrase_form.html.erb (3.5ms)
+  Rendered storylines/_picture_form.html.erb (3.8ms)
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (23.2ms)
+  [1m[35mUser Load (34.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 187ms (Views: 59.8ms | ActiveRecord: 50.4ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /storylines.css - 200 OK (5ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /phrases.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /storylines.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 17:52:31 -0800
+Served asset /application.js - 200 OK (9ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 17:52:34 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"sDFSDf"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Tue, 24 Dec 2013 01:52:34 UTC +00:00], ["text", "sDFSDf"], ["updated_at", Tue, 24 Dec 2013 01:52:34 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Tue, 24 Dec 2013 01:52:57 UTC +00:00], ["phrase_id", 47], ["picture_id", nil], ["turn", 2], ["updated_at", Tue, 24 Dec 2013 01:52:57 UTC +00:00], ["user_id", nil]]
+  [1m[35m (7.5ms)[0m  COMMIT
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" WHERE "storylines"."phrase_id" = 48
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" WHERE "storylines"."phrase_id" = 47[0m
+  Rendered phrases/create.html.erb (5.8ms)
+Completed 500 Internal Server Error in 265390ms
+
+ActionView::Template::Error (undefined method `turn=' for nil:NilClass):
+    1:  <% @storyline.turn = 2 %>
+    2:  <%= @storyline.turn %>
+    3:  <%= render @picture_form %>
+    4: 
+  app/views/phrases/create.html.erb:1:in `_app_views_phrases_create_html_erb__2063545691206394240_70168201422220'
+  app/controllers/phrases_controller.rb:16:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 17:57:16 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (5.8ms)
+  Rendered storylines/_phrase_form.html.erb (2.1ms)
+  Rendered storylines/_picture_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (17.6ms)
+  [1m[35mUser Load (34.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 197ms (Views: 57.2ms | ActiveRecord: 52.1ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /storylines.css - 200 OK (3ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /storylines.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 17:57:17 -0800
+Served asset /application.js - 200 OK (9ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 17:57:23 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"asdfasdf"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Tue, 24 Dec 2013 01:57:23 UTC +00:00], ["text", "asdfasdf"], ["updated_at", Tue, 24 Dec 2013 01:57:23 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" WHERE "storylines"."phrase_id" = 49
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" WHERE "storylines"."phrase_id" = 49[0m
+  Rendered phrases/create.html.erb (5.0ms)
+Completed 500 Internal Server Error in 60985ms
+
+ActionView::Template::Error (undefined method `turn=' for []:ActiveRecord::Relation):
+    1:  <% @storyline.turn = 2 %>
+    2:  <%= @storyline.turn %>
+    3:  <%= render @picture_form %>
+    4: 
+  app/views/phrases/create.html.erb:1:in `_app_views_phrases_create_html_erb___3386016627410985243_70150481641140'
+  app/controllers/phrases_controller.rb:18:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:01:36 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (6.4ms)
+  Rendered storylines/_phrase_form.html.erb (3.7ms)
+  Rendered storylines/_picture_form.html.erb (2.7ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (24.3ms)
+  [1m[35mUser Load (7.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 220ms (Views: 118.9ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /storylines.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /storylines.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 18:01:37 -0800
+Served asset /application.js - 200 OK (8ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 18:01:39 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"sadgadgf"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Tue, 24 Dec 2013 02:01:39 UTC +00:00], ["text", "sadgadgf"], ["updated_at", Tue, 24 Dec 2013 02:01:39 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" WHERE "storylines"."phrase_id" = 50
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Tue, 24 Dec 2013 02:01:39 UTC +00:00], ["phrase_id", 50], ["picture_id", nil], ["turn", nil], ["updated_at", Tue, 24 Dec 2013 02:01:39 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 28787ms (Views: 4.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (2.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/_picture_form.html.erb (1.2ms)
+  Rendered storylines/_phrase_form.html.erb (0.7ms)
+  Rendered storylines/index.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 72ms (Views: 25.3ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /storylines.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 18:03:22 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 18:03:26 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"asdfasdf"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Tue, 24 Dec 2013 02:03:26 UTC +00:00], ["text", "asdfasdf"], ["updated_at", Tue, 24 Dec 2013 02:03:26 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" WHERE "storylines"."phrase_id" = 51[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Tue, 24 Dec 2013 02:03:26 UTC +00:00], ["phrase_id", 51], ["picture_id", nil], ["turn", 2], ["updated_at", Tue, 24 Dec 2013 02:03:26 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 12ms (Views: 1.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:05:40 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.1ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/_picture_form.html.erb (1.6ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (8.9ms)
+Compiled phrases.js  (0ms)  (pid 35537)
+Compiled application.js  (4ms)  (pid 35537)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/phrases" for 127.0.0.1 at 2013-12-23 18:05:44 -0800
+Processing by PhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "phrase"=>{"text"=>"asdfsdaf"}, "phrase_id"=>"", "commit"=>"Create Phrase"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Tue, 24 Dec 2013 02:05:44 UTC +00:00], ["text", "asdfsdaf"], ["updated_at", Tue, 24 Dec 2013 02:05:44 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" WHERE "storylines"."phrase_id" = 52
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Tue, 24 Dec 2013 02:05:44 UTC +00:00], ["phrase_id", 52], ["picture_id", nil], ["turn", 2], ["updated_at", Tue, 24 Dec 2013 02:05:44 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:06:21 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.2ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/_picture_form.html.erb (1.2ms)
+  Rendered storylines/_phrase_form.html.erb (0.7ms)
+  Rendered storylines/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 63ms (Views: 20.6ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:07:26 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.6ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/_picture_form.html.erb (1.0ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (7.2ms)
+Compiled phrases.js  (0ms)  (pid 35537)
+Compiled players.js  (0ms)  (pid 35537)
+Compiled application.js  (3ms)  (pid 35537)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/_picture_form.html.erb (1.3ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (7.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /storylines.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /phrases.js - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /players.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 18:07:33 -0800
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:08:02 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (32.1ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/_picture_form.html.erb (0.9ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (37.2ms)
+Compiled phrases.js  (0ms)  (pid 35537)
+Compiled application.js  (3ms)  (pid 35537)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:08:02 -0800
+Served asset /phrases.js - 200 OK (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:08:02 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:08:46 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.6ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/_picture_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (8.7ms)
+Compiled phrases.js  (0ms)  (pid 35537)
+Compiled application.js  (2ms)  (pid 35537)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:08:47 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:08:47 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:09:43 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.2ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/_picture_form.html.erb (0.9ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (6.3ms)
+Compiled players.js  (0ms)  (pid 35537)
+Compiled application.js  (3ms)  (pid 35537)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:09:43 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:09:43 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-23 18:09:48 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"text"=>"asdfasdf"}
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.5ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (8.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:10:13 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.3ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/_picture_form.html.erb (0.9ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (6.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/_picture_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (8.8ms)
+Compiled phrases.js  (0ms)  (pid 35537)
+Compiled application.js  (3ms)  (pid 35537)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /storylines.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /phrases.js - 200 OK (43ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:01 -0800
+Served asset /application.js - 200 OK (9ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-23 18:15:05 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"text"=>"sadfasdf"}
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.2ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/_picture_form.html.erb (0.7ms)
+  Rendered storylines/_phrase_form.html.erb (0.7ms)
+  Rendered storylines/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:15:52 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/_picture_form.html.erb (0.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (8.4ms)
+Compiled phrases.js  (0ms)  (pid 35537)
+Compiled application.js  (4ms)  (pid 35537)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:52 -0800
+Served asset /phrases.js - 200 OK (3ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:15:52 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-23 18:15:56 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"text"=>"sFDSdf"}
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.1ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/_picture_form.html.erb (0.7ms)
+  Rendered storylines/_phrase_form.html.erb (0.7ms)
+  Rendered storylines/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:17:35 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.6ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (6.0ms)
+Compiled phrases.js  (0ms)  (pid 35537)
+Compiled application.js  (2ms)  (pid 35537)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:17:35 -0800
+Served asset /phrases.js - 200 OK (4ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:17:35 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-23 18:17:50 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.6ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/_picture_form.html.erb (1.0ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (8.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-23 18:17:50 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-23 18:17:50 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-23 18:17:57 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"text"=>"asfasdf"}
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/_picture_form.html.erb (0.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (7.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.7ms)

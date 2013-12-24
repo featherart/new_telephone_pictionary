@@ -1,25 +1,26 @@
 <div id="new_drawings">
 	<!--append here-->
 </div>
+
 <div id="new_phrases">
 	<!--append here-->
 </div>
 <%= render partial: 'player_form' %>
-<% if @turn == nil %>
-	<h1>New Phrase</h1>
+<#% if @turn == nil || @turn == 1 %>
+	
 	<%= render partial: 'phrase_form' %>
 
-<% elsif @turn.even? && @turn != 0 %>
+<#% elsif @turn.even? && @turn != 0 %>
 <!-- 	<div id="new_phrases">
 		
 	</div> -->
 	<h1>New Drawing</h1>
 	<%= render partial: 'picture_form' %>
 
-<% elsif @turn.odd? || @turn == 0 %>
+<#% elsif @turn.odd? || @turn == 0 %>
 
 	<h1>New Phrase of Phrase!</h1>
 	<%= render partial: 'phrase_form' %>
 	
 
-<% end %>
+<#% end %>
