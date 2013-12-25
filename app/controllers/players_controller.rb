@@ -8,7 +8,7 @@ class PlayersController < ApplicationController
     @player = Player.create(params[:player])
     text = "Hello #{@player.name}! #{current_user.name} has invited you to play Telephone Pictionary. Please log on to http://telephone-pictionary.herokuapp.com to participate!"
     @player.send_text(text)
-    #binding.pry
+    binding.pry # can I get a turn number here?
     #render :json => @player
     render nothing: true
   end

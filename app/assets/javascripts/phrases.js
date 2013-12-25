@@ -13,7 +13,7 @@ $(function() {
           var phrase = $("#phrase_text").val();
           //console.log(phrase);
       $.ajax({
-         url: "/",
+         url: "/phrases/create/",
          type: "POST",
          data: {
            text: phrase

@@ -2,13 +2,15 @@ class StorylinesController < ApplicationController
   def index
   	@storylines = Storyline.all
   	@storyline = Storyline.new
-    @turn = @storyline.turn
+    # @turn = @storyline.turn
   	@phrase = Phrase.new
   	@picture = Picture.new
     @player = Player.new
-    @player.turn_number = 1
+    #@player.turn_number = 1
+    #@turn = 3
     puts "**************"
     puts "in storyline index"
+    #puts params
     puts "**************"
     #binding.pry
   	respond_to do |format|
@@ -28,20 +30,19 @@ class StorylinesController < ApplicationController
     #@project = Project.includes(tasks: :logs).first
 
     # @picture = Picture.new(params[:picture])
-    # @phrase = Phrase.new(params[:phrase])
+    @phrase = Phrase.new(params[:phrase])
     # @storyline.picture_id = @picture.id
     # @storyline.phrase_id = @phrase.id
     Turn.last.turn_number ? @turn = Turn.last.turn_number : @turn = 1
     
     @storyline.turn = @turn
-  	@storyline.save()
-  	binding.pry #this never executes - why?
-  	render layout: false
+    @storyline.phrase_id = @phrase.id
 
-  	# respond_to do |format|
-  	#   format.json
-  	# end
-  	#redirect_to @story
+  	@storyline.save()
+  	#binding.pry #this never executes - why?
+    respond_to do |format|
+      format.js
+    end
   end
 
   # def show

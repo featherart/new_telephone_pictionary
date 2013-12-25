@@ -21367,3 +21367,2110 @@ Processing by StorylinesController#index as */*
   Rendered storylines/index.html.erb within layouts/application (7.7ms)
   [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
 Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:27:03 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.8ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (9.8ms)
+  Rendered storylines/_phrase_form.html.erb (3.3ms)
+  Rendered storylines/_picture_form.html.erb (3.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (33.7ms)
+  [1m[35mUser Load (6.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 280ms (Views: 155.4ms | ActiveRecord: 28.4ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:27:03 -0800
+Served asset /phrases.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:27:03 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:27:03 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:27:03 -0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-24 17:27:09 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"text"=>"afwqerw"}
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/_picture_form.html.erb (0.7ms)
+  Rendered storylines/_phrase_form.html.erb (0.7ms)
+  Rendered storylines/index.html.erb within layouts/application (5.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:29:54 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (5.1ms)
+  Rendered storylines/_phrase_form.html.erb (2.2ms)
+  Rendered storylines/_picture_form.html.erb (3.0ms)
+  Rendered storylines/_phrase_form.html.erb (1.7ms)
+  Rendered storylines/index.html.erb within layouts/application (21.4ms)
+  [1m[35mUser Load (6.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 204ms (Views: 93.1ms | ActiveRecord: 23.3ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:29:54 -0800
+Served asset /phrases.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:29:54 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:29:54 -0800
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:29:54 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:30:33 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.6ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/_picture_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:30:33 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:30:33 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:30:33 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:30:33 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:33:35 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/_picture_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (8.8ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 162726ms (Views: 59.3ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:36:18 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (15.6ms)
+  Rendered storylines/index.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___835906898544637153_70099114496640'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb___878420410731909466_70099114556300'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:36:18 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (0.7ms)
+  Rendered storylines/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___835906898544637153_70099114496640'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb___878420410731909466_70099114556300'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:36:18 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___835906898544637153_70099114496640'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb___878420410731909466_70099114556300'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:36:31 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___835906898544637153_70099114496640'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb___878420410731909466_70099114556300'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:36:53 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/_picture_form.html.erb (1.3ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (7.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 104ms (Views: 56.6ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:36:54 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:36:54 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:36:54 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:36:54 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-24 17:37:01 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"text"=>"ASDasd"}
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (6.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:40:24 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.5ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:40:24 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:40:24 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:40:24 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:40:24 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:41:20 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.5ms)
+  Rendered storylines/_phrase_form.html.erb (2.1ms)
+  Rendered storylines/index.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 122ms (Views: 28.4ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:41:20 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:41:20 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:41:20 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:41:20 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:44:00 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.5ms)
+  Rendered storylines/_picture_form.html.erb (2.6ms)
+  Rendered storylines/index.html.erb within layouts/application (24.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 128ms (Views: 43.3ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:44:00 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:44:00 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:44:00 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:44:00 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:44:35 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 97ms (Views: 19.0ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:44:36 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:44:36 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:44:36 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:44:36 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:45:27 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.4ms)
+  Rendered storylines/index.html.erb within layouts/application (4.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:45:28 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:45:28 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:45:28 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:45:28 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:45:57 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.2ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:45:57 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:45:57 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:45:57 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:45:57 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:50:07 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.3ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (3.4ms)
+Compiled players.js  (0ms)  (pid 36299)
+Compiled application.js  (5ms)  (pid 36299)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 94ms (Views: 91.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:50:08 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:50:08 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:50:08 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:50:08 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:50:52 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.6ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (3.9ms)
+Compiled players.js  (0ms)  (pid 36299)
+Compiled application.js  (3ms)  (pid 36299)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:50:52 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:50:52 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:50:52 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:50:52 -0800
+Served asset /players.js - 200 OK (3ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-24 17:51:08 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"name"=>"feather", "phone_number"=>"5108477006", "turn_number"=>"2"}
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.2ms)
+  Rendered storylines/_phrase_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 17:53:00 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (8.6ms)
+  Rendered storylines/_phrase_form.html.erb (3.0ms)
+  Rendered storylines/index.html.erb within layouts/application (22.6ms)
+Compiled players.js  (0ms)  (pid 36594)
+Compiled application.js  (5ms)  (pid 36594)
+  [1m[35mUser Load (6.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 252ms (Views: 144.4ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 17:53:00 -0800
+Served asset /phrases.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 17:53:00 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 17:53:00 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 17:53:00 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-24 17:53:29 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"name"=>"Feather", "phone_number"=>"5108477006", "turn_number"=>"2"}
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:00:56 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.1ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (5.3ms)
+Compiled players.js  (0ms)  (pid 36594)
+Compiled application.js  (5ms)  (pid 36594)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 18:00:56 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 18:00:56 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 18:00:56 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 18:00:56 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-24 18:01:07 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"name"=>"bobo", "phone_number"=>"5108477006", "turn_number"=>"3"}
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.3ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:04:54 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (5.1ms)
+  Rendered storylines/_phrase_form.html.erb (2.3ms)
+  Rendered storylines/index.html.erb within layouts/application (14.2ms)
+Compiled players.js  (0ms)  (pid 36675)
+Compiled application.js  (3ms)  (pid 36675)
+  [1m[35mUser Load (4.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 221ms (Views: 117.5ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 18:04:54 -0800
+Served asset /phrases.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 18:04:54 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 18:04:54 -0800
+Served asset /players.js - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 18:04:54 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-24 18:05:04 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"name"=>"jo", "phone_number"=>"5108477006", "turn_number"=>"2"}
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-24 18:05:22 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"text"=>"mary had a lamb"}
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.1ms)
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (5.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:08:04 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (7.1ms)
+  Rendered storylines/_picture_form.html.erb (3.1ms)
+  Rendered storylines/index.html.erb within layouts/application (20.0ms)
+Compiled players.js  (0ms)  (pid 36715)
+Compiled application.js  (3ms)  (pid 36715)
+  [1m[35mUser Load (5.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 232ms (Views: 131.6ms | ActiveRecord: 20.7ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 18:08:05 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 18:08:05 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 18:08:05 -0800
+Served asset /players.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 18:08:05 -0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-12-24 18:08:10 -0800
+Processing by StorylinesController#index as */*
+  Parameters: {"image"=>"data:image/png;base64,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"}
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (2.1ms)
+  Rendered storylines/_picture_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (5.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:09:37 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_phrase_form.html.erb (5.2ms)
+  Rendered storylines/_picture_form.html.erb (2.7ms)
+  Rendered storylines/index.html.erb within layouts/application (16.4ms)
+Compiled players.js  (0ms)  (pid 36767)
+Compiled application.js  (3ms)  (pid 36767)
+  [1m[35mUser Load (6.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 245ms (Views: 133.2ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 18:09:37 -0800
+Served asset /phrases.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 18:09:37 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 18:09:37 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 18:09:37 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:12:09 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.7ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (5.8ms)
+Compiled pictures.js  (0ms)  (pid 36767)
+Compiled application.js  (3ms)  (pid 36767)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 18:12:09 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 18:12:09 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 18:12:09 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 18:12:09 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2013-12-24 18:12:22 -0800
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "player"=>{"name"=>"jo", "phone_number"=>"5108477006", "turn_number"=>"2"}, "commit"=>"Create Player"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "players" ("created_at", "email", "joined", "name", "phone_number", "storyline_id", "time_start", "turn_number", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 02:12:22 UTC +00:00], ["email", nil], ["joined", nil], ["name", "jo"], ["phone_number", "+15108477006"], ["storyline_id", nil], ["time_start", nil], ["turn_number", 2], ["updated_at", Wed, 25 Dec 2013 02:12:22 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 16ms (Views: 3.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:15:39 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (6.7ms)
+  Rendered storylines/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 77ms
+
+ActionView::Template::Error (undefined method `model_name' for ActiveRecord::Relation:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___4591649190622972528_70195589653780'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb__4405245437885621602_70195601121620'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:25:02 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" WHERE "phrases"."id" IS NULL[0m
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" IS NULL
+  Rendered storylines/_player_form.html.erb (0.6ms)
+  Rendered storylines/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 40109ms
+
+ActionView::Template::Error (undefined method `model_name' for ActiveRecord::Relation:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___4591649190622972528_70195589653780'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb__4405245437885621602_70195601121620'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:25:42 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" WHERE "phrases"."id" IS NULL LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" IS NULL LIMIT 1[0m
+  Rendered storylines/_player_form.html.erb (1.0ms)
+  Rendered storylines/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 1673ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___4591649190622972528_70195589653780'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb__4405245437885621602_70195601121620'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:25:53 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" WHERE "phrases"."id" IS NULL LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" IS NULL LIMIT 1
+  Rendered storylines/_player_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___4591649190622972528_70195589653780'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb__4405245437885621602_70195601121620'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:26:05 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" WHERE "phrases"."id" IS NULL LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" IS NULL LIMIT 1[0m
+  Rendered storylines/_player_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@player) do |f| %>  
+    2:   <%= f.text_field :name, placeholder: "enter player's name", required: true %>
+    3:   <%= f.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    4:   <%= f.text_field :turn_number, placeholder: "next turn number", required: true %>
+  app/views/storylines/_player_form.html.erb:1:in `_app_views_storylines__player_form_html_erb___4591649190622972528_70195589653780'
+  app/views/storylines/index.html.erb:8:in `_app_views_storylines_index_html_erb__4405245437885621602_70195601121620'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:26:45 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" WHERE "phrases"."id" IS NULL LIMIT 1[0m
+  Rendered storylines/_player_form.html.erb (2.0ms)
+  Rendered storylines/_phrase_form.html.erb (0.6ms)
+  Rendered storylines/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@phrase) do |f| %>
+    2:   <%= f.text_field :text, placeholder: "enter a sentence", required: true %>
+    3:   <%= hidden_field_tag :phrase_id, @phrase.id %>
+    4:   <%= f.submit %>
+  app/views/storylines/_phrase_form.html.erb:1:in `_app_views_storylines__phrase_form_html_erb___285230139549696591_70195571808580'
+  app/views/storylines/index.html.erb:11:in `_app_views_storylines_index_html_erb__4405245437885621602_70195601121620'
+  app/controllers/storylines_controller.rb:16:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 18:27:29 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.6ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_player_form.html.erb (2.1ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (4.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 58ms (Views: 21.1ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 18:27:29 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 18:27:29 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 18:27:29 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 18:27:29 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:14:29 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (1.1ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_storyline.html.erb (5.8ms)
+  Rendered storylines/index.html.erb within layouts/application (14.3ms)
+  [1m[36mUser Load (6.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 206ms (Views: 95.2ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:30 -0800
+Served asset /phrases.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:30 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:30 -0800
+Served asset /jquery.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:30 -0800
+Served asset /players.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:14:36 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_storyline.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:36 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:36 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:36 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:36 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-12-24 19:14:52 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:14:52 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_storyline.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:52 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:52 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:52 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:52 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:14:55 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_storyline.html.erb (1.9ms)
+  Rendered storylines/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:55 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:55 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:55 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:14:55 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:17:41 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.9ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_storyline.html.erb (8.0ms)
+  Rendered storylines/index.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 161ms (Views: 67.2ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:17:42 -0800
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:17:42 -0800
+Served asset /phrases.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:17:42 -0800
+Served asset /pictures.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:17:42 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started POST "/storylines" for 127.0.0.1 at 2013-12-24 19:17:56 -0800
+Processing by StorylinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "storyline"=>{"turn"=>"3"}, "user_id"=>"3", "phrase"=>{"text"=>"asdfsdaf"}, "phrase_id"=>"52", "commit"=>"Create Storyline"}
+  [1m[36mTurn Load (0.7ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (33.5ms)[0m  INSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 03:17:56 UTC +00:00], ["phrase_id", nil], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:17:56 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 63550ms
+
+ActionView::MissingTemplate (Missing template storylines/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views"
+):
+  app/controllers/storylines_controller.rb:41:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:22:15 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_storyline.html.erb (2.5ms)
+  Rendered storylines/index.html.erb within layouts/application (3.1ms)
+Compiled storylines.js  (0ms)  (pid 37102)
+Compiled application.js  (2ms)  (pid 37102)
+Completed 200 OK in 90ms (Views: 55.9ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:22:15 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:22:15 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:22:15 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:22:15 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:24:48 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_storyline.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (2.3ms)
+Compiled storylines.js  (0ms)  (pid 37102)
+Compiled application.js  (2ms)  (pid 37102)
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:24:48 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:24:48 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:24:48 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:24:48 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/storylines" for 127.0.0.1 at 2013-12-24 19:25:00 -0800
+Processing by StorylinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "storyline"=>{"turn"=>"2"}, "user_id"=>"3", "phrase"=>{"text"=>"asdfsdaf"}, "phrase_id"=>"52", "commit"=>"Create Storyline"}
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" LIMIT 1
+  [1m[36mPhrase Load (31.7ms)[0m  [1mSELECT "phrases".* FROM "phrases" WHERE "phrases"."storyline_id" IN ('2')[0m
+PG::UndefinedColumn: ERROR:  column phrases.storyline_id does not exist
+LINE 1: SELECT "phrases".* FROM "phrases"  WHERE "phrases"."storylin...
+                                                 ^
+: SELECT "phrases".* FROM "phrases"  WHERE "phrases"."storyline_id" IN ('2')
+Completed 500 Internal Server Error in 74ms
+
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column phrases.storyline_id does not exist
+LINE 1: SELECT "phrases".* FROM "phrases"  WHERE "phrases"."storylin...
+                                                 ^
+: SELECT "phrases".* FROM "phrases"  WHERE "phrases"."storyline_id" IN ('2')):
+  app/controllers/storylines_controller.rb:28:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started GET "/storylines" for 127.0.0.1 at 2013-12-24 19:29:35 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_storyline.html.erb (2.5ms)
+  Rendered storylines/index.html.erb within layouts/application (3.1ms)
+Compiled phrases.js  (0ms)  (pid 37102)
+Compiled application.js  (2ms)  (pid 37102)
+Completed 200 OK in 96ms (Views: 60.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:29:35 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:29:35 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:29:35 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:29:35 -0800
+Served asset /phrases.js - 200 OK (3ms)
+
+
+Started GET "/storylines" for 127.0.0.1 at 2013-12-24 19:31:46 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mPhrase Load (0.5ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_storyline.html.erb (3.5ms)
+  Rendered storylines/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 76ms (Views: 8.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:31:46 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:31:46 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:31:46 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:31:46 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/storylines" for 127.0.0.1 at 2013-12-24 19:32:01 -0800
+Processing by StorylinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "storyline"=>{"turn"=>"2"}, "user_id"=>"3", "phrase"=>{"text"=>"i wish i were a bug"}, "phrase_id"=>"52", "commit"=>"Create Storyline"}
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:32:01 UTC +00:00], ["phrase_id", nil], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:32:01 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 500 Internal Server Error in 80589ms
+
+ActionView::MissingTemplate (Missing template storylines/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views"
+):
+  app/controllers/storylines_controller.rb:42:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (44.0ms)
+
+
+Started GET "/storylines" for 127.0.0.1 at 2013-12-24 19:33:21 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_storyline.html.erb (2.2ms)
+  Rendered storylines/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:33:21 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_storyline.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:33:21 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:33:21 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:33:21 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:33:21 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:33:26 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_storyline.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:33:26 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:33:26 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:33:26 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:33:26 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started POST "/storylines" for 127.0.0.1 at 2013-12-24 19:33:42 -0800
+Processing by StorylinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "storyline"=>{"turn"=>"4"}, "user_id"=>"3", "phrase"=>{"text"=>"how much i love red"}, "commit"=>"Create Storyline"}
+  [1m[36mTurn Load (0.6ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 03:33:42 UTC +00:00], ["phrase_id", nil], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:33:42 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+Completed 500 Internal Server Error in 73773ms
+
+ActionView::MissingTemplate (Missing template storylines/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views"
+):
+  app/controllers/storylines_controller.rb:42:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:35:47 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_player_form.html.erb (3.7ms)
+  Rendered storylines/_phrase_form.html.erb (2.5ms)
+  Rendered storylines/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:35:47 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:35:47 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:35:47 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:35:47 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:36:42 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 53ms (Views: 8.5ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:36:42 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:36:42 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:36:42 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:36:42 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 19:36:54 -0800
+
+ActionController::RoutingError (No route matches [POST] "/phrases/create"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:39:38 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  Rendered storylines/_phrase_form.html.erb (1.5ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 55ms (Views: 8.6ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:39:38 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:39:38 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:39:38 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:39:38 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 19:39:56 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"hi have a sammie"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 03:39:56 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 03:39:56 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered phrases/create.html.erb (2.2ms)
+Completed 500 Internal Server Error in 163646ms
+
+ActionView::Template::Error (undefined method `turn=' for nil:NilClass):
+    1:  <% @storyline.turn = 2 %>
+    2:  <%= @storyline.turn %>
+    3:  <%= render @picture_form %>
+    4: 
+  app/views/phrases/create.html.erb:1:in `_app_views_phrases_create_html_erb__1360339675414139055_70292812759840'
+  app/controllers/phrases_controller.rb:23:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 19:42:39 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"hi have a sammie"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:42:39 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 03:42:39 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered phrases/create.html.erb (0.9ms)
+Completed 500 Internal Server Error in 4041ms
+
+ActionView::Template::Error (undefined method `turn=' for nil:NilClass):
+    1:  <% @storyline.turn = 2 %>
+    2:  <%= @storyline.turn %>
+    3:  <%= render @picture_form %>
+    4: 
+  app/views/phrases/create.html.erb:1:in `_app_views_phrases_create_html_erb__1360339675414139055_70292812759840'
+  app/controllers/phrases_controller.rb:23:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (41.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:51:05 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (5.8ms)
+  Rendered storylines/_phrase_form.html.erb (2.4ms)
+  Rendered storylines/index.html.erb within layouts/application (15.3ms)
+Compiled phrases.js  (0ms)  (pid 37962)
+Compiled application.js  (3ms)  (pid 37962)
+Completed 200 OK in 219ms (Views: 126.0ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:51:06 -0800
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:51:06 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:51:06 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:51:06 -0800
+Served asset /players.js - 304 Not Modified (2ms)
+
+
+Started POST "/storylines/create/" for 127.0.0.1 at 2013-12-24 19:51:14 -0800
+Processing by StorylinesController#create as */*
+  Parameters: {"text"=>"hi have a sammie"}
+  [1m[35mTurn Load (0.7ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (16.6ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:51:14 UTC +00:00], ["phrase_id", nil], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:51:14 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Completed 500 Internal Server Error in 47ms
+
+ActionView::MissingTemplate (Missing template storylines/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views"
+):
+  app/controllers/storylines_controller.rb:43:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:51:52 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.3ms)
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 59ms (Views: 10.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:51:52 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:51:52 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:51:52 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:51:52 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/storylines/create/" for 127.0.0.1 at 2013-12-24 19:52:01 -0800
+Processing by StorylinesController#create as */*
+  Parameters: {"text"=>"hola have a sammie"}
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:52:01 UTC +00:00], ["phrase_id", nil], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:52:01 UTC +00:00], ["user_id", nil]]
+  [1m[35m (7.0ms)[0m  COMMIT
+Completed 500 Internal Server Error in 29ms
+
+ActionView::MissingTemplate (Missing template storylines/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views"
+):
+  app/controllers/storylines_controller.rb:43:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:52:38 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.1ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 52ms (Views: 9.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:52:38 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:52:38 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:52:38 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:52:38 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/storylines/create/" for 127.0.0.1 at 2013-12-24 19:52:46 -0800
+Processing by StorylinesController#create as */*
+  Parameters: {"text"=>"help me this is hard!"}
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:52:46 UTC +00:00], ["phrase_id", nil], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:52:46 UTC +00:00], ["user_id", nil]]
+  [1m[35m (7.1ms)[0m  COMMIT
+Completed 500 Internal Server Error in 27ms
+
+ActionView::MissingTemplate (Missing template storylines/create, application/create with {:locale=>[:en], :formats=>[:js, :html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views"
+):
+  app/controllers/storylines_controller.rb:43:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:55:06 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.1ms)
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (4.6ms)
+Compiled phrases.js  (0ms)  (pid 37962)
+Compiled application.js  (3ms)  (pid 37962)
+Completed 200 OK in 111ms (Views: 59.5ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:55:07 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:55:07 -0800
+Served asset /phrases.js - 200 OK (8ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:55:07 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:55:07 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 19:55:18 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"why is this not working?"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:55:19 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 03:55:19 UTC +00:00]]
+  [1m[35m (6.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 03:55:19 UTC +00:00], ["phrase_id", 55], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:55:19 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered phrases/create.html.erb (1.2ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1:  <% @storyline.turn = 2 %>
+    2:  <%= @storyline.turn %>
+    3:  <%= render @picture_form %>
+    4: 
+    5:  in create.html.erb
+  app/views/phrases/create.html.erb:3:in `_app_views_phrases_create_html_erb__3210872902589778011_70290974792420'
+  app/controllers/phrases_controller.rb:23:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:57:13 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (2.0ms)
+  Rendered storylines/_phrase_form.html.erb (1.8ms)
+  Rendered storylines/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:57:13 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:57:13 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:57:13 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:57:13 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 19:57:18 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"qqewrqewr"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 03:57:18 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 03:57:18 UTC +00:00]]
+  [1m[36m (7.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:57:18 UTC +00:00], ["phrase_id", 56], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:57:18 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered phrases/create.html.erb (1.3ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1:  
+    2:  <%= render @picture_form %>
+    3: 
+    4:  in create.html.erb
+  app/views/phrases/create.html.erb:2:in `_app_views_phrases_create_html_erb__3210872902589778011_70291004523920'
+  app/controllers/phrases_controller.rb:23:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:58:28 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.0ms)
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:58:28 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:58:29 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:58:29 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:58:29 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 19:58:36 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"how much i love red"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:58:36 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 03:58:36 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 03:58:36 UTC +00:00], ["phrase_id", 57], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:58:36 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered phrases/create.html.erb (1.3ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1:  
+    2:  <%= render partial: @picture_form %>
+    3: 
+    4:  in create.html.erb
+  app/views/phrases/create.html.erb:2:in `_app_views_phrases_create_html_erb__3210872902589778011_70291004370700'
+  app/controllers/phrases_controller.rb:23:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 19:59:09 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (2.5ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 54ms (Views: 10.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 19:59:09 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 19:59:09 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 19:59:09 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 19:59:09 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 19:59:16 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"how does this work"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 03:59:16 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 03:59:16 UTC +00:00]]
+  [1m[36m (7.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 03:59:16 UTC +00:00], ["phrase_id", 58], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 03:59:16 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered phrases/create.html.erb (0.7ms)
+Completed 500 Internal Server Error in 51906ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1:  
+    2:  <%= render partial: @picture_form %>
+    3: 
+    4:  in create.html.erb
+  app/views/phrases/create.html.erb:2:in `_app_views_phrases_create_html_erb__3210872902589778011_70291004370700'
+  app/controllers/phrases_controller.rb:23:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-24 20:00:08 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQDL2Q4aR3uRyUMc6RNou8cSdvmbX-JpWAJHIRehSp6J5x-pUFxQe1L-WRKHzTp6O4A_d1LkoJVapqmTHt_8btmrrR9Kgb8NXm_Du-FHU4KOSzvK5ezRicxEJBzHJQcq5f8KAEpAaS-7PBjp0qy6Ug9hPYkcmczMZ4ZM8tcJWeAwS29oUGfnmYjkxPl00X2XNSwBwxiOuIfzIGt42DkGJShsfIa3FQp_NFjCGDbNcWl9o79pkgtZ_q-3y6CVTUOz5CVR5vMQWVNuYIrM9dH3uo482mSGILijCxY0-RO9vt1C4Xl5TTj5EQH0NDwsLPnllb0&state=5fbd60e39db4728008ffa563bc2482912b7a8d87750c6e6a" for 127.0.0.1 at 2013-12-24 20:00:09 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDL2Q4aR3uRyUMc6RNou8cSdvmbX-JpWAJHIRehSp6J5x-pUFxQe1L-WRKHzTp6O4A_d1LkoJVapqmTHt_8btmrrR9Kgb8NXm_Du-FHU4KOSzvK5ezRicxEJBzHJQcq5f8KAEpAaS-7PBjp0qy6Ug9hPYkcmczMZ4ZM8tcJWeAwS29oUGfnmYjkxPl00X2XNSwBwxiOuIfzIGt42DkGJShsfIa3FQp_NFjCGDbNcWl9o79pkgtZ_q-3y6CVTUOz5CVR5vMQWVNuYIrM9dH3uo482mSGILijCxY0-RO9vt1C4Xl5TTj5EQH0NDwsLPnllb0", "state"=>"5fbd60e39db4728008ffa563bc2482912b7a8d87750c6e6a", "provider"=>"facebook"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "oauth_token" = 'CAAAANfXbNS4BAPhRhYAHfhkD5LdUZBHA6nhzsmNTCRs08hGCs4GjZAB59QsRNt1iYx6X70AtE6GZBBuJDFJETHzLTYCMZAQzZCjp9wyqwugLKyIZBUTZBtT6eTiBAgCmpM9UJaJFDO7ZAtaBySg68DvBEYkw4AjKYo0nfWW1Ax8ebDMYHifVZCfJrQwaSY6PDmCAZD', "oauth_expires_at" = '2014-02-23 04:00:08.000000', "updated_at" = '2013-12-25 04:00:10.028587' WHERE "users"."id" = 2[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Completed 500 Internal Server Error in 5865ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/sessions_controller.rb:7:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 20:00:27 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.2ms)
+  Rendered storylines/_phrase_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 20:00:27 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 20:00:27 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 20:00:27 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 20:00:27 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-24 20:00:31 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQCwnHcJkCtikw4X2PRZFhSkzt9JI5FTHbP-g7e-O0fFG34XrHNcsBVw-6fYHTHJkAHwZ6Er4EXGE1q1TkhS2O7BQcBtMCdW6rJ6Bp6kHFnurH4ySjfZ6qDOZsvX5Y0ZsRx-U8R1PntE-ErguYxIWbPdUfGDsxPkTYm7nC_Ry1Ep1veh0-4lW9vvLOdwZuBmDIha5vp9Q9Kwmm3UQ8j09KxSVfp2uXp9NbLOEYCNO86Nyv207B3bBlAM_H8BpuRWslHWv6Fe9Kv7Zcnue5hOcaBM6VGzBbS4KKcgM5sfc-x1D_mDSqy6adjKz6YFTLeUXI0&state=2022ada9e95e8c842e545f5f0410f92d00f8c5ba42666fd1" for 127.0.0.1 at 2013-12-24 20:00:31 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCwnHcJkCtikw4X2PRZFhSkzt9JI5FTHbP-g7e-O0fFG34XrHNcsBVw-6fYHTHJkAHwZ6Er4EXGE1q1TkhS2O7BQcBtMCdW6rJ6Bp6kHFnurH4ySjfZ6qDOZsvX5Y0ZsRx-U8R1PntE-ErguYxIWbPdUfGDsxPkTYm7nC_Ry1Ep1veh0-4lW9vvLOdwZuBmDIha5vp9Q9Kwmm3UQ8j09KxSVfp2uXp9NbLOEYCNO86Nyv207B3bBlAM_H8BpuRWslHWv6Fe9Kv7Zcnue5hOcaBM6VGzBbS4KKcgM5sfc-x1D_mDSqy6adjKz6YFTLeUXI0", "state"=>"2022ada9e95e8c842e545f5f0410f92d00f8c5ba42666fd1", "provider"=>"facebook"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "oauth_token" = 'CAAAANfXbNS4BAEVXCUF2d8gbZCy3ssenQZAVjJyx5PJ2BnOQm7i5PGXAPGKkCiU8msJDBss4KsXMJZCUzIZBhl0wqftNhncisTI8eIXmn6BNYSZBZBWZCCNjrV0IdEOuZA1pk5bx89ehYeJJHZAAZB9gLSA0EuE31swCSFSSfAsAZAuZBHgqKZCxJmRiMQotpIPWHJZC0ZD', "updated_at" = '2013-12-25 04:00:32.812880' WHERE "users"."id" = 2
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 2870ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/sessions_controller.rb:7:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 20:01:31 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 100ms (Views: 8.8ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 20:01:31 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 20:01:31 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 20:01:31 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 20:01:31 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-12-24 20:01:32 -0800
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQAkAbkJC_zq3EhFDzqAAYE0nOq-br7ND5gZKLezxPDE44FziAKt3UQVpWLNmRuVm0C_eTR3sYkEtOQoz24Esg6XNjVF7U5k56_4S7vH_maFRwcjwgtzi9hdPr6UJIOlD4nGJBEmJYXd4QQc7F8ZUJSSbuRuCMEhLbucEcW0SZs_rZvCmZjOeRzpB84J0p17heOTXcFots7XdG8eLhdP4IY7V12_UGe-7jD5Zd90wvBc0EIOZnk7ZDLwEov501CCZHiMyuzNgFtmzbnuuePVPOl-BWCloHGTmAl6LnMrb_1zS3czmRQCVanO80qMGFrx9fQ&state=69b01f38c6a126e6cc92b46a3155bf0acec69bf877a189c3" for 127.0.0.1 at 2013-12-24 20:01:33 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAkAbkJC_zq3EhFDzqAAYE0nOq-br7ND5gZKLezxPDE44FziAKt3UQVpWLNmRuVm0C_eTR3sYkEtOQoz24Esg6XNjVF7U5k56_4S7vH_maFRwcjwgtzi9hdPr6UJIOlD4nGJBEmJYXd4QQc7F8ZUJSSbuRuCMEhLbucEcW0SZs_rZvCmZjOeRzpB84J0p17heOTXcFots7XdG8eLhdP4IY7V12_UGe-7jD5Zd90wvBc0EIOZnk7ZDLwEov501CCZHiMyuzNgFtmzbnuuePVPOl-BWCloHGTmAl6LnMrb_1zS3czmRQCVanO80qMGFrx9fQ", "state"=>"69b01f38c6a126e6cc92b46a3155bf0acec69bf877a189c3", "provider"=>"facebook"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '745971784' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "oauth_token" = 'CAAAANfXbNS4BAHbt4pmeXQb3HsrH4fYHORwBZCnJ37Ell8zD6ikpXrfwDPahdo3uyCMchXZBurc2DWNUozLNo5YIwHISaPP1076ZCGzJ8fbVZCWE2Ngs1skZA9xLXkNRGnvoLFGZAPINjidU6TZCJnvFNEsQsybmxwPym4tMcIq6Dmdl6O57Pc1J3v11mtnYlgZD', "updated_at" = '2013-12-25 04:01:33.741019' WHERE "users"."id" = 2[0m
+  [1m[35m (6.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 20:01:33 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  Rendered storylines/_phrase_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 20:01:33 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 20:01:33 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 20:01:33 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 20:01:33 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 20:01:44 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"hi have a sammie"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 04:01:44 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 04:01:44 UTC +00:00]]
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 04:01:44 UTC +00:00], ["phrase_id", 59], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 04:01:44 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered phrases/create.html.erb (1.0ms)
+Completed 500 Internal Server Error in 14900ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1:  
+    2:  <%= render partial: @picture_form %>
+    3: 
+    4:  in create.html.erb
+  app/views/phrases/create.html.erb:2:in `_app_views_phrases_create_html_erb__3210872902589778011_70291004370700'
+  app/controllers/phrases_controller.rb:23:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 20:03:43 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (1.9ms)
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 100ms (Views: 19.4ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 20:03:44 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 20:03:44 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 20:03:44 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 20:03:44 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 20:03:51 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"hi have a sammie"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 04:03:51 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 04:03:51 UTC +00:00]]
+  [1m[35m (7.4ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 04:03:51 UTC +00:00], ["phrase_id", 60], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 04:03:51 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered phrases/create.html.erb (1.0ms)
+Completed 500 Internal Server Error in 22369ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1:  
+    2:  <%= render partial: @picture_form %>
+    3: 
+    4:  in create.html.erb
+  app/views/phrases/create.html.erb:2:in `_app_views_phrases_create_html_erb__3210872902589778011_70291004370700'
+  app/controllers/phrases_controller.rb:24:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (45.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 20:04:35 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.7ms)
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (5.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 81ms (Views: 23.6ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 20:04:35 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 20:04:35 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 20:04:35 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 20:04:35 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 20:04:42 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"hi have a sammie"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 04:04:42 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 04:04:42 UTC +00:00]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 04:04:42 UTC +00:00], ["phrase_id", 61], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 04:04:42 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered phrases/create.html.erb (3.4ms)
+Completed 500 Internal Server Error in 58ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1:  
+    2:  <%= render partial: @picture_form %>
+    3: 
+    4:  in create.html.erb
+  app/views/phrases/create.html.erb:2:in `_app_views_phrases_create_html_erb__3210872902589778011_70291016088480'
+  app/controllers/phrases_controller.rb:22:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 20:05:26 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  Rendered storylines/_player_form.html.erb (2.0ms)
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 20:05:26 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 20:05:26 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 20:05:26 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 20:05:26 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 20:05:36 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"yeah, tell me about it"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 04:05:36 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 04:05:36 UTC +00:00]]
+  [1m[35m (6.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Wed, 25 Dec 2013 04:05:36 UTC +00:00], ["phrase_id", 62], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 04:05:36 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered phrases/create.html.erb (0.5ms)
+Completed 500 Internal Server Error in 18ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/phrases_controller.rb:23:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 20:06:32 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  Rendered storylines/_player_form.html.erb (2.2ms)
+  Rendered storylines/_phrase_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (4.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 103ms (Views: 19.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 20:06:32 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-24 20:06:32 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-24 20:06:32 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-24 20:06:32 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-24 20:06:40 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"have a salami"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "phrases" ("created_at", "text", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 04:06:40 UTC +00:00], ["text", nil], ["updated_at", Wed, 25 Dec 2013 04:06:40 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "storylines" ("created_at", "phrase_id", "picture_id", "turn", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Wed, 25 Dec 2013 04:06:40 UTC +00:00], ["phrase_id", 63], ["picture_id", nil], ["turn", 2], ["updated_at", Wed, 25 Dec 2013 04:06:40 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 2.6ms)
