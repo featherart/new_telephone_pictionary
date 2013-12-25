@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :oauth_expires_at, :oauth_token, :provider, :uid 
-  #has_one :turn_number
+  attr_accessible :name, :oauth_expires_at, :oauth_token, :provider, :uid, :turn_number
+  has_one :turn
 
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
       user.name = auth.info.name
       user.oauth_token = auth.credentials.token
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+      #user.turn = Turn.last.turn_number
+      user.turn_number = Turn.last.turn_number
       user.save!
     end
     #binding.pry

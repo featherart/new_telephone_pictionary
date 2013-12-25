@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131221210837) do
+ActiveRecord::Schema.define(:version => 20131225043138) do
 
   create_table "phrases", :force => true do |t|
     t.string   "text"
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(:version => 20131221210837) do
     t.datetime "oauth_expires_at"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.integer  "turn_number"
   end
 
 end

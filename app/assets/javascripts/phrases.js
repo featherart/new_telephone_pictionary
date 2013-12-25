@@ -11,7 +11,7 @@ $(function() {
       $form.on("submit", function(event) {
           event.preventDefault();
           var phrase = $("#phrase_text").val();
-          //console.log(phrase);
+          console.log(phrase);
       $.ajax({
          url: "/phrases/create/",
          type: "POST",

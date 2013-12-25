@@ -2,28 +2,22 @@ class PhrasesController < ApplicationController
   
   def create
     puts "**************"
-    puts "in phrase controller"
-    puts params
+    puts "in phrase create"
+    puts params[:text]
     puts "**************"
     
-  	@phrase = Phrase.create(params[:phrase])
-  	
-    #@task = Project.find(params[:project_id]).tasks.create(name: params[:name])
-    #@phrase = Storyline.find(params[:phrase_id]).phrases.create(text: params[:text])
-    #Storyline.where(phrase_id: @phrase.id).length == 0 ? @storyline = Storyline.create(phrase_id: @phrase.id, turn: 2) : @storyline = Storyline.where(phrase_id: @phrase.id)
- 
-    @storyline = Storyline.new
+  	@phrase = Phrase.new(params[:phrase])
+  	@phrase.text = params[:text]
+    @phrase.save
+    @storyline = Storyline.new # only create a new storyline if one isn't already in play, but how?
     @storyline.phrase_id = @phrase.id
     @storyline.user_id = current_user.id
-    @storyline.turn = 2
+    @storyline.turn = current_user.turn
     @storyline.save
-    @turn = 2
-    #binding.pry
-    #render layout: false
+    @turn = @storyline.turn
+ 
     render nothing: true
-  	# respond_to do |format|
-  	#   format.js
-  	# end
+ 
   end
 
   def destroy
