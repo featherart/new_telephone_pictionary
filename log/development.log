@@ -30080,3 +30080,593 @@ NoMethodError (undefined method `gsub' for nil:NilClass):
   Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:21:45 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.8ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.8ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 152ms
+
+ActionView::Template::Error (Missing partial storylines/players_form, application/players_form with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views"
+):
+    1: here's turn <%= @turn %>
+    2: here's active or new <%= @active_or_new %>
+    3: <#% if !@active_or_new %>
+    4: 	<%= render partial: 'players_form' %>
+    5: <#% end %>
+    6: 
+    7: <% if current_user && @active_or_new %>
+  app/views/storylines/index.html.erb:4:in `_app_views_storylines_index_html_erb___3833227831381914182_70249210370820'
+  app/controllers/storylines_controller.rb:19:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:22:23 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_player_form.html.erb (9.9ms)
+  [1m[36mUser Load (39.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered storylines/_phrase_form.html.erb (4.7ms)
+  Rendered storylines/index.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 103ms (Views: 54.7ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:22:23 -0800
+Served asset /players.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:22:23 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:22:23 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2013-12-28 23:22:33 -0800
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "player"=>{"name"=>"helga", "phone_number"=>"5108477006"}, "commit"=>"Create Player"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sun, 29 Dec 2013 07:22:33 UTC +00:00], ["email", nil], ["name", "helga"], ["phone_number", "+15108477006"], ["updated_at", Sun, 29 Dec 2013 07:22:33 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 81883ms (Views: 0.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:24:42 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.8ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mTurn Load (0.5ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_player_form.html.erb (1.8ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered storylines/_phrase_form.html.erb (1.8ms)
+  Rendered storylines/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 120ms (Views: 21.0ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:24:42 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:24:42 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:24:42 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2013-12-28 23:24:53 -0800
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gICq/AR2H/XZoH45vZfAJJIToVYk7tB09fGi4fQb6mM=", "player"=>{"name"=>"jojo", "phone_number"=>"5108477006"}, "commit"=>"Create Player"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sun, 29 Dec 2013 07:24:53 UTC +00:00], ["email", nil], ["name", "jojo"], ["phone_number", "+15108477006"], ["updated_at", Sun, 29 Dec 2013 07:24:53 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_player_form.html.erb (5.3ms)
+  [1m[36mUser Load (5.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered storylines/_phrase_form.html.erb (2.7ms)
+  Rendered storylines/index.html.erb within layouts/application (37.4ms)
+Compiled players.js  (0ms)  (pid 41317)
+Compiled application.js  (2ms)  (pid 41317)
+Completed 200 OK in 264ms (Views: 135.7ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /storylines.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /pictures.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /players.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-28 23:40:01 -0800
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started POST "/players/create" for 127.0.0.1 at 2013-12-28 23:40:13 -0800
+Processing by PlayersController#create as */*
+  Parameters: {"name"=>"jub", "phone_number"=>"5108477006"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sun, 29 Dec 2013 07:40:13 UTC +00:00], ["email", nil], ["name", nil], ["phone_number", nil], ["updated_at", Sun, 29 Dec 2013 07:40:13 UTC +00:00]]
+  [1m[35m (7.2ms)[0m  COMMIT
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 18ms
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/models/player.rb:14:in `send_text'
+  app/controllers/players_controller.rb:11:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:42:28 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.9ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_player_form.html.erb (2.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered storylines/_phrase_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (6.0ms)
+Compiled players.js  (0ms)  (pid 41317)
+Compiled application.js  (3ms)  (pid 41317)
+Completed 200 OK in 72ms (Views: 65.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:42:28 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-28 23:42:28 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-28 23:42:28 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-28 23:42:28 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:42:28 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-28 23:42:28 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:42:29 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-28 23:42:29 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:42:29 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-28 23:42:29 -0800
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2013-12-28 23:42:43 -0800
+Processing by PlayersController#create as */*
+  Parameters: {"name"=>"asdfadsf", "phone_number"=>"5108477006"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sun, 29 Dec 2013 07:42:43 UTC +00:00], ["email", nil], ["name", nil], ["phone_number", nil], ["updated_at", Sun, 29 Dec 2013 07:42:43 UTC +00:00]]
+  [1m[36m (7.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 13ms
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/models/player.rb:14:in `send_text'
+  app/controllers/players_controller.rb:11:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_player_form.html.erb (1.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered storylines/_phrase_form.html.erb (1.8ms)
+  Rendered storylines/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 116ms (Views: 20.8ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-28 23:43:54 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2013-12-28 23:44:02 -0800
+Processing by PlayersController#create as */*
+  Parameters: {"name"=>"hobo", "phone_number"=>"5108477006"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sun, 29 Dec 2013 07:44:02 UTC +00:00], ["email", nil], ["name", nil], ["phone_number", nil], ["updated_at", Sun, 29 Dec 2013 07:44:02 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/models/player.rb:14:in `send_text'
+  app/controllers/players_controller.rb:11:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:44:43 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_player_form.html.erb (2.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered storylines/_phrase_form.html.erb (2.0ms)
+  Rendered storylines/index.html.erb within layouts/application (52.4ms)
+Completed 200 OK in 118ms (Views: 54.1ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-28 23:44:44 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2013-12-28 23:44:49 -0800
+Processing by PlayersController#create as */*
+  Parameters: {"name"=>"asef", "phone_number"=>"5108477006"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sun, 29 Dec 2013 07:44:49 UTC +00:00], ["email", nil], ["name", nil], ["phone_number", nil], ["updated_at", Sun, 29 Dec 2013 07:44:49 UTC +00:00]]
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 13ms
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/models/player.rb:14:in `send_text'
+  app/controllers/players_controller.rb:11:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:47:08 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered storylines/_phrase_form.html.erb (1.8ms)
+  Rendered storylines/index.html.erb within layouts/application (5.5ms)
+Compiled phrases.js  (0ms)  (pid 41317)
+Compiled players.js  (0ms)  (pid 41317)
+Compiled application.js  (4ms)  (pid 41317)
+Completed 200 OK in 75ms (Views: 69.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-28 23:47:08 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:47:08 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:08 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:08 -0800
+Served asset /phrases.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:08 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:08 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:08 -0800
+Served asset /players.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:09 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:09 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:09 -0800
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mStoryline Load (0.3ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_player_form.html.erb (1.4ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (6.3ms)
+Compiled players.js  (0ms)  (pid 41317)
+Compiled application.js  (4ms)  (pid 41317)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /players.js - 200 OK (46ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-28 23:47:51 -0800
+Served asset /application.js - 304 Not Modified (6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:51:10 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.8ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.7ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_player_form.html.erb (5.2ms)
+  [1m[36mUser Load (34.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.6ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/index.html.erb within layouts/application (71.3ms)
+Completed 500 Internal Server Error in 189ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    7: <% if current_user && @active_or_new %>
+    8: 	<% if @turn == nil || @turn.odd? %>
+    9: 	<div id="new_drawings">
+    10: 	  <img src="<%= Picture.last.image %>">
+    11: 	</div>
+    12: 	<%= render partial: 'phrase_form' %>
+    13: 
+  app/views/storylines/index.html.erb:10:in `_app_views_storylines_index_html_erb__2298699085601423374_70315500203200'
+  app/controllers/storylines_controller.rb:19:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.5ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_player_form.html.erb (5.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/_phrase_form.html.erb (4.5ms)
+  Rendered storylines/index.html.erb within layouts/application (16.2ms)
+Compiled pictures.js  (0ms)  (pid 41402)
+Compiled application.js  (4ms)  (pid 41402)
+Completed 200 OK in 96ms (Views: 90.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /storylines.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
+Served asset /application.css - 304 Not Modified (1ms)

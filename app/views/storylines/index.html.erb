@@ -1,22 +1,24 @@
 here's turn <%= @turn %>
 here's active or new <%= @active_or_new %>
 <#% if !@active_or_new %>
-	<%= render partial: 'first_form' %>
+	<%= render partial: 'player_form' %>
 <#% end %>
 
 <% if current_user && @active_or_new %>
 	<% if @turn == nil || @turn.odd? %>
 	<div id="new_drawings">
-	  <!--append here-->
-
+		<% if Picture.last %>
+	  	<img src="<%= Picture.last.image %>">
+	  <% end %>
 	</div>
 	<%= render partial: 'phrase_form' %>
 
 	<% elsif @turn.even? && @turn != 0 %>
   <div id="heading">Draw a picture to describe the phrase below</div>
 	<div id="new_phrases">
-	  <!--append here-->
-	  <%= Phrase.last.text %>
+		<% if Phrase.last %>
+	  	<%= Phrase.last.text %>
+	  <% end %>
 	</div>
 	<%= render partial: 'picture_form' %>
 	  

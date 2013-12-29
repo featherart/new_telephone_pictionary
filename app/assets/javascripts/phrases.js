@@ -1,6 +1,4 @@
 $(function() {
-    // $canvas = $("#new_picture");
-    // $canvas.hide();
     console.log("in phrases.js");
     
     submitPhrase();

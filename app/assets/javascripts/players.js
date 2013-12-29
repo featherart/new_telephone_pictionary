@@ -1,18 +1,17 @@
 $(function() {
-// this is a WIP - seeing if phrases will work first
-    
-    //console.log("here's form: " + $form.length);
-    //submitPlayer();
+    console.log("in player.js");
+    submitPlayer();
 
     function submitPlayer () {
       $form = $("#new_player");
+      console.log("in player form: " + $form.length);
       $form.on("submit", function(event) {
           event.preventDefault();
           var name = $("#player_name").val();
           var phone = $("#player_phone_number").val();
           var turn = $("#player_turn_number").val();
       $.ajax({
-         url: "/players/create",
+         url: "/players",
          type: "POST",
          data: {
            name: name,
@@ -21,10 +20,7 @@ $(function() {
          },
          success: function( data ) {
            console.log("success");
-
-           $form.hide();
-           //$("#new_phrases").prepend("<li>"+phrase+"</li>");
-        
+           $form.hide();       
          },
          error: function( data ) {
           console.log("ooops");
