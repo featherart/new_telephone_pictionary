@@ -11,35 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131225043138) do
+ActiveRecord::Schema.define(:version => 20131228231110) do
 
   create_table "phrases", :force => true do |t|
     t.string   "text"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "storyline_id"
   end
 
   create_table "pictures", :force => true do |t|
     t.text     "image"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "storyline_id"
   end
 
   create_table "players", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.integer  "turn_number"
-    t.integer  "storyline_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
-    t.boolean  "joined"
-    t.datetime "time_start"
     t.string   "phone_number"
   end
 
   create_table "storylines", :force => true do |t|
-    t.integer  "picture_id"
-    t.integer  "phrase_id"
     t.integer  "turn"
     t.integer  "user_id"
     t.datetime "created_at", :null => false

@@ -1,10 +1,9 @@
 <%= form_for @storyline do |sl| %>
-  <%= sl.text_field :turn, placeholder: "enter turn number", required: true %>
-  <%= hidden_field_tag :user_id, 3 %>
+  <%= hidden_field_tag :turn_number, current_user.turn_number %>
+  <%#= hidden_field_tag :id, :storyline_id %>
   <%= fields_for @phrase do |phrase| %>
     <%= phrase.text_field :text, placeholder: "enter a sentence", required: true %>
   <% end %>
-
   <%= sl.submit %>
 <% end %>
 

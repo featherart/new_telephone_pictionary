@@ -50,7 +50,7 @@ $(function() {
     $hidden.val(url);
 
     $.ajax({
-       url: "/",
+       url: "/pictures/create/",
        type: "POST",
        data: {
          image: url

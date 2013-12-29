@@ -4,18 +4,23 @@ class PhrasesController < ApplicationController
     puts "**************"
     puts "in phrase create"
     puts params[:text]
+    puts params[:storyline_id]
+    puts params
     puts "**************"
     
   	@phrase = Phrase.new(params[:phrase])
   	@phrase.text = params[:text]
+    @phrase.storyline_id = params[:storyline_id]
     @phrase.save
-    @storyline = Storyline.new # only create a new storyline if one isn't already in play, but how?
-    @storyline.phrase_id = @phrase.id
-    @storyline.user_id = current_user.id
-    @storyline.turn = current_user.turn
+    @phrase.storyline_id ? @storyline = Storyline.find(@phrase.storyline_id) : @storyline = Storyline.new
+    @storyline.turn = current_user.turn_number
     @storyline.save
-    @turn = @storyline.turn
- 
+    #binding.pry
+    # this needs to happen here for now but there might be a better place
+    @turn = Turn.where(turn_number: @storyline.turn).first
+    @turn.turn_number += 1
+    @turn.save!
+    
     render nothing: true
  
   end

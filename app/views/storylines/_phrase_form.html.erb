@@ -1,5 +1,6 @@
 <%= form_for(@phrase) do |f| %>
   <%= f.text_field :text, placeholder: "enter a sentence", required: true %>
-  <%= hidden_field_tag :phrase_id, @phrase.id %>
+  <%= hidden_field_tag :storyline_id, @storyline.id %>
+  <%= hidden_field_tag :turn_number, @storyline.turn %>
   <%= f.submit %>
 <% end %>
