@@ -21,16 +21,16 @@ class StorylinesController < ApplicationController
   	end
   end
 
-  def create  	
+  def create 
     puts "**************"
     puts "in storyline create"
-    puts "**************"
-  	@storyline = Storyline.new(params[:storyline])
-    @storyline.time_stop = @storyline.timestamp + 300
+    puts "**************" 	
+  	@storyline = Storyline.create(params[:storyline])
+    @storyline.time_stop = @storyline.created_at + 5.minutes
     @storyline.active = true
-  	@storyline.save()
+  	@storyline.save!
     @turn = Turn.create(turn_number: 1, user_id: current_user.id)
-  	
+  	#binding.pry
     render nothing: true
     # respond_to do |format|
     #   format.js

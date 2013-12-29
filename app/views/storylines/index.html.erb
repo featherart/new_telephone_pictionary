@@ -1,6 +1,10 @@
 here's turn <%= @turn %>
-<%= render partial: 'first_form' %>
-<% if current_user %>
+here's active or new <%= @active_or_new %>
+<#% if !@active_or_new %>
+	<%= render partial: 'first_form' %>
+<#% end %>
+
+<% if current_user && @active_or_new %>
 	<% if @turn == nil || @turn.odd? %>
 	<div id="new_drawings">
 	  <!--append here-->

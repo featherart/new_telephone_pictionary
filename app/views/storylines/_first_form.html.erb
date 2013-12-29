@@ -1,7 +1,9 @@
 <%= form_for(@storyline) do |f| %>
   <%= fields_for(@player) do |p| %>  
     <%= p.text_field :name, placeholder: "enter player's name", required: true %>
-    <%= p.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    <%= p.text_field :phone_number, placeholder: "enter player's text number", required: true %><br>
+    <%= p.text_field :name, placeholder: "enter player's name" %>
+    <%= p.text_field :phone_number, placeholder: "enter player's text number"  %><br>
   <% end %>
 <%= f.submit %>
 <% end %>

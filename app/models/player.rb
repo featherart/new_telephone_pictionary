@@ -5,10 +5,6 @@ class Player < ActiveRecord::Base
   before_save :clean_phone_number
   #has_one :turn_number
 
-  def join_game
-    self.update_attributes(accepted: true, start_time: Time.now)
-  end
-
   def send_text(text_message)
     account_sid    = ENV["TWILIO_ACCOUNT_SID"]
     auth_token     = ENV["TWILIO_AUTH_TOKEN"]
