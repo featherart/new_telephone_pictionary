@@ -3,7 +3,7 @@ $(function() {
     // $canvas.hide();
     console.log("in storylines.js");
     
-    submitPhrase();
+    //submitPhrase();
 
     function submitPhrase () {
       $form = $("#new_storyline");
@@ -20,7 +20,7 @@ $(function() {
          },
          success: function( data ) {
            console.log("success");
-           //$("#new_phrase").hide();
+           $("#new_phrase").hide();
            //$("#phrase_text").html("");
            $("#new_phrases").prepend("<h1>New Phrase</h1><br /> <li>"+phrase+"</li>");
         

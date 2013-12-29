@@ -13,14 +13,14 @@ class PhrasesController < ApplicationController
     @phrase.storyline_id = params[:storyline_id]
     @phrase.save
     @phrase.storyline_id ? @storyline = Storyline.find(@phrase.storyline_id) : @storyline = Storyline.new
-    @storyline.turn = current_user.turn_number
+    @storyline.turn = Turn.last.turn_number
     @storyline.save
     #binding.pry
     # this needs to happen here for now but there might be a better place
     @turn = Turn.where(turn_number: @storyline.turn).first
     @turn.turn_number += 1
     @turn.save!
-    
+    #binding.pry
     render nothing: true
  
   end

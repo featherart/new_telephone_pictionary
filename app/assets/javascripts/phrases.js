@@ -13,6 +13,7 @@ $(function() {
           event.preventDefault();
           var phrase = $("#phrase_text").val();
           var storyline_id = $("#storyline_id").val();
+          var user_id = $("#user_id").val();
           console.log(storyline_id);
           console.log(phrase);
       $.ajax({
@@ -20,13 +21,14 @@ $(function() {
          type: "POST",
          data: {
            text: phrase,
-           storyline_id: storyline_id
+           storyline_id: storyline_id,
+           user_id: user_id
          },
          success: function( data ) {
            console.log("success");
            $("#new_phrase").hide();
            //$("#phrase_text").html("");
-           $("#new_phrases").prepend("<h1>New Phrase</h1><br /> <li>"+phrase+"</li>");
+           $("#new_phrases").prepend("<h1>New Phrase</h1><br />"+phrase);
         
          }
        });    

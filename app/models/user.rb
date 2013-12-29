@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
       user.name = auth.info.name
       user.oauth_token = auth.credentials.token
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
-      user.turn_number = Turn.last.turn_number ? @turn = (Turn.last.turn_number += 1) : @turn = 1
+      user.turn_number = Turn.last.turn_number ? @turn = (Turn.last.turn_number+=1) : @turn = 1
       #user.turn_number = Turn.last.turn_number
       user.save!
     end
