@@ -1,16 +1,18 @@
 here's turn <%= @turn %>
-<%= render partial: 'player_form' %>
+<%= render partial: 'first_form' %>
 <% if current_user %>
 	<% if @turn == nil || @turn.odd? %>
 	<div id="new_drawings">
 	  <!--append here-->
+
 	</div>
 	<%= render partial: 'phrase_form' %>
 
 	<% elsif @turn.even? && @turn != 0 %>
-
+  <div id="heading">Draw a picture to describe the phrase below</div>
 	<div id="new_phrases">
 	  <!--append here-->
+	  <%= Phrase.last.text %>
 	</div>
 	<%= render partial: 'picture_form' %>
 	  

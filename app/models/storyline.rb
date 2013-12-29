@@ -1,9 +1,7 @@
 class Storyline < ActiveRecord::Base
-  attr_accessible :turn, :user_id
+  attr_accessible :turn, :user_id, :active, :time_stop
   has_many :pictures
   has_many :phrases
+  has_many :players
 
-  # not sure about this foreign key validation
-  # validates :phrase_id, uniqueness: true
-  # validates :picture_id, uniqueness: true
 end

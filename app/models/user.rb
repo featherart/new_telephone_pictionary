@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :oauth_expires_at, :oauth_token, :provider, :uid, :turn_number
+  attr_accessible :name, :oauth_expires_at, :oauth_token, 
+                  :provider, :uid, :turn_number, :storyline_id
   has_one :turn
   #has_many :storylines
 
@@ -10,11 +11,14 @@ class User < ActiveRecord::Base
       user.name = auth.info.name
       user.oauth_token = auth.credentials.token
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
-      user.turn_number = Turn.last.turn_number ? @turn = (Turn.last.turn_number+=1) : @turn = 1
-      #user.turn_number = Turn.last.turn_number
+      user.turn_number = Turn.last.turn_number ? Turn.last.turn_number : 1
       user.save!
+      # if the turn number is incremented here it should be saved
+      # but more logically it should be incremented in the controller
+      # of phrases or pictures as that is when a new thing is being done
+      # user.turn_number == 1 ? @turn = Turn.new(turn_number: 1) : @turn = Turn.last.turn_number += 1
+      # @turn.save!
     end
-    #binding.pry
   end
 
 

@@ -12,14 +12,13 @@ class PhrasesController < ApplicationController
   	@phrase.text = params[:text]
     @phrase.storyline_id = params[:storyline_id]
     @phrase.save
-    @phrase.storyline_id ? @storyline = Storyline.find(@phrase.storyline_id) : @storyline = Storyline.new
-    @storyline.turn = Turn.last.turn_number
-    @storyline.save
   
     # this needs to happen here for now but there might be a better place
-    Turn.where(turn_number: @storyline.turn).first ? @turn = Turn.where(turn_number: @storyline.turn).first : @turn = 1
+    #Turn.where(turn_number: @storyline.turn).first ? @turn = Turn.where(turn_number: @storyline.turn).first). : @turn.create = 1
+    @turn = Turn.last
     @turn.turn_number += 1
     @turn.save!
+    @turn_number = @turn.turn_number
     
     render nothing: true
  

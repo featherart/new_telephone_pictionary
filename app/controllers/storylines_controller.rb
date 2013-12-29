@@ -1,8 +1,11 @@
 class StorylinesController < ApplicationController
   def index
   	@storylines = Storyline.all
-  	@storyline = Storyline.last # need a way to signal storyline is complete
-    #@turn = current_user.turn_number if current_user 
+    # need a way to signal storyline is complete
+    # use a timestamp and set a boolean?
+
+    @active_or_new = Storyline.last.active 
+    @active_or_new ? @storyline = Storyline.last : @storyline = Storyline.new
     @turn = Turn.last.turn_number
 
   	@phrase = Phrase.new
@@ -19,18 +22,19 @@ class StorylinesController < ApplicationController
   end
 
   def create  	
-  	# need to add all the pictures & phrases before 
-  	# creating and saving the storyline
     puts "**************"
     puts "in storyline create"
     puts "**************"
   	@storyline = Storyline.new(params[:storyline])
-    @storyline.turn = params[:turn_number]  
+    @storyline.time_stop = @storyline.timestamp + 300
+    @storyline.active = true
   	@storyline.save()
+    @turn = Turn.create(turn_number: 1, user_id: current_user.id)
   	
-    respond_to do |format|
-      format.js
-    end
+    render nothing: true
+    # respond_to do |format|
+    #   format.js
+    # end
   end
 
   # def show

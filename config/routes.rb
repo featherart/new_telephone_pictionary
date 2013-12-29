@@ -7,7 +7,9 @@ TelephonePictionary::Application.routes.draw do
   match 'signout', to: 'sessions#destroy', as: 'signout'
   
   post "phrases/create"
+  post "pictures/create"
   post "storylines/create"
+  post "players/create"
   resources :pictures
   resources :phrases
   resources :storylines

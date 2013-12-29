@@ -1,1 +1,8 @@
-_first_form.html.erb
+<%= form_for(@storyline) do |f| %>
+  <%= fields_for(@player) do |p| %>  
+    <%= p.text_field :name, placeholder: "enter player's name", required: true %>
+    <%= p.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+  <% end %>
+<%= f.submit %>
+<% end %>
+

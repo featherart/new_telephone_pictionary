@@ -12,7 +12,7 @@ $(function() {
           var phone = $("#player_phone_number").val();
           var turn = $("#player_turn_number").val();
       $.ajax({
-         url: "/",
+         url: "/players/create",
          type: "POST",
          data: {
            name: name,
