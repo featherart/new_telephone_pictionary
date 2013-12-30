@@ -13,9 +13,14 @@
  *= require_tree .
  */
 
-canvas 
+ canvas 
 {
   border: 1px solid;
   cursor: crosshair;
   display: block;
+}
+body
+{
+  padding: 50px;
+  margin: 50px;
 }
