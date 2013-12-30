@@ -31641,3 +31641,188 @@ Served asset /storylines.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.8ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (6.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.8ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1[0m
+  Rendered storylines/_phrase_form.html.erb (34.4ms)
+  Rendered storylines/index.html.erb within layouts/application (75.6ms)
+Completed 200 OK in 221ms (Views: 100.4ms | ActiveRecord: 27.6ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /storylines.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /players.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /storylines.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:04 -0800
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-29 16:37:18 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"that's just absurd!", "storyline_id"=>"", "user_id"=>"2"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "phrases" ("created_at", "storyline_id", "text", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 30 Dec 2013 00:37:18 UTC +00:00], ["storyline_id", nil], ["text", "that's just absurd!"], ["updated_at", Mon, 30 Dec 2013 00:37:18 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mTurn Load (0.5ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE "turns" SET "turn_number" = 4, "updated_at" = '2013-12-30 00:37:18.073313' WHERE "turns"."id" = 12[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 55ms (Views: 38.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.5ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.6ms)
+  Rendered storylines/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 17ms (Views: 10.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:37:21 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/pictures/create/" for 127.0.0.1 at 2013-12-29 16:40:18 -0800
+Processing by PicturesController#create as */*
+  Parameters: {"image"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAADICAYAAAAeGRPoAAAd30lEQVR4Xu2dWewlx1WHHc/i8cSGmF1IyFaMCCIJOIuE4IWADWKVg8wSlkQCBcIDD/DCDo7Dzgs88EDYHhKWELCIJTZBEsILCCmLgUQCIUfJCxIQsIntyXgcA+c4XZ5yz723q7trOXXqu1Lrf2duddU53zldv67q6u7nXMcHAhCAAAQgAIHuCTynew9wAAIQgAAEIACB6xB0kgACEIAABCDggACC7iCIuAABCEAAAhBA0MkBCEAAAhCAgAMCCLqDIOICBCAAAQhAAEEnByAAAQhAAAIOCCDoDoKICxCAAAQgAAEEnRyAAAQgAAEIOCCAoDsIIi5AAAIQgAAEEHRyAAIQgAAEIOCAAILuIIi4AAEIQAACEEDQyQEIQAACEICAAwIIuoMg4gIEIAABCEAAQScHIAABCEAAAg4IIOgOgogLEGhM4H+l/dCX0Kc0DgbNj0uAg2/c2OM5BPYS+LhUcH0k5qE++pW9ZNkfAhsIcOBtgMYuEBiYQDwaDxj+bxJ2/asf+pWBEwTX2xHgwGvHnpYh0BOBB8XYL5oMVuFWYT8bORCEPoh7T75hKwRcEEDQXYQRJxwQODTyVbcsCGRs2z+ITXccEHIrtjpIBVyAwDYCCPo2buwFgRwEjon4vO6Wx2mYRj90YsGoPEcWUAcEMhFo2VFkcoFqILBIwJrwnLoOPXdGhbTFKP1JaTdMqevit3Mzw4LQPxWVWwwEBSAAgXIEEPRybKnZBoG5eLbM+diWVJEO+9S0+9RtaCruZ6bQ1rTJRjZhBQQME+CANBwcTNtNIB6Z63cVohY5v0XIY+drjtKZYt+ddlQAgTYEWnRubTyl1REJzG+j0n/XniI+JZCpMakxSj81xb73hCTVT8pBAAI7CCDoO+A52jWITi2XQnsqFG+T7ZsKNXxI0FOnuveaFAukfj+/o8JLsu+Nsunf5+6o59iux6bYEfICsKkSAqUIIOilyPZVb21BP0Un2KLXareK4MOy7/OmRmIBrzHS1WZLPAq11LT7oQWDCHlfxy/WQuBpAgg6iTAXoFoj2ED+j+TLK2XTR4ieyslUu2IxekQqvCUKcQ1BL7WivoTtc1sRcvoDCHRMAEHvOHgFTC8lRltNvSI7hlunQq7ORXpe96mRbFihXSrv40sJYSX4Vt/n+4Vp94/JDxczVBrHOuaReuKUwQSqgAAEchIo1bHltJG66hKwOko7No0e01kaxf6aFH6dbG+U7fsyYn1U6rppqu8x+XtzxrrjqnJNux+6D772YsFCiKgWAuMSQNDHjf2S53Nhv5xpZLjU7tLvp044UgQv90p3FcKlywVLPqX+vnTCklKP1RO2FNspAwEInCCAoJMeSwTmozkrU7KH7NJ8XsrpFNFfYhJ+r32JYq+gx8zeIU7cleoo5SAAAfsEljo/+x5gYS0Ceg33QiSYS9eya9h1aOp4KadzCXptMVeeW9cAMCqvkY20AYHGBJY6v8bm0bxBAinXsluYrUKdks97R7nqW6vnmL9e2r5Xtvtk0++pnxwPt0lti3IQgEAjAikdYCPTaNY4gVO3h1k2fesoNx4h6/dWx86WNQCtTkAs5wG2QcAdgVadkjuQgzpkdbS+FI4tothiiv2QH2svGRy6LLHEp8ff6ct6jBo2ZyXAQZAV57CV9TZaXyuKYSW7hQWBa2wPcYlvSdMZCl2V7+3YtxCbYTsAHLdBwNtBbYPqmFb0NFpfcx093GNuRTBSbQ+XFqzYXfKoYNFfSbrU3Q0BBL2bUHVjaA+j9TDiTsn/+QteWgci1fY1I/nWPuVq38plkVz+UA8EVhFI6dBWVUhhCAgB66P1fxIbXyTb+2V78YmIWRNzNfXtst0p26n7yC3aXevAQNRrkaYdcwQQdHMhcWXQfEGWpceLquipfceeuR5sL/ko163BPmV76pT81rZ72A9R7yFK2JidAIKeHSkVHiAQrueGnyxc1z01JR0E4ZTgtwz0MdsPLYJraWfLthH1lvRpuwkBBL0J9qEbtbKA6dhItofFZMem1Ee8bn7qYELUh+5qxnMeQR8v5lY8bi3sxx4w04MoHhJ0ptoPZzaibuWIx47iBBD04ohpYIHAXNi1uIrt+Qrk5g+Y6WUx2dzOJyZeVi8RVAjlySYsr4dozYb2HRFA0B0Fs3NXUp9oljNn49F4TyPcuaD3ciLSMkVh1JI+bVchkLNzrGIwjQxD4Ip4enbyNs7TnDkbv7RE67W0Cv9UoGNxCvelK68bhsmObY4i6tu4sVcnBHJ2jp24jJkQeIZA6OD1PyysvE8NTSxMPVzzT/WrdDlrT/0r7S/1D0YAQR8s4Lh7DQGdatdnm/f0mc8scBynR4/r6emsKNkZATqCzgI2mLmHrquTs1ffx97bzIKV9GXq3UoksCMrATrHrDipLCOBY4vkyNmrgt7TZYKMqZGlKkQ9C0YqsUSAztFSNLAlEODe4eVc6PFSwbJX9UpwPb0ea1qqRABBrwSaZpIItH7YTJKRFHJDgBNHN6HEESWAoJMHFgi8RYz41skQppEtRGQcGxD1cWLt3lME3X2ITTuorzF9YXRi+Qfy/VWmLcY4jwQQdY9RHdAnBH3AoBtweb7gjVG5gaAMbgKiPngCeHAfQfcQxX58eJOY+upoav0D8v3F/ZiPpc4J9PT4X+ehwL0tBBD0LdTYZw2BQ7efvVkqeM2aSigLgUoE5i/sqdQszUBgPwEEfT9DajhOgKl1sqM3Atyf3lvEsPcZAgg6yVCCALeflaBKnTUI6Kt7z8hG31iDNm1kJUDSZsVJZROB+FnjvT0nnSBCgBfekANdEkDQuwybaaNZWLQcnienUaCWPHYMqqgoy8dle0i235btV5ervu6vpcxtsn3WVPYj8vdzEvajyFUCTLuTDV0SQNC7DJtpo+kMT4fnCfn5vGy5OIV69CRBH2d6Tjb9/lzZLkymaBm9m0DvKuCzTCBXbJZbogQEMhJA0DPCpKqnCXA/7/FE+F356dtl+z3Z/lW216/Mme+X8t8t2+2TYOvljLXHcHwC8J+y/1/I9tqVdngvjqB7j7BT/9Z2Bk4x4FZmAoj6YaA6Hf4Fsn1Mtltlu2+DqKeG6nuk4HfJ9nmy3SybjtzXHu/hWrJO+/+zbG+Q7U9SDeiw3M+KzT822W3tYUf/JXbdEsVwbSw7DAcmryVAUqwlRvlUAoj6YVKPyX/rdPiHZbstFWbGct8gdT0wCYPGSFd0f71s98r2gsk27RfW9A0qfpdk+0rZ/i6jrSWq0kseSyc3PydlfrxE4xvqPPYaYa1qTYw2NM0uvREgIXqLWF/2IurPjpc+u/5FsumI96bGodSR9tdNNqzpB35T9vlq2T59EsZjwqIirzMRdzUU+W+Ttn9nEr4UH62MysOtcyFF1K6HZfvU6T+4JND44LHafEqSW7Udu/ogEIv6H4vJ9/RhdlYrVdT0WrWOht8vm6XH3QZx+FOxS0fqez5fKjv/lWw3TiI6ryuIvI7k/3ZPQ7N9T41iY1HUxYI3ZGw3d1VzP56SBs4eaARBz03eSX0IupNAGnfj0BPjtFPSEdRbjdu+x7zUDnpPGzn2VeHQBXYlRqhfIvW+/YTI57D/0ImD+vKdsv1+iQYy17n2QUwIeuYAeKkOQfcSyT78uF/M/EbZDuVdCTFpSeUl0vh7J5H8qknUWtqz1HYsKu+Swl++tMOO31XkdSR/8UgurKm657xZK+SBC4K+JkMGKougDxRsg65+yzSCmi/Cuiz/r9O2PX967XRZ91A26w5dH1/7NMVec6ssWWpnlSQ5YIqALqIKD0NRw0LHpd91FbWuzv4OUxZfa4yepLxlGnm+VP6+z7i9h8zT2+teMf3Q8wjYEvqcl18QdEuRNWQLI3RDwcCUZxFIWegUdggdnD4p7Ytl03uma388vlku9om+YntG5Z71QNC3x8L1nhykrsPr0jl92trdsun11/A5lcfa+f2PbPpQjlKfuMN+lTTiaaGfLipTn/SjMw+6kJFPOoEgvsdWrKfXdLUkgr6F2gD7IOgDBHkwFz9f/P172fTpaPqZ53hOgd+6qKnHkAQRYQo+LXrxtfLc/SyCnhaD4UrlTrThAOJwNwT0wRyffEDg9zowksCFE5grAs3y/dx7Y7p3/9xT7HN7EPS9EXK6P4LuNLC4tUggh8DrKEwfIzrSJ7wtDlG/Nurvkv/6sum/S57oad0l6x8pn135iqC7CifOJBI4tuCO4yENIKJ+Lac4p94pP9+ZhnJTKQR9Ezb/O9GB+Y8xHl4lsLRynuMhPVsQ9U+w0qfgBfGuNWpG0NPzdKiSdGBDhXtoZ98k3r+aqcqsOTD6tdz4BPFvhOwrstI9Xplyz7lqvpLZNFOaAIJemjD1WyEwuviUiMOoTHVKPTwat9aoPI6ftqkPYYpv3SwRX+rsjACC3lnAMHcTgTCSerPs/ZpNNbDTnEBgGt6pPgqheFSu0+365riaH31i4rG32dW0g7YMEkDQDQYFk7IT4JpjXqSlb8vKa22e2v4yEu8Wo/LgRbi/nb47T1xd1UJSuAonzhwgoM9Sv0O2B2XTN6Dx2UdgRDGPR+X6nPuv2Idw197BFvruXRh97kxS+IwrXl0lQAeYLxtGFvOWo/I4guRzvnx2VxOC7i6kODQjwHR7npQYUczDoj9L6wQQ9Dz57LIWBN1lWHFqIvBu+fsy2d4j28uhsonA98peb5z2tDJK3eTIip30bX0vmMr/i/zV9wNY+XCCaiUSBu1A0A0GBZOyEWA0sw9lfO34tVLVb+2rrou99f7u6ydLLfaPKuiWZgy6COooRlpM2FHY42d5AoxmtjFW8f6NwUbl6m4PlxU0pz8qm75oiA8EnkUAQSchPBPgiVqHo6srtcODUeYl4lH56+THX/ecIJFv4XYwy5cVwuwB/fYgSbnWTRJjLTHK90KA+3WPR+pJ+ekx2W6ZFelhhFoq/3qYzeESUqnoO6kXQXcSSNy4hgCd3/Gk0MeG6vvMw7ViLTm6mCsD6/1hDycddEUNCVhP4IZoXDS99HaxHjqxrYEY9TnjKbw+JIVulS284GNkMe/pxA9BT8nugcsg6H6DnyLmwXuPeYCgn87t+Jqxxt/yteNSR2k4Rnp5c5nGSON2rhQQ6u2bgMeOvO+I5LM+5Wze88gMQV/OpcBoZDHvxXdd93C2g8sCy1lHiWIEEPRiaJtWvGYa0auox37pqu47m0bEXuNBzNUyFYvz9kwsZlGPOb/mmC4GjoptE0DQbcdnq3Upo/O47h47uBQ288sOyuWdst2VsrPTMg+JX8+ffPtg9H2UvqDXXEfQnR6QOd0a5SDOycx6XVsP/F47upR46Hur9Q1Zcb6HEepH5P8/I6USB2XiE5w5i16mnveEoeccX3uSvocT+3ZKAEHvNHAnzN5z4IcOz/MU7DuEnT5U5VjuK79vlu1+Z6lx6nr51pPAnhD1LObKmUe+9pRtjWxF0BuBL9Rsjo55xMVk/yHx+LQpJvORa3yvdqGwFa12PsV++5HW9pwIFnUgQ+W9i/kjwkAf9Up/nSEZPFdBgviKbq5OeURRjzNBp+E/ZdaBqiic6Sxdjk2xH3IjlH2l/PhAZ36eMrd3MVffeOSro4Qs6QqCXpJu3bofl+YuyqZPAdO/ez7hFpkRrqsucYrfvqVllcl/yxZG9Ev71/5d438hanRNDL2dyHkQcw1ljpm32nlIew0IIOgNoBdqMvdBH+rrcWRaCPEzHWuoP74u/Y/yny8p1XBCvfMV/ZdlnxsT9ouL3C3/eNt00tL7pQYvYh5OIvUv/fXKhB6tOAniJ+K5pttjIqFT1Bd53OwH1W5P7pEa/jChg43v9dbvOvOh17RfuNuCT1SwZzR+zITcJ4aZXF1VjScxR9BXhX7swgi6j/hfmkZjOabb50S8TcOmRHyrz++Tyr8wEvpax9eW0fgxDj8hP/y0bD8p28+kwDJWxpuYI+jGEsyyObU6HMsMPNhWelS1VeB6ZVvD3w8InM+Vbf44z9Rjcs218bVxqOH/WptSyv+ZFPoa2UqySbEjd5le45GbA/UtEEjtPABpm0DpA/5Rcf8mhx3lsaiW5mk7m64uwlI7e+ojvMbNq1/Wj4Pu7OvpYO0ObkWDaxzwYbW3t9HPoTDV4FkxPTY3Fa8BsN5XhFmqPxdvv3azxzZ3JB9txsWcVdYPUnPAjBpU64APnWYvr5vcGq5aPLfaV3M/66Kuq/J1db5+vJ5sko81M77jthD0joMXmV7zgC99vd5CRGrytODvkg1WecS36unDcPShOB4/Vvl7ZN21Twh61+F7xvjaB3zt9mpHybt/a3laXTle4lbNtWxqlCcfa1B20AaC7iCI01SjelIznp47UzrQa48LS6K+5pG2Ho5w8tFDFCv4UFMAKrgzbBMtDviPC219trnH65YtePaQvFZEPcTHY+4dygPysYejw4CNCLqBIGQwodUB7/V6eiueGVKheBWtRd1rzp0KHPlYPK19NICg+4hjywO+ZduloufRp5ysWol6q3ZzsttSF/m4hdqA+yDoPoLe8oC/IgjPyebpJS4tefaSkbXFtXZ7luJAPlqKhmFbEHTDwVlhWusD3ts0aGueK0LftGjNuHtehLkUxJF9X2LD7xEBBN1HOlgQIE+djgWevWRmjbjXPHGwyL0GY4t+Y9NKAgj6SmBGi1sQoPBoWH1F6HmjnFLNogNNJXX1ue+l+pKRp9pDFDQfvT+dMT3jKHmUQKmDEOR1CVgQdPXYih176Jd8Fe0euyzvW+oECDG/7rofkMD/smz3yvYGy0mAbe0JIOjtY5DDAktCWqpzz8EppY7Rp3dTGM3LlBDeEnVu8a31PuF5D/TVrSPRQfskSQdBSjDRkqCHjlg7Il393tun9xOSVrxzCPC7xfiXyhb6pVEeHHMqZpxgtsroDttF0DsM2gGTLQm6mmfNntQoM92eSupwua2iHj/KNeTP9ftMcbM3gu4mlOUdQdDLM67RgkUBtWjTUizoPJcILf8ei/MvSfEfPrFLXFbz5b2yvXy5iaFKMGM0VLj3OYug7+NnZW+L4qmr3c9Oo/UeRltbR5dWcsCSHb8oxvxQokFMq58GhaAnJhLF6r6dC97lCFgUdPW2l+vpiHmZ3JxPpcetIORpzLllLY0TpYQAI3QfaWBV0JWuZdvikw4Exsex4MmLnxJn7pPtB2X7FU+O4UsZAgh6Ga61a7UumlbtY2ReO1Npbw0BbllbQ4uyjNCd5IBVwQx4rV5P5/qkkwPAqRss0nQa2FJuMUIvRbZuvdYFPZ7atvJWNjrLujlKa+sJkKPrmQ29B4LuI/w9CHos6vrK1RsaomeqvSF8mk4mwAxSMioKKgEE3Uce9CLoSru1rYi5j5wfwQsEfYQoZ/QRQc8Is2FVrUVyrest7aWTXBstyrciwC1rrch32i6C3mngZma3FMitBFvYzDXJrdFiv9oEfkQa/HnZflS2X6jdOO31SQBB7zNuc6t7FKonxAl9b3rN+78ZnfvI9xG84Ja1EaKc2UcEPTPQRtX1KOiK6inZ9LGwNUS9V0aNUopmGxMgXxsHoMfmEfQeo3atzUEYe4xnjUVqNdrwkUl4YYUAgm4lEh3Z0aMAdIS3mqmXpSW9DazXeIYTEgWW04f527x6eElMtaShIdMEuDxkOjw2jcvZedr0cByrtAPQ69IXOnU5XFPPKep0ip0mA2Y/fRlKr6OfgwUEUgkg6Kmk7JfTDsDKU9j20Aqr3/c8fCYemZPje6LBvi0I9HwJrQUv2pwI0Nn5SQVPo9Eg6ltOUJhm95PTo3rS4pbOUVm78htB9xNOT4KuUYkXsqlv/y7bZ0fhujRdXjiUwzVWzfvJHDyxRsDLbJs1ru7tQdD9hNjjqth4tJ0aKcQ8lRTlLBIIbyakb7YYHeM2kTTGA7TCPL3mrAtovMb038S3z4z805X9F1fwsVJUT1JYbW8lGvbs8Hhibo+yU4u8dv5Ow7Xolrdp90WHOysQro2q2cwkdBa8SuZyDFcC7bEZBN1XVDm7tx3PIOj6V489jj/b8aptHcdvbeLO2qND8RVQbnexHc949MVIzHasWlhHTrSg7qhNBN1RMCdXWCFrM6bz0RejMZtxamUV+dCKvKN2EXRHwYwEneuz9uJ6aPTFiMxenFpYFBa0cty2oO+oTQTdUTAnVzjTtxfTYzEJ/6+XSs7aMxuLKhHgQTKVQHtvBkH3GWHtIPR+Vn3fOJ/2BE512JyAtY9PSwsQ85b0nbWNoDsLKNPuJgO61Gkv/W7SKYzaTSCczPESlt0oqUAJIOg+84BRn624pgg219Ntxay0NVw3L014wPoRdJ9B5/Y1W3FNEXQdpZ2RjYVRtmJXypqUnCjVNvU6JYCgOw3sJAx7XkHql0x9z1JH30zB1o9NixYR8xbUB2gTQfcb5FQR8UvAjmdrYkFnbyduJSzhpK0EVep8mgCC7jcREAY7sV171wGxsxO7nJZw3TwnTeq6hgCC7jcpWBhnI7Zb3oJHx28jdrmt4EQtN1HqexYBBN1vQjwhrul96MS4bYy3nliF/fSvLpbj0zcBxLzv+HVhPZ19F2HabCTPdd+MLtuOWwVdDQj7Pibfb85mERXVJsB189rEB20PQfcd+DWLsXyTaOfd3hgwsmsXu70th1sRtR5uR9xLk/0XCSDoi4i6LrBndNi144aM145877PaEXVDAU00JRx7CHkiMIrtJ4Cg72dovQam3dtFKIzQ9h5nj4oLNzHKaxfIFS0HIddd9p7IrWiWohBgwdQIOcAovV2Uc7IPT/9jxNcunkstMypfIsTvRQnsHTkUNY7KsxD4qNSiC6oYLWTBuaqS3FPlCMYq/FULE5uquGnsEAEEfYy8yC0sY1Db72UJ7gjH/rjkroGY5CZKfZsIIOibsHW3U7iWq9diP6k76/s1uISgKw0ExE5OEAs7sRjeEgR9nBTYe/vUOKTyeVpK0BH1fDHaUxNivoce+2YngKBnR2q2Ql6pWj80JQUdUa8fz7hFxLwtf1o/QABBHystGKXXjXdpQUfU68YztBbiykLTNvxp9QgBBH2s1Mh5G9VY5LZ5W0PQY1HX74/Idss2c9lrgUD85Df6TtLFHAGS0lxIihuU48llxY100kAtQVdcD8v2vIkb96rnTyCm2PMzpcbMBBD0zEA7qK6myHSAo6iJLVjHTypjtL4/vB+SKm7lRGk/SGooTwBBL8/YWgu5HkdqzS+L9rQQdEbr+TIhPjn6oFR7e76qqQkC+Qkg6PmZ9lAji+PKR8nCFK0FG8qTzt/CQ1Ll8xmV5wdLjWUJIOhl+Vqtnfczl42MJSGNR5nqNdfXT8c+5vVhKXpb2VShdgjkI4Cg52PZW02tpoN747TG3lgMLAnnXNSDT2Gm5kH5j5etcdRpWUsnYk4R41ZJAgh6Sbr260bU98foklRxQbZwLFkS8kPeHRP3WOT1/upz+9F0VQP3lncVLow9RABBHzsvrkwdt3URshaluYirfT0zfI/Yf8d0UjLvE/QE4Iy1AGS0h3vLM8KkqrYEEPS2/C20zsNm0qLwuBS7MRqJBxG/LF8uplXRVanwqODY6PAMAy+jd6bYu0pJjF0igKAvERrj93AtVTu4s2O4fNLL++XXu2W7fioVHyfKyquIH4Py5DRK9zR6D1PsPc+scKhC4FkEEHQSQgksXVcdndKIIn4q5sdG7z2cEOrJSThp1e/nR09u/PdDAEH3E8tcnug1RR2ZjpYbYcSmovSAbPfkAuq8nmOjd+VpTeDjE9fR8tt5GuKeEiCpyQMIQCAngWMnhK2ntrlenjPK1GWSAIJuMiwYBQE3BA4JfO3XjiLmbtIJR04RQNDJDwhAoBaB+BYxbbP0qvn4ZKL1DEEtxrQzMAEEfeDg4zoEGhI4tBBz7z3vh54PEE4cwh0LDV2maQiUJYCgl+VL7RCAwDKBvavmDz2v3tqCvGUKlIDATgII+k6A7A4BCGQlcGzV/FIj3Fq4RIjf3RNA0N2HGAch0DWBpdsouTbedXgxPicBBD0nTeqCAAQgAAEINCKAoDcCT7MQgAAEIACBnAQQ9Jw0qQsCEIAABCDQiACC3gg8zUIAAhCAAARyEkDQc9KkLghAAAIQgEAjAgh6I/A0CwEIQAACEMhJAEHPSZO6IAABCEAAAo0IIOiNwNMsBCAAAQhAICcBBD0nTeqCAAQgAAEINCKAoDcCT7MQgAAEIACBnAT+HxZWXBSkaL1cAAAAAElFTkSuQmCC"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "pictures" ("created_at", "image", "storyline_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 30 Dec 2013 00:40:18 UTC +00:00], ["image", "data:image/png;base64,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"], ["storyline_id", nil], ["updated_at", Mon, 30 Dec 2013 00:40:18 UTC +00:00], ["user_id", nil]]
+  [1m[35m (7.0ms)[0m  COMMIT
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE "turns" SET "turn_number" = 5, "updated_at" = '2013-12-30 00:40:18.352812' WHERE "turns"."id" = 12[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 22ms (Views: 1.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.5ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1[0m
+  Rendered storylines/_phrase_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:40:21 -0800
+Served asset /application.js - 304 Not Modified (0ms)
