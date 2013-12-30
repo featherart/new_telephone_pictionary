@@ -1,8 +1,8 @@
-<div class="row">
-  <div class="three mobile-one columns">
   <canvas id="drawing" class="picture" width="500" height="200">
     <!-- drawing goes here -->
   </canvas>
+  <div class="row">
+  <div class="three mobile-one columns">
   <%= form_for(@picture) do |f| %>
     <%= f.hidden_field :image %>
     <%= hidden_field_tag :storyline_id, @storyline.id %>
