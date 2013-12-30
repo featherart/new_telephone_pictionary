@@ -30670,3 +30670,974 @@ Served asset /storylines.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:52:30 -0800
 Served asset /application.css - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:56:46 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.8ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.9ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.5ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_first_form.html.erb (6.1ms)
+  [1m[36mUser Load (36.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.7ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/_phrase_form.html.erb (3.6ms)
+  Rendered storylines/index.html.erb within layouts/application (72.1ms)
+Compiled phrases.js  (0ms)  (pid 41495)
+Compiled pictures.js  (0ms)  (pid 41495)
+Compiled application.js  (3ms)  (pid 41495)
+Completed 200 OK in 217ms (Views: 68.3ms | ActiveRecord: 58.8ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /storylines.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /jquery.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-28 23:56:47 -0800
+Served asset /application.js - 304 Not Modified (10ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-28 23:57:57 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.7ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  UPDATE "storylines" SET "active" = 'f', "updated_at" = '2013-12-29 07:59:53.140459' WHERE "storylines"."id" = 30
+  [1m[36m (7.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  Rendered storylines/_first_form.html.erb (6.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.6ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/_phrase_form.html.erb (2.3ms)
+  Rendered storylines/index.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 132449ms (Views: 98.0ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /storylines.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /pictures.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /players.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /storylines.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:10 -0800
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 00:00:16 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.3ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_first_form.html.erb (1.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered storylines/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 6819ms (Views: 7.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 00:00:23 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/storylines/create/" for 127.0.0.1 at 2013-12-29 00:00:45 -0800
+Processing by StorylinesController#create as */*
+  Parameters: {"active"=>"true"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "storylines" ("active", "created_at", "time_stop", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["active", nil], ["created_at", Sun, 29 Dec 2013 08:00:45 UTC +00:00], ["time_stop", nil], ["updated_at", Sun, 29 Dec 2013 08:00:45 UTC +00:00], ["user_id", nil]]
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE "storylines" SET "time_stop" = '2013-12-29 08:05:45.286300', "active" = 't', "updated_at" = '2013-12-29 08:00:45.297282' WHERE "storylines"."id" = 31[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "turns" ("created_at", "turn_number", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sun, 29 Dec 2013 08:00:45 UTC +00:00], ["turn_number", 1], ["updated_at", Sun, 29 Dec 2013 08:00:45 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 60ms (Views: 3.0ms | ActiveRecord: 17.9ms)
+
+
+Started POST "/players/create" for 127.0.0.1 at 2013-12-29 00:00:45 -0800
+
+ActionController::RoutingError (No route matches [POST] "/players/create"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "storylines".* FROM "storylines" ORDER BY "storylines"."id" DESC LIMIT 1[0m
+  [1m[35mTurn Load (0.5ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_first_form.html.erb (2.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.5ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/_phrase_form.html.erb (2.1ms)
+  Rendered storylines/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 89ms (Views: 25.2ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 00:01:32 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/storylines/31" for 127.0.0.1 at 2013-12-29 00:01:43 -0800
+
+AbstractController::ActionNotFound (The action 'update' could not be found for StorylinesController):
+  actionpack (3.2.14) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__3339159209308505992__call__2291380307279379671__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.5ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_first_form.html.erb (2.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered storylines/index.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 108ms (Views: 52.2ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 00:03:01 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/storylines/create/" for 127.0.0.1 at 2013-12-29 00:03:11 -0800
+Processing by StorylinesController#create as */*
+  Parameters: {"active"=>"true"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "storylines" ("active", "created_at", "time_stop", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["active", nil], ["created_at", Sun, 29 Dec 2013 08:03:11 UTC +00:00], ["time_stop", nil], ["updated_at", Sun, 29 Dec 2013 08:03:11 UTC +00:00], ["user_id", nil]]
+  [1m[35m (6.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE "storylines" SET "time_stop" = '2013-12-29 08:08:11.398029', "active" = 't', "updated_at" = '2013-12-29 08:03:11.409125' WHERE "storylines"."id" = 32
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "turns" ("created_at", "turn_number", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sun, 29 Dec 2013 08:03:11 UTC +00:00], ["turn_number", 1], ["updated_at", Sun, 29 Dec 2013 08:03:11 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 11.6ms)
+
+
+Started POST "/players/create" for 127.0.0.1 at 2013-12-29 00:03:11 -0800
+Processing by PlayersController#create as */*
+  Parameters: {"name"=>"sfeqwer", "phone_number"=>"5108477006"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sun, 29 Dec 2013 08:03:11 UTC +00:00], ["email", nil], ["name", nil], ["phone_number", nil], ["updated_at", Sun, 29 Dec 2013 08:03:11 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/models/player.rb:14:in `send_text'
+  app/controllers/players_controller.rb:11:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_first_form.html.erb (2.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered storylines/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 117ms (Views: 20.3ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 00:04:19 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/storylines/create/" for 127.0.0.1 at 2013-12-29 00:04:25 -0800
+Processing by StorylinesController#create as */*
+  Parameters: {"active"=>"true"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "storylines" ("active", "created_at", "time_stop", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["active", nil], ["created_at", Sun, 29 Dec 2013 08:04:25 UTC +00:00], ["time_stop", nil], ["updated_at", Sun, 29 Dec 2013 08:04:25 UTC +00:00], ["user_id", nil]]
+  [1m[36m (7.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE "storylines" SET "time_stop" = '2013-12-29 08:09:25.507056', "active" = 't', "updated_at" = '2013-12-29 08:04:25.517388' WHERE "storylines"."id" = 33[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "turns" ("created_at", "turn_number", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sun, 29 Dec 2013 08:04:25 UTC +00:00], ["turn_number", 1], ["updated_at", Sun, 29 Dec 2013 08:04:25 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 10.4ms)
+
+
+Started POST "/players/create" for 127.0.0.1 at 2013-12-29 00:04:25 -0800
+Processing by PlayersController#create as */*
+  Parameters: {"name"=>"sfef", "phone_number"=>"5108477006"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sun, 29 Dec 2013 08:04:25 UTC +00:00], ["email", nil], ["name", nil], ["phone_number", nil], ["updated_at", Sun, 29 Dec 2013 08:04:25 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 87186ms
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/models/player.rb:14:in `send_text'
+  app/controllers/players_controller.rb:12:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:19:13 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.8ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_first_form.html.erb (10.2ms)
+  [1m[36mUser Load (38.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered storylines/index.html.erb within layouts/application (76.7ms)
+Completed 200 OK in 243ms (Views: 82.8ms | ActiveRecord: 58.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /storylines.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:19:14 -0800
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started POST "/storylines/create/" for 127.0.0.1 at 2013-12-29 16:19:31 -0800
+Processing by StorylinesController#create as */*
+  Parameters: {"active"=>"true"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "storylines" ("active", "created_at", "time_stop", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["active", nil], ["created_at", Mon, 30 Dec 2013 00:19:31 UTC +00:00], ["time_stop", nil], ["updated_at", Mon, 30 Dec 2013 00:19:31 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  UPDATE "storylines" SET "time_stop" = '2013-12-30 00:24:31.886504', "active" = 't', "updated_at" = '2013-12-30 00:19:31.895402' WHERE "storylines"."id" = 34
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "turns" ("created_at", "turn_number", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Mon, 30 Dec 2013 00:19:31 UTC +00:00], ["turn_number", 1], ["updated_at", Mon, 30 Dec 2013 00:19:31 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 24ms (Views: 3.2ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/players/create" for 127.0.0.1 at 2013-12-29 16:19:31 -0800
+Processing by PlayersController#create as */*
+  Parameters: {"name"=>"blablah", "phone_number"=>"5108477006"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "players" ("created_at", "email", "name", "phone_number", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 30 Dec 2013 00:19:31 UTC +00:00], ["email", nil], ["name", nil], ["phone_number", nil], ["updated_at", Mon, 30 Dec 2013 00:19:31 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 31721ms
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/models/player.rb:14:in `send_text'
+  app/controllers/players_controller.rb:12:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_first_form.html.erb (2.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.7ms)[0m  [1mSELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1[0m
+  Rendered storylines/_phrase_form.html.erb (4.3ms)
+  Rendered storylines/index.html.erb within layouts/application (72.5ms)
+Completed 200 OK in 141ms (Views: 76.6ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:20:47 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-29 16:20:53 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"hi have a sammie", "storyline_id"=>"", "user_id"=>"2"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "phrases" ("created_at", "storyline_id", "text", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 30 Dec 2013 00:20:53 UTC +00:00], ["storyline_id", nil], ["text", "hi have a sammie"], ["updated_at", Mon, 30 Dec 2013 00:20:53 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE "turns" SET "turn_number" = 2, "updated_at" = '2013-12-30 00:20:53.178920' WHERE "turns"."id" = 12[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (1.0ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_first_form.html.erb (1.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.6ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (3.2ms)
+  Rendered storylines/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 29ms (Views: 22.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:21:18 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/pictures/create/" for 127.0.0.1 at 2013-12-29 16:21:27 -0800
+Processing by PicturesController#create as */*
+  Parameters: {"image"=>"data:image/png;base64,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"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "pictures" ("created_at", "image", "storyline_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 30 Dec 2013 00:21:27 UTC +00:00], ["image", nil], ["storyline_id", nil], ["updated_at", Mon, 30 Dec 2013 00:21:27 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 500 Internal Server Error in 13ms
+
+ActionView::MissingTemplate (Missing template pictures/create, application/create with {:locale=>[:en], :formats=>[:js, :html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/views"
+):
+  app/controllers/pictures_controller.rb:30:in `create'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (1.2ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_first_form.html.erb (2.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.5ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.2ms)
+  Rendered storylines/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 97ms (Views: 30.8ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:23:26 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/pictures/create/" for 127.0.0.1 at 2013-12-29 16:23:46 -0800
+Processing by PicturesController#create as */*
+  Parameters: {"image"=>"data:image/png;base64,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"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "pictures" ("created_at", "image", "storyline_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 30 Dec 2013 00:23:47 UTC +00:00], ["image", nil], ["storyline_id", nil], ["updated_at", Mon, 30 Dec 2013 00:23:47 UTC +00:00], ["user_id", nil]]
+  [1m[35m (7.1ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (1.1ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  Rendered storylines/_first_form.html.erb (1.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.5ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.7ms)
+  Rendered storylines/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:24:17 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.5ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_first_form.html.erb (2.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.5ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (2.4ms)
+  Rendered storylines/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 130ms (Views: 29.9ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:07 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/pictures/create/" for 127.0.0.1 at 2013-12-29 16:30:15 -0800
+Processing by PicturesController#create as */*
+  Parameters: {"image"=>"data:image/png;base64,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"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (13.1ms)[0m  INSERT INTO "pictures" ("created_at", "image", "storyline_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 30 Dec 2013 00:30:15 UTC +00:00], ["image", "data:image/png;base64,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"], ["storyline_id", nil], ["updated_at", Mon, 30 Dec 2013 00:30:15 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE "turns" SET "turn_number" = 3, "updated_at" = '2013-12-30 00:30:15.494144' WHERE "turns"."id" = 12
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 24ms (Views: 1.1ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.7ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  Rendered storylines/_first_form.html.erb (1.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.5ms)[0m  [1mSELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/_phrase_form.html.erb (1.8ms)
+  Rendered storylines/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.css?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /storylines.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 16:30:28 -0800
+Served asset /application.js - 304 Not Modified (0ms)

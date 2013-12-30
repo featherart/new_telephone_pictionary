@@ -1,12 +1,9 @@
 $(function() {
     console.log("in phrases.js");
-    
     submitPhrase();
 
     function submitPhrase () {
       $form = $("#new_phrase");
-      //$form = $("#edit_storyline_25");
-      console.log("here's form: " + $form.length);
       $form.on("submit", function(event) {
           event.preventDefault();
           var phrase = $("#phrase_text").val();
@@ -23,7 +20,7 @@ $(function() {
            user_id: user_id
          },
          success: function( data ) {
-           console.log("success");
+           console.log("successfully created a phrase");
            $("#new_phrase").hide();
            //$("#phrase_text").html("");
            $("#new_phrases").prepend("<h1>New Phrase</h1><br />"+phrase);

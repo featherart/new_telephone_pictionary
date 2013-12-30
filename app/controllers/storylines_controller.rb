@@ -3,9 +3,11 @@ class StorylinesController < ApplicationController
   	@storylines = Storyline.all
     # need a way to signal storyline is complete
     # use a timestamp and set a boolean?
-
-    @active_or_new = Storyline.last.active 
-    @active_or_new ? @storyline = Storyline.last : @storyline = Storyline.new
+    # turn this on later for now, too annoying to reset each time
+    #@active_or_new = Storyline.last.active 
+    #@active_or_new ? @storyline = Storyline.last : @storyline = Storyline.new
+    @active_or_new = false
+    @storyline = Storyline.new
     @turn = Turn.last.turn_number
 
   	@phrase = Phrase.new

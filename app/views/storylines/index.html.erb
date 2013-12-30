@@ -1,10 +1,10 @@
 here's turn <%= @turn %>
 here's active or new <%= @active_or_new %>
 <#% if !@active_or_new %>
-	<%= render partial: 'player_form' %>
+	<%= render partial: 'first_form' %>
 <#% end %>
 
-<% if current_user && @active_or_new %>
+<% if current_user  %>
 	<% if @turn == nil || @turn.odd? %>
 	<div id="new_drawings">
 		<% if Picture.last %>

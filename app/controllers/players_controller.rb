@@ -8,9 +8,10 @@ class PlayersController < ApplicationController
     @player = Player.create(params[:player])
     text = "Hello #{@player.name}! #{current_user.name} has invited you to play Telephone Pictionary."
     # could this be creating a spam issue? Please log on to http://telephone-pictionary.herokuapp.com to participate!
+    #binding.pry
     @player.send_text(text)
     render :json => @player
-    binding.pry
+    #binding.pry
     #render nothing: true
   end
 end

@@ -11,7 +11,7 @@ class PhrasesController < ApplicationController
   	@phrase = Phrase.new(params[:phrase])
   	@phrase.text = params[:text]
     @phrase.storyline_id = params[:storyline_id]
-    @phrase.save
+    @phrase.save!
   
     # this needs to happen here for now but there might be a better place
     #Turn.where(turn_number: @storyline.turn).first ? @turn = Turn.where(turn_number: @storyline.turn).first). : @turn.create = 1

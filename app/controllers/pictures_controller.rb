@@ -25,11 +25,17 @@ class PicturesController < ApplicationController
     puts "in pictures create"
     puts "**************"
     @picture = Picture.new(params[:picture])
-    @picture.save()
-    
-    respond_to do |format|
-      format.js
-  	end
+    @picture.image = params[:image]
+    @picture.storyline_id = params[:storyline_id]
+    @picture.save!
+  
+    # this needs to happen here for now but there might be a better place
+    #Turn.where(turn_number: @storyline.turn).first ? @turn = Turn.where(turn_number: @storyline.turn).first). : @turn.create = 1
+    @turn = Turn.last
+    @turn.turn_number += 1
+    @turn.save!
+    @turn_number = @turn.turn_number    
+    render nothing: true
   end
 
   def show

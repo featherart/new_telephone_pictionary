@@ -59,7 +59,7 @@ $(function() {
          console.log("successfully created picture!");
          $form.hide();
          $canvas.hide();
-         //$("#new_drawings").append("<h1>New Drawing</h1><br><img src='"+url+"'>");
+         $("#new_drawings").append("<h1>New Drawing</h1><br><img src='"+url+"'>");
        }
      });      
    });

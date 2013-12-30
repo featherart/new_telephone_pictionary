@@ -20,7 +20,7 @@ class Player < ActiveRecord::Base
 
   def clean_phone_number
     number = self.phone_number
-
+    binding.pry
     if number
       unless number[0..1] == "+1"
         number.gsub!(/[^0-9]/, '')

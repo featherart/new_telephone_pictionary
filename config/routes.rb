@@ -9,7 +9,7 @@ TelephonePictionary::Application.routes.draw do
   post "phrases/create"
   post "pictures/create"
   post "storylines/create"
-  #post "players/create"
+  post "players/create"
   resources :pictures
   resources :phrases
   resources :storylines
