@@ -8,6 +8,7 @@ gem 'unicorn'
 gem 'figaro'
 gem 'omniauth-facebook'
 gem 'twilio-ruby'
+gem 'zurb-foundation'
 
 group :development, :test do
   gem 'pry-rails'

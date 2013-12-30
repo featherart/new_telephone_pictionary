@@ -1,12 +1,15 @@
-<canvas id="drawing" class="picture" width="500" height="200">
-  <!-- drawing goes here -->
-</canvas>
-<%= form_for(@picture) do |f| %>
-  <%= f.hidden_field :image %>
-  <%#= hidden_field_tag :picture_id, @picture.id %>
-  <%= hidden_field_tag :storyline_id, @storyline.id %>
-  <%= hidden_field_tag :turn_number, @turn %>
-  <%= hidden_field_tag :user_id, current_user.id %>
-  <%= f.submit %>
-  <button type="button" id="clear">Clear</button>
-<% end %>
+<div class="row">
+  <div class="three mobile-one columns">
+  <canvas id="drawing" class="picture" width="500" height="200">
+    <!-- drawing goes here -->
+  </canvas>
+  <%= form_for(@picture) do |f| %>
+    <%= f.hidden_field :image %>
+    <%= hidden_field_tag :storyline_id, @storyline.id %>
+    <%= hidden_field_tag :turn_number, @turn %>
+    <%= hidden_field_tag :user_id, current_user.id %>
+    <button type="button" id="clear" class="small radius button">Clear</button>
+    <button type="submit" id="submit_button" class="small radius button">send it</button>
+  <% end %>
+  </div>
+</div>

@@ -9,7 +9,7 @@
 	<%= render partial: 'phrase_form' %>
 
 	<% elsif @turn.even? && @turn != 0 %>
-  <div id="heading">Draw a picture to describe the phrase below</div>
+  <div id="heading">Draw a picture to describe the phrase below:</div>
 	<div id="new_phrases">
 		<% if Phrase.last %>
 	  	<%= Phrase.last.text %>
