@@ -1,24 +1,33 @@
-<% if current_user  %>
-<div id="new_phrases">
-</div>
-<div id="new_pictures">
-</div>
-	<% if @turn == nil || @turn.odd? %>
-	<div id="new_drawings">
-		<% if Picture.last %>
-	  	<img src="<%= Picture.last.image %>">
-	  <% end %>
-	</div>
-	<%= render partial: 'phrase_form' %>
+<div class="one">
 
-	<% elsif @turn.even? && @turn != 0 %>
-	<h4><small>Draw a picture to describe the phrase below:</small></h4>
-	<div id="new_phrases">
-		<h4 class="subheader"><% if Phrase.last %>
-	  	<%= Phrase.last.text %></h4>
-	  <% end %>
+	<% if current_user  %>
+	<div class="three columns centered">
+		<div id="new_phrases">
+		</div>
+		<div id="new_pictures">
+		</div>
 	</div>
-	<%= render partial: 'picture_form' %>
-	  
+	<div class="three columns centered">
+		<% if @turn == nil || @turn.odd? %>
+		<div id="drawings">
+			<% if Picture.last %>
+		  	<img src="<%= Picture.last.image %>">
+		  <% end %>
+		</div>
+		<%= render partial: 'phrase_form' %>
+
+		<% elsif @turn.even? && @turn != 0 %>
+
+		<h4><small>Draw a picture to describe the phrase below:</small></h4>
+		<div id="phrases">
+			<h4 class="subheader"><% if Phrase.last %>
+		  	<%= Phrase.last.text %></h4>
+		  <% end %>
+		</div>
+		<%= render partial: 'picture_form' %>
+		  
+		<% end %>
 	<% end %>
-<% end %>
+
+  </div>
+</div>
