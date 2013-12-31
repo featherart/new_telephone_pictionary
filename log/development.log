@@ -37361,3 +37361,517 @@ Served asset /storylines.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-29 19:51:53 -0800
 Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 17:34:40 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.9ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.9ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (6.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (1.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.0ms)
+  Rendered storylines/index.html.erb within layouts/application (40.1ms)
+Compiled phrases.js  (0ms)  (pid 43799)
+Compiled pictures.js  (0ms)  (pid 43799)
+Compiled application.js  (5ms)  (pid 43799)
+Completed 200 OK in 356ms (Views: 213.9ms | ActiveRecord: 31.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /foundation/index.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /storylines.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 17:34:41 -0800
+Served asset /application.js - 304 Not Modified (59ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 17:35:39 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.3ms)
+Compiled phrases.js  (0ms)  (pid 43799)
+Compiled application.js  (5ms)  (pid 43799)
+Completed 200 OK in 85ms (Views: 81.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-30 17:35:40 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started POST "/pictures/create/" for 127.0.0.1 at 2013-12-30 17:36:23 -0800
+Processing by PicturesController#create as */*
+  Parameters: {"image"=>"data:image/png;base64,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"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (12.3ms)[0m  INSERT INTO "pictures" ("created_at", "image", "storyline_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Tue, 31 Dec 2013 01:36:23 UTC +00:00], ["image", "data:image/png;base64,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"], ["storyline_id", nil], ["updated_at", Tue, 31 Dec 2013 01:36:23 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mTurn Load (0.5ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "turns" SET "turn_number" = 9, "updated_at" = '2013-12-31 01:36:23.458544' WHERE "turns"."id" = 12
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 27ms (Views: 3.4ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.7ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.5ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (7.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/_phrase_form.html.erb (3.7ms)
+  Rendered storylines/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 31ms (Views: 18.7ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 17:37:46 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2013-12-30 17:37:56 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"help! my hair is on fire!", "storyline_id"=>"", "user_id"=>"2"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "phrases" ("created_at", "storyline_id", "text", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Tue, 31 Dec 2013 01:37:56 UTC +00:00], ["storyline_id", nil], ["text", "help! my hair is on fire!"], ["updated_at", Tue, 31 Dec 2013 01:37:56 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  UPDATE "turns" SET "turn_number" = 10, "updated_at" = '2013-12-31 01:37:56.222352' WHERE "turns"."id" = 12
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 17:38:19 -0800
+Served asset /application.js - 304 Not Modified (0ms)
