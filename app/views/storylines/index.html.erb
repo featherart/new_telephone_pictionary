@@ -1,13 +1,9 @@
-<div class="one">
-
-	<% if current_user  %>
-	<div class="three columns centered">
+<div class="container">
+<% if current_user  %>
 		<div id="new_phrases">
 		</div>
 		<div id="new_pictures">
 		</div>
-	</div>
-	<div class="three columns centered">
 		<% if @turn == nil || @turn.odd? %>
 		<div id="drawings">
 			<% if Picture.last %>
@@ -28,6 +24,4 @@
 		  
 		<% end %>
 	<% end %>
-
-  </div>
 </div>

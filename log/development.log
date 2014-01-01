@@ -40554,3 +40554,3089 @@ Served asset /storylines.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 18:36:42 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 18:57:05 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.8ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.8ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (8.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.6ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.8ms)
+  Rendered storylines/index.html.erb within layouts/application (73.3ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (5ms)  (pid 44610)
+Completed 200 OK in 358ms (Views: 217.0ms | ActiveRecord: 30.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:06 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /foundation/index.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:07 -0800
+Served asset /application.js - 304 Not Modified (59ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.8ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.5ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (5.9ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 95ms (Views: 89.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:54 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 18:57:55 -0800
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.5ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 33ms (Views: 26.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation_and_overrides.css - 200 OK (1ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.interchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 18:59:07 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:00:12 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.7ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (7ms)  (pid 44610)
+Completed 200 OK in 141ms (Views: 135.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:00:12 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:01:08 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (5.1ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 89ms (Views: 85.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:01:08 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:01:49 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.9ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (5ms)  (pid 44610)
+Completed 200 OK in 97ms (Views: 92.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:01:49 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:01:50 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:02:18 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.7ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.5ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:02:18 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:02:18 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:06:45 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (4.2ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (6ms)  (pid 44610)
+Completed 200 OK in 102ms (Views: 97.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:06:45 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:06:45 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:06:45 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:07:40 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.3ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 91ms (Views: 87.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:07:41 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:07:41 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:07:41 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:07:41 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:08:56 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (4.2ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:08:56 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:08:56 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:08:56 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:08:56 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:09:27 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.9ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:09:27 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:09:27 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:09:27 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:09:27 -0800
+Served asset /pictures.js - 200 OK (34ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:10:12 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.5ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 59ms (Views: 54.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:10:13 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:10:13 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:10:13 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:10:13 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:10:38 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.7ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (7ms)  (pid 44610)
+Completed 200 OK in 91ms (Views: 87.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:10:38 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:10:38 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:10:38 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:10:38 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:11:56 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.7ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.5ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (7ms)  (pid 44610)
+Completed 200 OK in 101ms (Views: 95.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:11:57 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:11:57 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:11:57 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:11:57 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:12:40 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.8ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 91ms (Views: 87.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:12:41 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:12:41 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:12:41 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:12:41 -0800
+Served asset /pictures.js - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:13:27 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.7ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 89ms (Views: 85.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:13:27 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:13:27 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:13:27 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:13:27 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:13:50 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.7ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 86ms (Views: 82.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:13:50 -0800
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:13:50 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:13:51 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:13:51 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:14:22 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (5ms)  (pid 44610)
+Completed 200 OK in 104ms (Views: 100.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:14:22 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:14:22 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:14:22 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:14:22 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 19:14:48 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (2.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (6.2ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (5ms)  (pid 44610)
+Completed 200 OK in 93ms (Views: 87.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 19:14:49 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-30 19:14:49 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-30 19:14:49 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-30 19:14:49 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:16:22 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (2.0ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.8ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.7ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (6.8ms)
+  Rendered storylines/index.html.erb within layouts/application (25.5ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (9ms)  (pid 44610)
+Completed 200 OK in 266ms (Views: 241.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:16:23 -0800
+Served asset /application.js - 304 Not Modified (27ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.6ms)
+  Rendered storylines/index.html.erb within layouts/application (5.5ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled sketch.js  (1ms)  (pid 44610)
+Compiled application.js  (13ms)  (pid 44610)
+Completed 200 OK in 108ms (Views: 103.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /pictures.js - 200 OK (3ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sketch.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /sketch.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:24:58 -0800
+Served asset /application.js - 304 Not Modified (24ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.7ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 90ms (Views: 86.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:34 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /foundation/index.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:25:35 -0800
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.5ms)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 83ms (Views: 79.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:26:18 -0800
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.5ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 96ms (Views: 91.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.interchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /pictures.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /application.js - 200 OK (24ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:27:29 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:28:23 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.8ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 91ms (Views: 86.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:28:23 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:29:41 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.7ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (8ms)  (pid 44610)
+Completed 200 OK in 96ms (Views: 91.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:29:41 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.7ms)
+  Rendered storylines/index.html.erb within layouts/application (3.6ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (5ms)  (pid 44610)
+Completed 200 OK in 95ms (Views: 91.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.interchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:30:04 -0800
+Served asset /application.js - 200 OK (58ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:31:25 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.3ms)
+  Rendered storylines/index.html.erb within layouts/application (4.8ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.interchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /application.js - 200 OK (23ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:31:26 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:32:23 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (0.8ms)
+  Rendered storylines/index.html.erb within layouts/application (3.9ms)
+Compiled pictures.js  (0ms)  (pid 44610)
+Compiled application.js  (4ms)  (pid 44610)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:32:23 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:43:51 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.8ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.6ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (6.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.7ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.5ms)
+  Rendered storylines/index.html.erb within layouts/application (45.0ms)
+Compiled application.css  (19ms)  (pid 44830)
+Compiled pictures.js  (0ms)  (pid 44830)
+Compiled application.js  (4ms)  (pid 44830)
+Completed 200 OK in 370ms (Views: 233.8ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /foundation/index.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /phrases.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /pictures.js - 200 OK (41ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:43:52 -0800
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.4ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+Compiled pictures.js  (0ms)  (pid 44830)
+Compiled application.js  (4ms)  (pid 44830)
+Completed 200 OK in 88ms (Views: 84.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:45:14 -0800
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:54:00 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+Compiled pictures.js  (0ms)  (pid 44830)
+Compiled application.js  (4ms)  (pid 44830)
+Completed 200 OK in 86ms (Views: 82.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:00 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:54:01 -0800
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.8ms)
+  Rendered storylines/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:55:24 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.5ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.0ms)
+  Rendered storylines/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /foundation_and_overrides.css - 200 OK (51ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /application.css - 200 OK (15ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:41 -0800
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.interchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:57:42 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (2.4ms)
+  Rendered storylines/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:18 -0800
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.interchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /pictures.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:58:19 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.4ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (5.5ms)
+Compiled pictures.js  (0ms)  (pid 44830)
+Compiled application.js  (5ms)  (pid 44830)
+Completed 200 OK in 84ms (Views: 79.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.interchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/sketch.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /sketch.js - 200 OK (2ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 19:59:53 -0800
+Served asset /application.js - 200 OK (24ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 20:00:32 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.5ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.8ms)
+Compiled application.js  (6ms)  (pid 44830)
+Completed 200 OK in 98ms (Views: 93.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 20:00:32 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 20:06:35 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.5ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (5.1ms)
+Compiled application.js  (3ms)  (pid 44830)
+Completed 200 OK in 82ms (Views: 78.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 20:06:36 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 20:06:36 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 20:06:36 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 20:06:36 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 20:06:36 -0800
+Served asset /phrases.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 20:06:36 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sketch.js?body=1" for 127.0.0.1 at 2013-12-31 20:06:36 -0800
+Served asset /sketch.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.9ms)
+  Rendered storylines/index.html.erb within layouts/application (5.3ms)
+Compiled pictures.js  (0ms)  (pid 44830)
+Compiled application.js  (2ms)  (pid 44830)
+Completed 200 OK in 66ms (Views: 61.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/sketch.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /sketch.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:22 -0800
+Served asset /application.js - 200 OK (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 20:07:53 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+Compiled application.js  (15ms)  (pid 44830)
+Completed 200 OK in 84ms (Views: 79.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /foundation/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 20:07:54 -0800
+Served asset /application.js - 200 OK (22ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.7ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.3ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+Compiled pictures.js  (0ms)  (pid 44830)
+Compiled application.js  (4ms)  (pid 44830)
+Completed 200 OK in 106ms (Views: 100.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.interchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /pictures.js - 200 OK (5ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /phrases.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /foundation/foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /players.js - 200 OK (0ms)
+
+
+Started GET "/assets/sketch.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /sketch.js - 200 OK (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 20:11:13 -0800
+Served asset /application.js - 200 OK (23ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 20:14:27 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 20:14:27 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 20:14:28 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 20:14:28 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.6ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.5ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (1.2ms)
+  Rendered storylines/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:05 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:06 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:06 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:06 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:06 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sketch.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:06 -0800
+Served asset /sketch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 20:18:06 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/pictures/create/" for 127.0.0.1 at 2013-12-31 20:18:55 -0800
+Processing by PicturesController#create as */*
+  Parameters: {"image"=>"data:image/png;base64,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"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (8.2ms)[0m  INSERT INTO "pictures" ("created_at", "image", "storyline_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Wed, 01 Jan 2014 04:18:55 UTC +00:00], ["image", "data:image/png;base64,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"], ["storyline_id", nil], ["updated_at", Wed, 01 Jan 2014 04:18:55 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mTurn Load (0.5ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "turns" SET "turn_number" = 11, "updated_at" = '2014-01-01 04:18:55.658035' WHERE "turns"."id" = 12
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 23ms (Views: 3.3ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/_phrase_form.html.erb (3.1ms)
+  Rendered storylines/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 30ms (Views: 26.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-31 20:22:59 -0800
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sketch.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /sketch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-31 20:23:00 -0800
+Served asset /application.js - 304 Not Modified (0ms)

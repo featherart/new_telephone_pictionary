@@ -19,14 +19,9 @@
   cursor: crosshair;
   display: block;
 }
-body
-{
-  padding: 50px;
-  margin: 50px;
-}
 /* Prevent text selection */
-
-.noselect {
+.noselect 
+{
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
