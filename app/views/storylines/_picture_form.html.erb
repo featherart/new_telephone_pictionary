@@ -1,15 +1,14 @@
+ <div class="input-group">
   <canvas id="drawing" class="picture" width="500" height="200">
     <!-- drawing goes here -->
   </canvas>
-  <div class="row">
-  <div class="three mobile-one columns">
+ 
   <%= form_for(@picture) do |f| %>
     <%= f.hidden_field :image %>
     <%= hidden_field_tag :storyline_id, @storyline.id %>
     <%= hidden_field_tag :turn_number, @turn %>
     <%= hidden_field_tag :user_id, current_user.id %>
-    <button type="button" id="clear" class="small radius button">Clear</button>
-    <button type="submit" id="submit_button" class="small radius button">send it</button>
+    <button type="button" id="clear" class="btn-default btn-sm">Clear</button>
+    <button type="submit" id="submit_button" class="btn-default btn-sm">send it</button>
   <% end %>
-  </div>
 </div>

@@ -1,12 +1,13 @@
+<div class="input-group">
 <%= form_for(@phrase) do |f| %>
-<div class="row">
-    <div class="three mobile-one columns">   
+
+  
     <%= f.text_field :text, placeholder: "enter a sentence for this picture", autofocus: true, required: true %>
     <%= hidden_field_tag :storyline_id, @storyline.id %>
     <%= hidden_field_tag :turn_number, @turn %>
     <%= hidden_field_tag :user_id, current_user.id %>
+    <br> 
+    <button type="submit" id="submit" class="btn-default btn-sm">send it</button>
 
-    <button type="submit" id="submit_button" class="small radius button">send it</button>
-    </div>
-  </div>
 <% end %>
+</div>
