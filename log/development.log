@@ -47493,3 +47493,319 @@ ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
 
 
   Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-01 19:00:08 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.5ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.8ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (7.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.6ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.2ms)
+  Rendered storylines/index.html.erb within layouts/application (36.7ms)
+Completed 500 Internal Server Error in 225ms
+
+ActionView::Template::Error (cannot load such file -- less
+  (in /Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    12:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+    13:     <![endif]-->
+    14: 
+    15:     <%= stylesheet_link_tag "application", :media => "all" %>
+    16: 
+    17:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    18:     <!-- Size should be 144 x 144 pixels -->
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___181920592243442406_70122280897480'
+  app/controllers/storylines_controller.rb:21:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-01 19:01:02 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.7ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPhrase Load (0.4ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  Rendered storylines/_picture_form.html.erb (0.9ms)
+  Rendered storylines/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (cannot load such file -- less
+  (in /Users/lisafeatherknee/workspace/do_stuff/telephone_pictionary/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    12:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+    13:     <![endif]-->
+    14: 
+    15:     <%= stylesheet_link_tag "application", :media => "all" %>
+    16: 
+    17:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    18:     <!-- Size should be 144 x 144 pixels -->
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___181920592243442406_70122280897480'
+  app/controllers/storylines_controller.rb:21:in `index'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-01 19:01:30 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.4ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.3ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.3ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (1.1ms)
+  Rendered storylines/index.html.erb within layouts/application (4.5ms)
+Compiled bootstrap_and_overrides.css  (0ms)  (pid 45905)
+Compiled application.css  (5ms)  (pid 45905)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-01 19:01:30 -0800
+Served asset /bootstrap_and_overrides.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-01 19:01:30 -0800
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap" for 127.0.0.1 at 2014-01-01 19:01:30 -0800
+Served asset /twitter/bootstrap/bootstrap - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter/bootstrap/bootstrap"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap/responsive" for 127.0.0.1 at 2014-01-01 19:01:30 -0800
+Served asset /twitter/bootstrap/responsive - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter/bootstrap/responsive"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-01 19:01:30 -0800
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-01 19:01:30 -0800
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-01-01 19:01:31 -0800
+Served asset /favicon.ico - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-01 19:02:54 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.9ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.8ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (5.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.6ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.4ms)
+  Rendered storylines/index.html.erb within layouts/application (35.3ms)
+Compiled bootstrap_and_overrides.css  (805ms)  (pid 45945)
+Compiled application.css  (840ms)  (pid 45945)
+Completed 200 OK in 1205ms (Views: 1051.4ms | ActiveRecord: 26.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /bootstrap_and_overrides.css - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /twitter/bootstrap.js - 200 OK (50ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /phrases.js - 200 OK (1ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /storylines.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /application.js - 200 OK (18ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-01-01 19:02:56 -0800
+Served asset /favicon.ico - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lisafeatherknee/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lisafeatherknee/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
