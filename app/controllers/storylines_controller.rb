@@ -13,11 +13,7 @@ class StorylinesController < ApplicationController
   	@phrase = Phrase.new
   	@picture = Picture.new
     @player = Player.new
-    puts "**************"
-    puts "in storyline index"
-    puts params
-    puts "**************"
-    #binding.pry
+    
   	respond_to do |format|
   	  format.html
   	end
@@ -32,7 +28,7 @@ class StorylinesController < ApplicationController
     @storyline.active = true
   	@storyline.save!
     @turn = Turn.create(turn_number: 1, user_id: current_user.id)
-  	#binding.pry
+
     render nothing: true
     # respond_to do |format|
     #   format.js
