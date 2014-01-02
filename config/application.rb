@@ -15,7 +15,7 @@ module TelephonePictionary
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    # for Devise deploy to Heroku
+    # for deploy to Heroku
     config.assets.initialize_on_precompile = false
 
     # Custom directories with classes and modules you want to be autoloadable.
