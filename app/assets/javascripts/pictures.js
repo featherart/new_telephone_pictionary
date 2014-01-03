@@ -9,10 +9,10 @@ $(function() {
       button_is_down = false,
       context = $canvas[0].getContext('2d');
 
+  $canvas.addEventListener( 'touchstart', onTouchStart, false );
+
   $(document).mouseup(function(e) {
-    e.preventDefault();
-    console.log("here's e: ");
-    console.log(e);
+    //e.preventDefault();
     if(button_is_down) {
       var x = e.pageX - this.offsetLeft,
           y = e.pageY - this.offsetTop;
@@ -24,13 +24,7 @@ $(function() {
   });
 
   $canvas.mousedown(function(e) {
-    console.log(this.offsetLeft);
-    console.log(this.offsetTop);
-    console.log(e.pageX);
-    console.log(e.pageY);
-    console.log("here's e: ");
-    console.log(e);
-    e.preventDefault();
+    //e.preventDefault();
     var x = e.pageX - this.offsetLeft,
         y = e.pageY - this.offsetTop;
     context.beginPath();
@@ -40,7 +34,7 @@ $(function() {
   });
 
   $canvas.mousemove(function(e) {
-    e.preventDefault();
+    //e.preventDefault();
     if(button_is_down) {
       var x = e.pageX - $canvas[0].offsetLeft,
           y = e.pageY - $canvas[0].offsetTop;
