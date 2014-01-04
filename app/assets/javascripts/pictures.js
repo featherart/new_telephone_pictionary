@@ -10,11 +10,50 @@ $(function() {
       context = $canvas[0].getContext('2d');
 
   //$canvas.addEventListener( 'touchstart', onTouchStart, false );
-  $canvas.ontouchstart = function(e) {
-    alert("in canvas touchstart listener");
-    if (e.touches) e = e.touches[0];
-    return false;
-  }
+  // $canvas.ontouchstart = function(e) {
+  //   alert("in canvas touchstart listener");
+  //   if (e.touches) e = e.touches[0];
+  //   return false;
+  // }
+
+  // Disable Page Move for mobile
+    document.body.addEventListener('touchmove',function(event){
+      event.preventDefault();
+    },false);
+ 
+  // Events
+  $canvas.on('touchstart', function(e) {
+    alert("in touchstart: " + e);
+    var x = e.targetTouches[0].pageX - this.offsetLeft,
+        y = e.targetTouches[0].pageY - this.offsetTop;
+    context.beginPath();
+    context.moveTo(x,y);
+    //$('body').addClass('noselect');
+    button_is_down = true;
+  });
+
+  $canvas.on('touchend', function(e) {
+    alert("in touchend: " + e);
+    if(button_is_down) {
+    var x = e.pageX - this.offsetLeft,
+        y = e.pageY - this.offsetTop;
+      context.lineTo(x,y);
+      context.stroke();
+    }
+    button_is_down = false;
+    //$('body').removeClass('noselect');
+  });
+  
+  $canvas.on('touchmove', function(e) {
+    alert("in touchmove: " + e);
+    if(button_is_down) {
+      var x = e.pageX - $canvas[0].offsetLeft,
+          y = e.pageY - $canvas[0].offsetTop;
+      context.lineTo(x,y);
+      context.stroke();
+    }
+  }); 
+
 
   $(document).mouseup(function(e) {
     if(button_is_down) {
@@ -26,13 +65,6 @@ $(function() {
     button_is_down = false;
     $('body').removeClass('noselect');
   });
-
-  $canvas.touchstart( function(e) ) {   
-    var x = e.pageX - $canvas[0].offsetLeft,
-        y = e.pageY - $canvas[0].offsetTop;
-    context.lineTo(x,y);
-    context.stroke();
-  }
 
   $canvas.mousedown(function(e) {
     var x = e.pageX - this.offsetLeft,
