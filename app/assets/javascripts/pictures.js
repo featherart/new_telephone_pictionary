@@ -22,7 +22,7 @@ $(function() {
     },false);
  
   // Events
-  $canvas.on('touchstart', function(e) {
+  document.body.addEventListener('touchstart', function(e) {
     alert("in touchstart: " + e);
     var x = e.targetTouches[0].pageX - this.offsetLeft,
         y = e.targetTouches[0].pageY - this.offsetTop;
@@ -32,7 +32,7 @@ $(function() {
     button_is_down = true;
   });
 
-  $canvas.on('touchend', function(e) {
+  document.body.addEventListener('touchend', function(e) {
     alert("in touchend: " + e);
     if(button_is_down) {
     var x = e.pageX - this.offsetLeft,
@@ -44,7 +44,7 @@ $(function() {
     //$('body').removeClass('noselect');
   });
   
-  $canvas.on('touchmove', function(e) {
+  document.body.addEventListener('touchmove', function(e) {
     alert("in touchmove: " + e);
     if(button_is_down) {
       var x = e.pageX - $canvas[0].offsetLeft,
