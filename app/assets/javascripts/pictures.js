@@ -9,6 +9,24 @@ $(function() {
       button_is_down = false,
       context = $canvas[0].getContext('2d');
 
+  // start tracking the touches, move the pen to the beginning of a line
+  $canvas.bind('touchstart', function (event) {
+    alert("in touchstart");
+    var xy = extractXY(event.originalEvent.touches[0]);
+    ctx.moveTo(xy.x, xy.y);
+    event.preventDefault();
+    return false;
+  });
+  // draw a line from the last point to this one
+  $canvas.bind('touchmove', function (event) {
+    alert("in touch move");
+    var xy = extractXY(event.originalEvent.touches[0]);
+    ctx.lineTo(xy.x, xy.y);
+    ctx.stroke();
+    event.preventDefault();
+    return false;
+  });
+
   //$canvas.addEventListener( 'touchstart', onTouchStart, false );
   // $canvas.ontouchstart = function(e) {
   //   alert("in canvas touchstart listener");
@@ -16,43 +34,43 @@ $(function() {
   //   return false;
   // }
 
-  // Disable Page Move for mobile
-    document.body.addEventListener('touchmove',function(event){
-      event.preventDefault();
-    },false);
+  // // Disable Page Move for mobile
+  //   document.body.addEventListener('touchmove',function(event){
+  //     event.preventDefault();
+  //   },false);
  
-  // Events
-  document.body.addEventListener('touchstart', function(e) {
-    alert("in touchstart: " + e);
-    var x = e.targetTouches[0].pageX - this.offsetLeft,
-        y = e.targetTouches[0].pageY - this.offsetTop;
-    context.beginPath();
-    context.moveTo(x,y);
-    //$('body').addClass('noselect');
-    button_is_down = true;
-  });
+  // // Events
+  // document.body.addEventListener('touchstart', function(e) {
+  //   alert("in touchstart: " + e);
+  //   var x = e.targetTouches[0].pageX - this.offsetLeft,
+  //       y = e.targetTouches[0].pageY - this.offsetTop;
+  //   context.beginPath();
+  //   context.moveTo(x,y);
+  //   //$('body').addClass('noselect');
+  //   button_is_down = true;
+  // });
 
-  document.body.addEventListener('touchend', function(e) {
-    alert("in touchend: " + e);
-    if(button_is_down) {
-    var x = e.pageX - this.offsetLeft,
-        y = e.pageY - this.offsetTop;
-      context.lineTo(x,y);
-      context.stroke();
-    }
-    button_is_down = false;
-    //$('body').removeClass('noselect');
-  });
+  // document.body.addEventListener('touchend', function(e) {
+  //   alert("in touchend: " + e);
+  //   if(button_is_down) {
+  //   var x = e.pageX - this.offsetLeft,
+  //       y = e.pageY - this.offsetTop;
+  //     context.lineTo(x,y);
+  //     context.stroke();
+  //   }
+  //   button_is_down = false;
+  //   //$('body').removeClass('noselect');
+  // });
   
-  document.body.addEventListener('touchmove', function(e) {
-    alert("in touchmove: " + e);
-    if(button_is_down) {
-      var x = e.pageX - $canvas[0].offsetLeft,
-          y = e.pageY - $canvas[0].offsetTop;
-      context.lineTo(x,y);
-      context.stroke();
-    }
-  }); 
+  // document.body.addEventListener('touchmove', function(e) {
+  //   alert("in touchmove: " + e);
+  //   if(button_is_down) {
+  //     var x = e.pageX - $canvas[0].offsetLeft,
+  //         y = e.pageY - $canvas[0].offsetTop;
+  //     context.lineTo(x,y);
+  //     context.stroke();
+  //   }
+  // }); 
 
 
   $(document).mouseup(function(e) {
@@ -90,7 +108,6 @@ $(function() {
     var url = $canvas[0].toDataURL('image/png'),
         img = document.createElement('img'),
         drawings_target = $('#drawings_target');
-    console.log("url: "+url);
     drawings_target.append(img); 
     img.src = url;
     $hidden.val(url);
