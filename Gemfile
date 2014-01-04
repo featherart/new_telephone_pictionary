@@ -8,7 +8,6 @@ gem 'unicorn'
 gem 'figaro'
 gem 'omniauth-facebook'
 gem 'twilio-ruby'
-#gem 'zurb-foundation'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"

@@ -48790,3 +48790,431 @@ Served asset /players.js - 200 OK (0ms)
 
 Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2014-01-03 16:11:12 -0800
 Served asset /storylines.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-03 16:17:52 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.7ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.8ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (5.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.6ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (3.3ms)
+  Rendered storylines/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 247ms (Views: 95.7ms | ActiveRecord: 26.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /bootstrap_and_overrides.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap.js - 200 OK (13ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /phrases.js - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /pictures.js - 200 OK (1ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /players.js - 200 OK (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2014-01-03 16:17:53 -0800
+Served asset /storylines.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-03 16:57:56 -0800
+Connecting to database specified by database.yml
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (1.2ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (6.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPhrase Load (0.7ms)[0m  SELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "phrases".* FROM "phrases" ORDER BY "phrases"."id" DESC LIMIT 1[0m
+  Rendered storylines/_picture_form.html.erb (2.4ms)
+  Rendered storylines/index.html.erb within layouts/application (37.9ms)
+Compiled phrases.js  (0ms)  (pid 47357)
+Compiled pictures.js  (0ms)  (pid 47357)
+Compiled application.js  (8ms)  (pid 47357)
+Completed 200 OK in 341ms (Views: 163.5ms | ActiveRecord: 33.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/phrases.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /phrases.js - 200 OK (2ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /pictures.js - 200 OK (2ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /players.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2014-01-03 16:57:57 -0800
+Served asset /storylines.js - 304 Not Modified (1ms)
+
+
+Started POST "/pictures/create/" for 127.0.0.1 at 2014-01-03 16:58:08 -0800
+Processing by PicturesController#create as */*
+  Parameters: {"image"=>"data:image/png;base64,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"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "pictures" ("created_at", "image", "storyline_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 04 Jan 2014 00:58:08 UTC +00:00], ["image", "data:image/png;base64,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"], ["storyline_id", nil], ["updated_at", Sat, 04 Jan 2014 00:58:08 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "turns" SET "turn_number" = 5, "updated_at" = '2014-01-04 00:58:08.864501' WHERE "turns"."id" = 13[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 3.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Processing by StorylinesController#index as HTML
+  [1m[36mStoryline Load (0.6ms)[0m  [1mSELECT "storylines".* FROM "storylines" [0m
+  [1m[35mTurn Load (0.4ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1[0m
+  Rendered storylines/_phrase_form.html.erb (3.8ms)
+  Rendered storylines/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:18 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2014-01-03 16:58:26 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"scribbles!", "storyline_id"=>"", "user_id"=>"2"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "phrases" ("created_at", "storyline_id", "text", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 04 Jan 2014 00:58:26 UTC +00:00], ["storyline_id", nil], ["text", "scribbles!"], ["updated_at", Sat, 04 Jan 2014 00:58:26 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mTurn Load (0.4ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "turns" SET "turn_number" = 6, "updated_at" = '2014-01-04 00:58:26.872731' WHERE "turns"."id" = 13[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/phrases/create/" for 127.0.0.1 at 2014-01-03 16:58:26 -0800
+Processing by PhrasesController#create as */*
+  Parameters: {"text"=>"scribbles!", "storyline_id"=>"", "user_id"=>"2"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "phrases" ("created_at", "storyline_id", "text", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 04 Jan 2014 00:58:26 UTC +00:00], ["storyline_id", nil], ["text", "scribbles!"], ["updated_at", Sat, 04 Jan 2014 00:58:26 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mTurn Load (0.8ms)[0m  SELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "turns" SET "turn_number" = 7, "updated_at" = '2014-01-04 00:58:26.890874' WHERE "turns"."id" = 13
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-03 16:58:35 -0800
+Processing by StorylinesController#index as HTML
+  [1m[35mStoryline Load (0.4ms)[0m  SELECT "storylines".* FROM "storylines" 
+  [1m[36mTurn Load (0.3ms)[0m  [1mSELECT "turns".* FROM "turns" ORDER BY "turns"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT 1
+  Rendered storylines/_phrase_form.html.erb (1.9ms)
+  Rendered storylines/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /players.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/storylines.js?body=1" for 127.0.0.1 at 2014-01-03 16:58:36 -0800
+Served asset /storylines.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml

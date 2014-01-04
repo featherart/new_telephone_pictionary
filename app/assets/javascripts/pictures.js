@@ -11,12 +11,12 @@ $(function() {
 
   //$canvas.addEventListener( 'touchstart', onTouchStart, false );
   $canvas.ontouchstart = function(e) {
-  if (e.touches) e = e.touches[0];
-  return false;
-}
+    alert("in canvas touchstart listener");
+    if (e.touches) e = e.touches[0];
+    return false;
+  }
 
   $(document).mouseup(function(e) {
-    //e.preventDefault();
     if(button_is_down) {
       var x = e.pageX - this.offsetLeft,
           y = e.pageY - this.offsetTop;
@@ -27,8 +27,14 @@ $(function() {
     $('body').removeClass('noselect');
   });
 
+  $canvas.touchstart( function(e) ) {   
+    var x = e.pageX - $canvas[0].offsetLeft,
+        y = e.pageY - $canvas[0].offsetTop;
+    context.lineTo(x,y);
+    context.stroke();
+  }
+
   $canvas.mousedown(function(e) {
-    //e.preventDefault();
     var x = e.pageX - this.offsetLeft,
         y = e.pageY - this.offsetTop;
     context.beginPath();
@@ -38,7 +44,6 @@ $(function() {
   });
 
   $canvas.mousemove(function(e) {
-    //e.preventDefault();
     if(button_is_down) {
       var x = e.pageX - $canvas[0].offsetLeft,
           y = e.pageY - $canvas[0].offsetTop;
@@ -68,7 +73,7 @@ $(function() {
          console.log("successfully created picture!");
          $form.hide();
          $canvas.hide();
-         $("#new_drawings").html("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+url +"' />");
+         $("#new_drawings").append("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+url +"' />");
        }
      });      
    });
