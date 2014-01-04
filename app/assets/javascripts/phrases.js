@@ -23,7 +23,7 @@ $(function() {
            console.log("successfully created a phrase");
            $("#new_phrase").hide();
            //$("#phrase_text").html("");
-           $("#new_phrases").prepend("<h4><small>Your phrase is below! Please log out now.</small></h4><br /><h4 class='subheader'>"+phrase +"</h4>");
+           $("#new_phrases").html("<h4><small>Your phrase is below! Please log out now.</small></h4><br /><h4 class='subheader'>"+phrase +"</h4>");
         
          }
        });    

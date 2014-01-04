@@ -9,7 +9,11 @@ $(function() {
       button_is_down = false,
       context = $canvas[0].getContext('2d');
 
-  $canvas.addEventListener( 'touchstart', onTouchStart, false );
+  //$canvas.addEventListener( 'touchstart', onTouchStart, false );
+  $canvas.ontouchstart = function(e) {
+  if (e.touches) e = e.touches[0];
+  return false;
+}
 
   $(document).mouseup(function(e) {
     //e.preventDefault();
@@ -64,7 +68,7 @@ $(function() {
          console.log("successfully created picture!");
          $form.hide();
          $canvas.hide();
-         $("#new_drawings").prepend("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+url +"' />");
+         $("#new_drawings").html("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+url +"' />");
        }
      });      
    });
