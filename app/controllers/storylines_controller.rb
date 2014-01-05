@@ -12,14 +12,14 @@ class StorylinesController < ApplicationController
 
   	@phrase = Phrase.new
   	@picture = Picture.new
-    @player = Player.new
+    #@player = Player.new
     
   	respond_to do |format|
   	  format.html
   	end
   end
 
-  def create 
+  def create     
     puts "**************"
     puts "in storyline create"
     puts "**************" 	
@@ -28,18 +28,30 @@ class StorylinesController < ApplicationController
     @storyline.active = true
   	@storyline.save!
     @turn = Turn.create(turn_number: 1, user_id: current_user.id)
-
-    render nothing: true
+#render partial: 'first_form'
+    #render nothing: true
     # respond_to do |format|
     #   format.js
     # end
   end
 
-  # def show
-  # 	@story = Story.find(params[:id])
+   def new_story    
+    puts "**************"
+    puts "in storyline new_story"
+    puts "**************"   
+    @storyline = Storyline.new
+    render partial: 'first_form'
+  end
+  
+  # will need this if we are displaying stories!
+  # do an ajax call then render the partial that displays a story
+  def show 
+  	@storyline = Storyline.find(params[:id])
 
-  # 	respond_to do |format|
-  # 	  format.js
-  # 	end
-  # end
+    render partial: 'show_storyline'
+
+  	# respond_to do |format|
+  	#   format.js
+  	# end
+  end
 end

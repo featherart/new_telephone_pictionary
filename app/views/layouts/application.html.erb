@@ -17,31 +17,8 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
+  <%= render "layouts/header" %>
 
-    <div class="navbar navbar-inverse navbar-fluid-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">TelephonePictionary</a>
-          <div class="container-fluid nav-collapse">
-            <ul class="nav">
-              <% if current_user %>
-              <li><%= link_to "Hello #{current_user.name}", "#" %></li>
-              <li><%= link_to "Sign out", signout_path %></li>
-              <% else %>
-              <li><%= link_to "Sign in with Facebook", "/auth/facebook" %></li>
-              <% end %>
-              <li><%= link_to "Create New Game"  %></li>
-              <li><%= link_to "Storylines List"  %></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
 
     <div class="container-fluid">
       <div class="row-fluid">

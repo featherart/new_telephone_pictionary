@@ -10,22 +10,22 @@ $(function() {
       context = $canvas[0].getContext('2d');
 
   // start tracking the touches, move the pen to the beginning of a line
-  $canvas.bind('touchstart', function (event) {
-    alert("in touchstart");
-    var xy = extractXY(event.originalEvent.touches[0]);
-    ctx.moveTo(xy.x, xy.y);
-    event.preventDefault();
-    return false;
-  });
+  // $canvas.bind('touchstart', function (event) {
+  //   alert("in touchstart");
+  //   var xy = extractXY(event.originalEvent.touches[0]);
+  //   ctx.moveTo(xy.x, xy.y);
+  //   event.preventDefault();
+  //   return false;
+  // });
   // draw a line from the last point to this one
-  $canvas.bind('touchmove', function (event) {
-    alert("in touch move");
-    var xy = extractXY(event.originalEvent.touches[0]);
-    ctx.lineTo(xy.x, xy.y);
-    ctx.stroke();
-    event.preventDefault();
-    return false;
-  });
+  // $canvas.bind('touchmove', function (event) {
+  //   alert("in touch move");
+  //   var xy = extractXY(event.originalEvent.touches[0]);
+  //   ctx.lineTo(xy.x, xy.y);
+  //   ctx.stroke();
+  //   event.preventDefault();
+  //   return false;
+  // });
 
   //$canvas.addEventListener( 'touchstart', onTouchStart, false );
   // $canvas.ontouchstart = function(e) {

@@ -1,10 +1,14 @@
 $(function() {
-    // $canvas = $("#new_picture");
-    // $canvas.hide();
+ 
     console.log("in storylines.js");
-    
-    submitStoryline();
-    submitPlayer();
+    // $.get('storylines/new_story', function (data) {
+    //   console.log(data);
+    //   $('new_story').append(data);
+    //  });
+
+
+    //submitStoryline();
+    //submitPlayer();
 
     function submitStoryline () {
       $form = $("#new_storyline");

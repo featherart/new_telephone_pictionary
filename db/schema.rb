@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131229054320) do
+ActiveRecord::Schema.define(:version => 20140105045404) do
 
   create_table "phrases", :force => true do |t|
     t.string   "text"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20131229054320) do
     t.datetime "updated_at", :null => false
     t.datetime "time_stop"
     t.boolean  "active"
+    t.string   "story_name"
   end
 
   create_table "turns", :force => true do |t|
