@@ -17,6 +17,7 @@ module TelephonePictionary
 
     # for deploy to Heroku
     config.assets.initialize_on_precompile = false
+    config.assets.precompile += %w( sketch.js )
 
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
