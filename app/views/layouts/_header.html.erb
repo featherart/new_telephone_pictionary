@@ -16,7 +16,7 @@
               <li><%= link_to "Sign in with Facebook", "/auth/facebook" %></li>
               <% end %>
               <li><%= link_to "Create New Game", new_storyline_path %></li>
-              <li><%= link_to "Storylines List", root_path  %></li>
+              <li><%= link_to "Storylines List", root_path(list: true), onclick: "$('#drawings').append('hi');"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
