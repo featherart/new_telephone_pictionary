@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.14'
 
 gem 'jquery-rails'
-gem "jquery_mobile-rails", :git => 'https://github.com/Guidecase/jquery_mobile-rails.git'
+# this causes weird issues with drawing on a desktop
+#gem "jquery_mobile-rails", :git => 'https://github.com/Guidecase/jquery_mobile-rails.git'
 gem 'pg'
 gem 'unicorn'
 gem 'figaro'

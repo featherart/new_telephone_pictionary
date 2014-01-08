@@ -1,7 +1,6 @@
 <ul>
   <% @storylines.each do |storyline| %>
-    <li><%= link_to "storyline created on #{storyline.created_at}", storyline %>
-     %>
+    <li><%= link_to "storyline #{storyline.story_name} created on #{storyline.created_at}", storyline %>
   <% end %>
 </ul>
 

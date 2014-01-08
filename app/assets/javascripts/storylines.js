@@ -1,11 +1,6 @@
 $(function() {
  
     console.log("in storylines.js");
-    // $.get('storylines/new_story', function (data) {
-    //   console.log(data);
-    //   $('new_story').append(data);
-    //  });
-
 
     //submitStoryline();
     //submitPlayer();

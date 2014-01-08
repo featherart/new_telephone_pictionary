@@ -6,7 +6,7 @@ TelephonePictionary::Application.routes.draw do
   match 'auth/failure', to: redirect('/')
   match 'signout', to: 'sessions#destroy', as: 'signout'
   #get 'new_story', to: 'storylines#new'
-  get 'storylines/new_story', as: 'new_story'
+  #get 'storylines/new_story', as: 'new_story'
 
   post "phrases/create"
   post "pictures/create"

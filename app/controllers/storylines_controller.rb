@@ -7,15 +7,17 @@ class StorylinesController < ApplicationController
     #@active_or_new = Storyline.last.active 
     #@active_or_new ? @storyline = Storyline.last : @storyline = Storyline.new
     @active_or_new = false
-    @storyline = Storyline.new
+    @storyline = Storyline.last
     @turn = Turn.last.turn_number
+    #@player = Player.new
+    
 
   	@phrase = Phrase.new
   	@picture = Picture.new
-    #@player = Player.new
-    
+  
   	respond_to do |format|
   	  format.html
+      format.json {@storyline}
   	end
   end
 
@@ -30,9 +32,10 @@ class StorylinesController < ApplicationController
     @turn = Turn.create(turn_number: 1, user_id: current_user.id)
 #render partial: 'first_form'
     #render nothing: true
-    # respond_to do |format|
-    #   format.js
-    # end
+    respond_to do |format|
+      format.html { redirect_to storylines_url }
+      format.js
+    end
   end
 
    def new_story    
@@ -40,7 +43,10 @@ class StorylinesController < ApplicationController
     puts "in storyline new_story"
     puts "**************"   
     @storyline = Storyline.new
-    render partial: 'first_form'
+    respond_to do |format|
+      format.html { redirect_to storylines_url }
+      format.js
+    end
   end
   
   # will need this if we are displaying stories!
