@@ -19,8 +19,7 @@
 			</div>
 			<%= render partial: 'phrase_form' %>
 
-			<% elsif @turn.even? && @turn != 0 %>
-
+		<% elsif @turn.even? && @turn != 0 %>
 			<h4><small>Draw a picture to describe the phrase below:</small></h4>
 			<div id="phrases">
 				<h4 class="subheader"><% if Phrase.last %>
@@ -28,7 +27,6 @@
 			  <% end %>
 			</div>
 			<%= render partial: 'picture_form' %>
-		  
 
       <% end %>
 	  <% end %>	

@@ -22,8 +22,20 @@ canvas
     -o-user-select: none;
     user-select: none;
   }
-  #new_storyline
-  {
-    border: 1px solid;
-    visibility:hidden;
-  }
+.tools 
+{ 
+  margin-bottom: 10px; 
+}
+.tools a 
+{
+  border: 1px solid black; 
+  height: 30px; 
+  line-height: 30px; 
+  padding: 0 10px; 
+  vertical-align: middle; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  color: black; 
+  font-weight: bold;
+}

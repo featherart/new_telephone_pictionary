@@ -1,7 +1,22 @@
  <div class="input-group">
-  <canvas id="drawing" class="picture" width="400" height="200">
-    <!-- drawing goes here -->
-  </canvas>
+  <!-- begin sketch experiment -->
+  <div id='color_drawing'>
+    <div class='tools'>
+    </div>
+    <canvas id='drawing' width='400' height='300'></canvas>
+    <script type="text/javascript">
+    $(function() {
+      $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+        $('#color_drawing .tools').append("<a href='#drawing' data-color='" + this + "' style='width: 10px; background: " + this + ";'>☆</a> ");
+      });
+      $.each([3, 5, 10, 15], function() {
+        $('#color_drawing .tools').append("<a href='#drawing' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
+      });
+      $('#drawing').sketch();
+    });
+  </script>
+  </div>
+  <!-- end sketch experiment -->
  
   <%= form_for(@picture) do |f| %>
     <%= f.hidden_field :image %>

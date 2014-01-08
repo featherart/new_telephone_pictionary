@@ -30,21 +30,9 @@ class StorylinesController < ApplicationController
     @storyline.active = true
   	@storyline.save!
     @turn = Turn.create(turn_number: 1, user_id: current_user.id)
-#render partial: 'first_form'
-    #render nothing: true
-    respond_to do |format|
-      format.html { redirect_to storylines_url }
-      format.js
-    end
-  end
 
-   def new_story    
-    puts "**************"
-    puts "in storyline new_story"
-    puts "**************"   
-    @storyline = Storyline.new
     respond_to do |format|
-      format.html { redirect_to storylines_url }
+      format.html { redirect_to root_path }
       format.js
     end
   end
