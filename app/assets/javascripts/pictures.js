@@ -3,40 +3,62 @@ $(function() {
   if($canvas.length == 0) {
     return;
   }
-  var $clear = $("#clear"),
-      $form = $("#new_picture"),
-      $hidden = $("#picture_image"),
-      button_is_down = false,
-      context = $canvas[0].getContext('2d');
+  var $clear = $("#clear");
+  var context = $canvas[0].getContext('2d');
 
-  $(document).mouseup(function(e) {
-    if(button_is_down) {
-      var x = e.pageX - this.offsetLeft,
-          y = e.pageY - this.offsetTop;
-      context.lineTo(x,y);
-      context.stroke();
-    }
-    button_is_down = false;
-    $('body').removeClass('noselect');
+  function clearCanvas() {
+    context.clearRect(0,0,$canvas.width(),$canvas.height()); 
+  }
+
+ $('#clear').click(function() {
+    clearCanvas();
+    location.reload();
   });
 
-  $canvas.mousedown(function(e) {
-    var x = e.pageX - this.offsetLeft,
-        y = e.pageY - this.offsetTop;
-    context.beginPath();
-    context.moveTo(x,y);
-    $('body').addClass('noselect');
-    button_is_down = true;
-  });
+      $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+        $('#color_drawing .tools').append("<a href='#drawing' data-color='" + this + "' style='width: 10px; background: " + this + ";'>☆</a> ");
+      });
+      $.each([3, 5, 10], function() {
+        $('#color_drawing .tools').append("<a href='#drawing' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
+      });
+      $('#drawing').sketch();
+    
 
-  $canvas.mousemove(function(e) {
-    if(button_is_down) {
-      var x = e.pageX - $canvas[0].offsetLeft,
-          y = e.pageY - $canvas[0].offsetTop;
-      context.lineTo(x,y);
-      context.stroke();
-    }
-  });
+  // old drawing functionality, doesn't work in mobile & no colors
+  // var $clear = $("#clear"),
+  //     $form = $("#new_picture"),
+  //     $hidden = $("#picture_image"),
+  //     button_is_down = false,
+  //     context = $canvas[0].getContext('2d');
+
+  // $(document).mouseup(function(e) {
+  //   if(button_is_down) {
+  //     var x = e.pageX - this.offsetLeft,
+  //         y = e.pageY - this.offsetTop;
+  //     context.lineTo(x,y);
+  //     context.stroke();
+  //   }
+  //   button_is_down = false;
+  //   $('body').removeClass('noselect');
+  // });
+
+  // $canvas.mousedown(function(e) {
+  //   var x = e.pageX - this.offsetLeft,
+  //       y = e.pageY - this.offsetTop;
+  //   context.beginPath();
+  //   context.moveTo(x,y);
+  //   $('body').addClass('noselect');
+  //   button_is_down = true;
+  // });
+
+  // $canvas.mousemove(function(e) {
+  //   if(button_is_down) {
+  //     var x = e.pageX - $canvas[0].offsetLeft,
+  //         y = e.pageY - $canvas[0].offsetTop;
+  //     context.lineTo(x,y);
+  //     context.stroke();
+  //   }
+  // });
 
   $form.on("submit", function(event) {
     event.preventDefault();
@@ -62,12 +84,5 @@ $(function() {
        }
      });      
    });
-
-  function clearCanvas() {
-    context.clearRect(0,0,$canvas.width(),$canvas.height());   
-  }
-
-  $clear.click(clearCanvas);
-  clearCanvas();
 
 });
