@@ -1,1 +1,6 @@
-<%= @storyline.id %>
+<div class="input-group">
+  <%= @storyline.story_name %>
+  <%= Picture.where(storyline_id: @storyline.id).first.text %>
+  <img src='<%= Phrase.where(storyline_id: @storyline.id).first %>' />
+</div>
+<%= link_to "Back", root_path %>

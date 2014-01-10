@@ -1,4 +1,6 @@
 class StorylinesController < ApplicationController
+  #before_filter :require_login
+ 
   def index
   	@storylines = Storyline.all
     # need a way to signal storyline is complete
@@ -10,7 +12,6 @@ class StorylinesController < ApplicationController
     @storyline = Storyline.last
     @turn = Turn.last.turn_number
     #@player = Player.new
-    
 
   	@phrase = Phrase.new
   	@picture = Picture.new
@@ -48,4 +49,5 @@ class StorylinesController < ApplicationController
   	#   format.js
   	# end
   end
+
 end

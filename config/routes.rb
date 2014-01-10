@@ -1,5 +1,7 @@
 TelephonePictionary::Application.routes.draw do
   
+  get "tests/index"
+
   root to: "storylines#index"
  
   match 'auth/:provider/callback', to: 'sessions#create'
