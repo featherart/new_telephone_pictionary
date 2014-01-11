@@ -18,7 +18,7 @@ class PhrasesController < ApplicationController
     @turn = Turn.last
     @turn.turn_number += 1
     @turn.save!
-    @turn_number = @turn.turn_number
+    @turn_number = turn.turn_number
     
     render nothing: true
  

@@ -15,6 +15,10 @@ describe PhrasesController do
       phrase.text.should == "test phrase"
       phrase.storyline_id.should == 2
       Phrase.all.length.should == num_phrases + 1
+
+      # also turn # gets incremented by one
+      # a turn # should also get assigned to 
+      # picture as to show them in order!
     end
   end
 end

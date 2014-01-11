@@ -14,6 +14,10 @@ describe PicturesController do
       picture.image.should == "an insanely long string"
       picture.storyline_id.should == 2
       Picture.all.length.should == (num_pictures + 1)
+
+      # also turn # gets incremented by one
+      # a turn # should also get assigned to 
+      # picture as to show them in order!
     end
   end
 
