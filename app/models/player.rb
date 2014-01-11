@@ -9,7 +9,6 @@ class Player < ActiveRecord::Base
     account_sid    = ENV["TWILIO_ACCOUNT_SID"]
     auth_token     = ENV["TWILIO_AUTH_TOKEN"]
     client = Twilio::REST::Client.new account_sid, auth_token
-    #binding.pry
     account = client.account
     message = account.sms.messages.create({
       :from => ENV["PHONE"],
@@ -20,7 +19,6 @@ class Player < ActiveRecord::Base
 
   def clean_phone_number
     number = self.phone_number
-    binding.pry
     if number
       unless number[0..1] == "+1"
         number.gsub!(/[^0-9]/, '')
