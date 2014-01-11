@@ -1,5 +1,5 @@
 <div class="container">
-
+<% if current_user %>
 		<% if params["list"] == "true" %>
  		<div id="all_storylines">
 			<%= render 'all_storylines' %>
@@ -27,7 +27,7 @@
 		  <% end %>
 		</div>
 		<%= render partial: 'picture_form' %>
-
     <% end %>
-  <% end %>	
+  <% end %>
+<% end %>	
 </div>
