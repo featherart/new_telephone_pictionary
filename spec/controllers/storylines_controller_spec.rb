@@ -27,7 +27,7 @@ describe StorylinesController do
         storyline.active.should eq(true)
         storyline.created_at.should_not be_nil
         storyline.time_stop.should eq(storyline.created_at + 5.minutes)
-        Storyline.all.length.should eq (num_stories + 1)
+        Storyline.all.length.should eq(num_stories + 1)
 
         turn.turn_number.should eq(1)
         Turn.all.length.should eq(turns + 1)
