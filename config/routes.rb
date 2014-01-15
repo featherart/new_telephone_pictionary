@@ -1,5 +1,8 @@
 TelephonePictionary::Application.routes.draw do
   
+  resources :posts
+
+
   get "tests/index"
 
   root to: "storylines#index"
