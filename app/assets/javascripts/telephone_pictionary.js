@@ -4,8 +4,8 @@ window.TelephonePictionary = {
   Views: {},
   Routers: {},
   initialize: function() {
-    init: ->
-    new TelephonePictionary.Routers.Entries()
+    //new TelephonePictionary.Routers.Entries()
+    
     Backbone.history.start()
   }
 };
