@@ -21,6 +21,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'sms-spec'
   gem 'shoulda-matchers'
+  gem 'jasmine'
 end
 
 group :assets do
