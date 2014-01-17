@@ -1,6 +1,6 @@
 $(function() {
  
-    console.log("in storylines.js");
+    //console.log("in storylines.js");
 
     //submitStoryline();
     //submitPlayer();

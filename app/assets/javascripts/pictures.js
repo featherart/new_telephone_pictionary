@@ -1,5 +1,10 @@
 $(function() {
-  var $canvas = $("#drawing");
+
+  var $canvas = $("#drawing"),
+      $form = $("#new_picture"),
+      $hidden = $("#picture_image");
+
+  console.log("in pictures, canvas: " + $canvas)
   if($canvas.length == 0) {
     return;
   }
@@ -59,22 +64,29 @@ $(function() {
   //     context.stroke();
   //   }
   // });
+  console.log("in pictures");
+  console.log("here's picture form: " + $form.length)
 
   $form.on("submit", function(event) {
     event.preventDefault();
-
+    console.log("in submit");
     var url = $canvas[0].toDataURL('image/png'),
         img = document.createElement('img'),
         drawings_target = $('#drawings_target');
     drawings_target.append(img); 
     img.src = url;
     $hidden.val(url);
+    console.log("here's url: " + url);
+    console.log("here's img " + img);
 
     $.ajax({
-       url: "/pictures/create/",
+       url: "/pictures",
        type: "POST",
        data: {
          image: url
+       },
+       error: function(data) {
+          console.log("something went wrong");
        },
        success: function( data ) {
          console.log("successfully created picture!");

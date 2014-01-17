@@ -1,5 +1,5 @@
 $(function() {
-    console.log("in player.js");
+    //console.log("in player.js");
     submitPlayer();
 
     function submitPlayer () {

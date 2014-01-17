@@ -18,8 +18,8 @@ class StorylinesController < ApplicationController
   
   	respond_to do |format|
   	  format.html
-      #format.json {@storyline}
-      format.json
+      format.json {@storyline}
+      #format.json
   	end
   end
 

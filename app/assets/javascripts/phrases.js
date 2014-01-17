@@ -1,5 +1,5 @@
 $(function() {
-    console.log("in phrases.js");
+    //console.log("in phrases.js");
     submitPhrase();
 
     function submitPhrase () {
