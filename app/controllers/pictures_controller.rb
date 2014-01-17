@@ -27,7 +27,6 @@ class PicturesController < ApplicationController
     @picture = Picture.new(params[:picture])
     @picture.image = params[:image]
     @picture.storyline_id = params[:storyline_id]
-    binding.pry
     @picture.save!
 
     # this needs to happen here for now but there might be a better place
