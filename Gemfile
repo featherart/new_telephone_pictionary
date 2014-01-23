@@ -22,6 +22,7 @@ group :development, :test do
   gem 'sms-spec'
   gem 'shoulda-matchers'
   gem 'jasmine'
+  #gem 'jasmine-jquery-rails'
 end
 
 group :assets do
