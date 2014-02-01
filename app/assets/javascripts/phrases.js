@@ -5,11 +5,9 @@ TelephonePictionary.Phrase = {
     console.log(data);
     console.log("successfully created a phrase");
     $("#new_phrase").hide();
-    $("#new_phrases").append("<h4><small>Your phrase is below! Please log out now.</small></h4><br /><h4 class='subheader'>"+phrase +"</h4>");
+    $("#new_phrases").append("<h4><small>Your phrase is below! Please log out now.</small></h4><br /><h4 class='subheader'>"+ $("#phrase_text").val() +"</h4>");
   }
 };
-
-
 
 $(function() {
 

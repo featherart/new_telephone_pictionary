@@ -1,3 +1,14 @@
+var TelephonePictionary = TelephonePictionary || {}
+
+TelephonePictionary.Picture = {
+  successHandler: function( data ) {
+    console.log(data);
+    console.log("successfully created a picture");
+    $("#new_picture").hide();
+    $("#new_drawings").append("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+$("#picture_image").val() +"' />");
+  }
+};
+
 $(function() {
 
   var $canvas = $("#drawing"),
@@ -33,8 +44,8 @@ $(function() {
       return;
     }
     var url = $canvas[0].toDataURL('image/png'),
-          img = document.createElement('img'),
-          drawings_target = $('#drawings_target');
+        img = document.createElement('img'),
+        drawings_target = $('#drawings_target');
     drawings_target.append(img); 
     img.src = url;
     $hidden.val(url);
@@ -48,12 +59,13 @@ $(function() {
        error: function(data) {
           console.log("something went wrong");
        },
-       success: function( data ) {
-         console.log("successfully created picture!");
-         $form.hide();
-         $canvas.hide();
-         $("#new_drawings").append("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+url +"' />");
-       }
+       success: TelephonePictionary.Picture.successHandler
+       // success: function( data ) {
+       //   console.log("successfully created picture!");
+       //   $form.hide();
+       //   $canvas.hide();
+       //   $("#new_drawings").append("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+url +"' />");
+       // }
     });      
   }
 });

@@ -6,7 +6,6 @@ describe('Phrase', function() {
       TelephonePictionary.Phrase.successHandler();
       expect(fixtures.find('#new_phrase')).not.toBeVisible();
     });
-
     
   });  
 
