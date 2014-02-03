@@ -1,9 +1,17 @@
-$(function() {
- 
-    //console.log("in storylines.js");
+var TelephonePictionary = TelephonePictionary || {}
 
-    //submitStoryline();
-    //submitPlayer();
+TelephonePictionary.Storyline = {
+  successHandler: function( data ) {
+    console.log(data);
+    console.log("successfully created a storyline");
+    $("#new_storyline").hide();
+    //$("#new_drawings").append("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+$("#picture_image").val() +"' />");
+  }
+};
+
+$(function() {
+    submitStoryline();
+    submitPlayer();
 
     function submitStoryline () {
       $form = $("#new_storyline");
@@ -16,9 +24,7 @@ $(function() {
          data: {
            active: true
          },
-         success: function( data ) {
-           console.log("successfully created a storyline");
-         }
+        success: TelephonePictionary.Storyline.successHandler
        });    
       });
     };
@@ -38,11 +44,9 @@ $(function() {
            phone_number: phone,
            turn_number: turn
          },
-         success: function( data ) {
-           console.log("successfully created players");
-         },
+         success: TelephonePictionary.Storyline.successHandler,
          error: function( data ) {
-          console.log("ooops");
+          console.log("error submitting player");
          }
        });    
       });

@@ -1,5 +1,5 @@
 require 'spec_helper'
-respond_with :json
+#respond_with :json
 
 describe StorylinesController do
 

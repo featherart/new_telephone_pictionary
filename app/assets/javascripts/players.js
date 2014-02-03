@@ -1,5 +1,15 @@
+var TelephonePictionary = TelephonePictionary || {}
+
+TelephonePictionary.Player = {
+  successHandler: function( data ) {
+    console.log(data);
+    console.log("successfully created a player");
+    $("#new_player").hide();
+    //$("#new_drawings").append("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+$("#picture_image").val() +"' />");
+  }
+};
+
 $(function() {
-    //console.log("in player.js");
     submitPlayer();
 
     function submitPlayer () {
