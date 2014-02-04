@@ -1,15 +1,23 @@
 <div class="input-group">
-<%= form_for(Storyline.new) do |f| %>
+  <div id="storyline_form">
+<% @storyline = Storyline.new %>
+<%= nested_form_for(@storyline) do |f| %>
 <%= f.text_field :story_name, placeholder: "please enter a name for this story", required: true, autofocus: true %>
-<input type="text"><br>
-  <%= fields_for(Player.new) do |p| %>  
+<br>
+</div>
+<div class="hide" id="players_form" style="visibility:hidden;">  
+    <%= f.fields_for(Player.new) do |p| %>
+  <!-- <%#= f.fields_for :player do |p| %>  -->
     <%= p.text_field :name, placeholder: "enter player's name", required: true %>
     <%= p.text_field :email, placeholder: "enter player's email address", required: true %>
     <%= hidden_field_tag :storyline_id, @storyline.id %>
-    <!-- <#%= hidden_field_tag :turn_number, @turn %> -->
     <!-- <#%= p.text_field :phone_number, placeholder: "enter player's text number", required: true %> -->
-  <% end %>
+    <!-- <%#= p.link_to_add "Add a player", :player %> -->
+  <% end %><br>
+</div>
    <br><button type="submit" id="submit_button" class="btn btn-default">send it</button>
+<button type="submit" id="submit_player" class="btn btn-default"><a href="javascript:;" id="add_player">Add Player</a></button>
+
 <% end %>
 </div>
 <%= link_to 'Back', root_path %>

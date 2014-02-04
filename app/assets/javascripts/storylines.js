@@ -10,6 +10,8 @@ TelephonePictionary.Storyline = {
 };
 
 $(function() {
+    console.log("in storyline");
+    
     submitStoryline();
     submitPlayer();
 

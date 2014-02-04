@@ -10,13 +10,19 @@ TelephonePictionary.Picture = {
 };
 
 $(function() {
+  // dynamically add rows to the player form
+  $("#add_player").click(function() {
+      $("#storyline_form").append($("#players_form").html());
+  });
 
   var $canvas = $("#drawing"),
       $form = $("#new_picture"),
       $hidden = $("#picture_image"),
-      $clear = $("#clear"),
-      context = $canvas[0].getContext('2d');
- 
+      $clear = $("#clear");
+
+  if( $canvas[0] !== undefined ) {
+      var context = $canvas[0].getContext('2d');
+  }
   function clearCanvas() {
     context.clearRect(0,0,$canvas.width(),$canvas.height()); 
   }
