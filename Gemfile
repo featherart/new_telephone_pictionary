@@ -7,6 +7,7 @@ gem 'jquery-rails'
 #gem "jquery_mobile-rails", :git => 'https://github.com/Guidecase/jquery_mobile-rails.git'
 gem 'pg'
 gem 'unicorn'
+gem "nested_form"
 gem 'figaro'
 gem 'omniauth-facebook'
 gem 'twilio-ruby'

@@ -2,7 +2,6 @@ TelephonePictionary::Application.routes.draw do
   
   resources :posts
 
-
   get "tests/index"
 
   root to: "storylines#index"
@@ -20,5 +19,5 @@ TelephonePictionary::Application.routes.draw do
   resources :pictures
   resources :phrases
   resources :storylines
-  resource :players
+  resources :players
   end

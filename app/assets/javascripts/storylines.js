@@ -18,11 +18,19 @@ $(function() {
       console.log("here's storyline form: " + $form.length);
       $form.on("submit", function(event) {
           event.preventDefault();
+          var story_name = $("#storyline_story_name"),
+              name = $("#player_name").val(),
+              phone = $("#player_phone_number").val(),
+              turn = $("#player_turn_number").val();
       $.ajax({
          url: "/storylines/create/",
          type: "POST",
          data: {
-           active: true
+           active: true,
+           story_name: story_name,
+           name: name,
+           phone_number: phone,
+           turn_number: turn
          },
         success: TelephonePictionary.Storyline.successHandler
        });    

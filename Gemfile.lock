@@ -78,6 +78,7 @@ GEM
     mime-types (1.25.1)
     multi_json (1.8.2)
     multipart-post (1.2.0)
+    nested_form (0.3.2)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -194,6 +195,7 @@ DEPENDENCIES
   jasmine
   jquery-rails
   less-rails
+  nested_form
   omniauth-facebook
   pg
   pry

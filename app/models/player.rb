@@ -1,6 +1,6 @@
 class Player < ActiveRecord::Base
   attr_accessible :email, :name, :phone_number, :storyline_id, 
-                  :turn_number, :accepted, :start_time
+                  :turn_number
   belongs_to :storyline
   before_save :clean_phone_number
   #has_one :turn_number

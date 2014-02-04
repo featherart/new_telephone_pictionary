@@ -15,7 +15,7 @@ class StorylinesController < ApplicationController
 
   	@phrase = Phrase.new
   	@picture = Picture.new
-  
+    
   	respond_to do |format|
   	  format.html
       format.json {@storyline}
@@ -26,13 +26,23 @@ class StorylinesController < ApplicationController
   def create     
     puts "**************"
     puts "in storyline create"
+    params[:storyline]
     puts "**************" 	
   	@storyline = Storyline.create(params[:storyline])
     @storyline.time_stop = @storyline.created_at + 5.minutes
     @storyline.active = true
+    @storyline.story_name = params[:story_name]
   	@storyline.save!
     @turn = Turn.create(turn_number: 1, user_id: current_user.id)
 
+    @player = Player.create(params[:player])
+    
+    @player.phone_number = params[:player][:phone_number]
+    text = "Hello #{@player.name}! #{current_user.name} has invited you to play Telephone Pictionary."
+    #binding.pry
+    @player.send_text(text)
+
+    #render :json => @player
     respond_to do |format|
       format.html { redirect_to root_path }
       format.js

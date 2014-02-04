@@ -1,11 +1,15 @@
 <div class="input-group">
 <%= form_for(Storyline.new) do |f| %>
-<%= f.text_field :story_name, placeholder: "please enter a name for this story", required: true, autofocus: true %><br>
+<%= f.text_field :story_name, placeholder: "please enter a name for this story", required: true, autofocus: true %>
+<input type="text"><br>
   <%= fields_for(Player.new) do |p| %>  
     <%= p.text_field :name, placeholder: "enter player's name", required: true %>
-    <%= p.text_field :phone_number, placeholder: "enter player's text number", required: true %>
+    <%= p.text_field :email, placeholder: "enter player's email address", required: true %>
+    <%= hidden_field_tag :storyline_id, @storyline.id %>
+    <!-- <#%= hidden_field_tag :turn_number, @turn %> -->
+    <!-- <#%= p.text_field :phone_number, placeholder: "enter player's text number", required: true %> -->
   <% end %>
-   <button type="submit" id="submit_button" class="small radius button">send it</button>
+   <br><button type="submit" id="submit_button" class="btn btn-default">send it</button>
 <% end %>
 </div>
 <%= link_to 'Back', root_path %>
