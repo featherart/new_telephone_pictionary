@@ -8,8 +8,8 @@
 <div class="hide" id="players_form" style="visibility:hidden;">  
     <%= fields_for(Player.new) do |p| %>
   <!-- <%#= f.fields_for :player do |p| %>  -->
-    <%= p.text_field :name, placeholder: "enter player's name", required: true %>
-    <%= p.text_field :email, placeholder: "enter player's email address", required: true %>
+    <%= p.text_field :name, placeholder: "enter player's name" %>
+    <%= p.text_field :email, placeholder: "enter player's email address" %>
     <%= hidden_field_tag :storyline_id, @storyline.id %>
     <!-- <#%= p.text_field :phone_number, placeholder: "enter player's text number", required: true %> -->
     <!-- <%#= p.link_to_add "Add a player", :player %> -->
