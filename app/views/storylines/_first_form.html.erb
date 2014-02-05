@@ -6,7 +6,7 @@
 <br>
 </div>
 <div class="hide" id="players_form" style="visibility:hidden;">  
-    <%= f.fields_for(Player.new) do |p| %>
+    <%= fields_for(Player.new) do |p| %>
   <!-- <%#= f.fields_for :player do |p| %>  -->
     <%= p.text_field :name, placeholder: "enter player's name", required: true %>
     <%= p.text_field :email, placeholder: "enter player's email address", required: true %>
@@ -15,11 +15,12 @@
     <!-- <%#= p.link_to_add "Add a player", :player %> -->
   <% end %><br>
 </div>
-   <br><button type="submit" id="submit_button" class="btn btn-default">send it</button>
-<button type="submit" id="submit_player" class="btn btn-default"><a href="javascript:;" id="add_player">Add Player</a></button>
+  <button type="submit" action="javascript;" id="add_player" class="btn btn-default">add player</button>
+  <button type="submit" id="submit_button" class="btn btn-default">send it</button>
+ 
 
 <% end %>
 </div>
-<%= link_to 'Back', root_path %>
-
-
+<div style="margin-top: 30px;">
+<%= link_to 'back', root_path %>
+</div>
