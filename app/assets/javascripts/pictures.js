@@ -15,7 +15,7 @@ $(function() {
       e.preventDefault();
       $("#storyline_form").append($("#players_form").html());
   });
-
+  console.log("in pictures");
   var $canvas = $("#drawing"),
       $form = $("#new_picture"),
       $hidden = $("#picture_image"),

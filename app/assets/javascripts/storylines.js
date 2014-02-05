@@ -5,7 +5,6 @@ TelephonePictionary.Storyline = {
     console.log(data);
     console.log("successfully created a storyline");
     $("#new_storyline").hide();
-    //$("#new_drawings").append("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+$("#picture_image").val() +"' />");
   }
 };
 
@@ -40,6 +39,7 @@ $(function() {
       });
     };
 
+    // not using this now
     function submitPlayer () {
       $form = $("#new_storyline");
       $form.on("submit", function(event) {
