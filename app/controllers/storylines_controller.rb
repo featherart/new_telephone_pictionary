@@ -36,11 +36,12 @@ class StorylinesController < ApplicationController
     @turn = Turn.create(turn_number: 1, user_id: current_user.id)
 
     @player = Player.create(params[:player])
+    @player.email = params[:player][:email]
     
-    @player.phone_number = params[:player][:phone_number]
+    #@player.phone_number = params[:player][:phone_number]
     text = "Hello #{@player.name}! #{current_user.name} has invited you to play Telephone Pictionary."
     #binding.pry
-    @player.send_text(text)
+    #@player.send_text(text)
 
     #render :json => @player
     respond_to do |format|

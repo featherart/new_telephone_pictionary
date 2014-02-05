@@ -11,7 +11,8 @@ TelephonePictionary.Picture = {
 
 $(function() {
   // dynamically add rows to the player form
-  $("#add_player").click(function() {
+  $("#add_player").click(function(e) {
+      e.preventDefault();
       $("#storyline_form").append($("#players_form").html());
   });
 

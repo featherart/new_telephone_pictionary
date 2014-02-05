@@ -13,7 +13,7 @@ $(function() {
     console.log("in storyline");
     
     submitStoryline();
-    submitPlayer();
+    //submitPlayer();
 
     function submitStoryline () {
       $form = $("#new_storyline");
@@ -22,7 +22,8 @@ $(function() {
           event.preventDefault();
           var story_name = $("#storyline_story_name"),
               name = $("#player_name").val(),
-              phone = $("#player_phone_number").val(),
+              //phone = $("#player_phone_number").val(),
+              email = $("#player_email").val();
               turn = $("#player_turn_number").val();
       $.ajax({
          url: "/storylines/create/",
@@ -31,7 +32,7 @@ $(function() {
            active: true,
            story_name: story_name,
            name: name,
-           phone_number: phone,
+           email: email,
            turn_number: turn
          },
         success: TelephonePictionary.Storyline.successHandler
