@@ -5,6 +5,7 @@ TelephonePictionary.Picture = {
     console.log(data);
     console.log("successfully created a picture");
     $("#new_picture").hide();
+    $("#color_drawing").hide();
     $("#new_drawings").append("<h4><small>Your picture is below! Please log out now.</small></h4><br /><img src='"+$("#picture_image").val() +"' />");
   }
 };
@@ -46,13 +47,41 @@ $(function() {
       submitPicture();
   });
 
+  function submitStoryline () {
+      $form = $("#new_storyline");
+      console.log("here's storyline form: " + $form.length);
+      $form.on("submit", function(event) {
+          event.preventDefault();
+          var story_name = $("#storyline_story_name"),
+              name = $("#player_name").val(),
+              //phone = $("#player_phone_number").val(),
+              email = $("#player_email").val();
+              turn = $("#player_turn_number").val();
+      $.ajax({
+         url: "/storylines/create/",
+         type: "POST",
+         data: {
+           active: true,
+           story_name: story_name,
+           name: name,
+           email: email,
+           turn_number: turn
+         },
+        success: TelephonePictionary.Storyline.successHandler
+       });    
+      });
+  };
+
   function submitPicture() {
     if($canvas.length == 0) {
       return;
     }
     var url = $canvas[0].toDataURL('image/png'),
         img = document.createElement('img'),
-        drawings_target = $('#drawings_target');
+        drawings_target = $('#drawings_target'),
+        storylineId = $("#storyline_id").val(),
+        userId = $("#user_id").val();
+    
     drawings_target.append(img); 
     img.src = url;
     $hidden.val(url);
@@ -61,7 +90,9 @@ $(function() {
        url: "/pictures",
        type: "POST",
        data: {
-       image: url
+         image: url,
+         storyline_id: storylineId,
+         user_id: userId
        },
        error: function(data) {
           console.log("something went wrong");

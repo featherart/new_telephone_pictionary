@@ -19,16 +19,17 @@ $(function() {
   });
   
   function submitPhrase () {
-    var phrase = $("#phrase_text").val();
-    var storyline_id = $("#storyline_id").val();
-    var user_id = $("#user_id").val();
+    var phrase = $("#phrase_text").val(),
+        storylineId = $("#storyline_id").val(),
+        userId = $("#user_id").val();
+    
     $.ajax({
        url: "/phrases/create/",
        type: "POST",
        data: {
          text: phrase,
-         storyline_id: storyline_id,
-         user_id: user_id
+         storyline_id: storylineId,
+         user_id: userId
        },
        success: TelephonePictionary.Phrase.successHandler
     });

@@ -19,7 +19,7 @@ class PhrasesController < ApplicationController
     @turn.turn_number += 1
     @turn.save!
     @turn_number = @turn.turn_number
-    
+    #binding.pry
     render nothing: true
  
   end
