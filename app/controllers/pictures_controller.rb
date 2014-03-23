@@ -35,7 +35,7 @@ class PicturesController < ApplicationController
     @turn.turn_number += 1
     @turn.save!
     @turn_number = @turn.turn_number    
-    binding.pry
+    #binding.pry
     render nothing: true
   end
 
