@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="275cd5db-426e-4e9d-9422-f45f471e3000" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/phrases.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/phrases.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/phrases_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/phrases_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pictures.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pictures.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pictures_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pictures_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/storylines/_show_storyline.html.erb" afterPath="$PROJECT_DIR$/app/views/storylines/_show_storyline.html.erb" />
     </list>
     <ignored path="telephone_pictionary.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,25 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1034">
-              <folding>
-                <marker date="1389581326000" expanded="true" signature="31:1083" placeholder="..." />
-                <marker date="1389581326000" expanded="true" signature="40:662" placeholder="..." />
-                <marker date="1389581326000" expanded="true" signature="396:538" placeholder="..." />
-                <marker date="1389581326000" expanded="true" signature="671:1075" placeholder="..." />
-                <marker date="1389581326000" expanded="true" signature="740:1044" placeholder="..." />
-                <marker date="1389581326000" expanded="true" signature="770:949" placeholder="..." />
-                <marker date="1389581326000" expanded="true" signature="798:824" placeholder="..." />
-                <marker date="1389581326000" expanded="true" signature="865:936" placeholder="..." />
-                <marker date="1389581326000" expanded="true" signature="976:1032" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="phrases_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/phrases_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,19 +52,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_picture_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/storylines/_picture_form.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/storylines/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="550">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.193548" vertical-offset="192" max-vertical-offset="858">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pictures.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_all_storylines.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/storylines/_all_storylines.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_show_storyline.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/storylines/_show_storyline.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.1981982" vertical-offset="0" max-vertical-offset="666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="picture.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/picture.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pictures.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pictures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="36" selection-start="2669" selection-end="2669" vertical-scroll-proportion="0.32456142" vertical-offset="1582" max-vertical-offset="2398">
+            <state line="82" column="36" selection-start="2669" selection-end="2669" vertical-scroll-proportion="0.0" vertical-offset="1626" max-vertical-offset="2398">
               <folding />
             </state>
           </provider>
@@ -130,6 +133,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/phrases.js" />
         <option value="$PROJECT_DIR$/app/controllers/phrases_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pictures.js" />
+        <option value="$PROJECT_DIR$/app/views/storylines/_show_storyline.html.erb" />
       </list>
     </option>
   </component>
@@ -243,6 +247,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pictures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="telephone_pictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="telephone_pictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -550,23 +572,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1034">
           <folding>
-            <marker date="1389581326000" expanded="true" signature="31:1083" placeholder="..." />
-            <marker date="1389581326000" expanded="true" signature="40:662" placeholder="..." />
-            <marker date="1389581326000" expanded="true" signature="396:538" placeholder="..." />
-            <marker date="1389581326000" expanded="true" signature="671:1075" placeholder="..." />
-            <marker date="1389581326000" expanded="true" signature="740:1044" placeholder="..." />
-            <marker date="1389581326000" expanded="true" signature="770:949" placeholder="..." />
-            <marker date="1389581326000" expanded="true" signature="798:824" placeholder="..." />
-            <marker date="1389581326000" expanded="true" signature="865:936" placeholder="..." />
-            <marker date="1389581326000" expanded="true" signature="976:1032" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389581326000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/storylines_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1562">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,7 +629,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pictures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="36" selection-start="2669" selection-end="2669" vertical-scroll-proportion="0.32456142" vertical-offset="1582" max-vertical-offset="2398">
+        <state line="82" column="36" selection-start="2669" selection-end="2669" vertical-scroll-proportion="0.0" vertical-offset="1626" max-vertical-offset="2398">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/storylines_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="1562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/storylines/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.193548" vertical-offset="192" max-vertical-offset="858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/storylines/_all_storylines.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/picture.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/storylines/_show_storyline.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.1981982" vertical-offset="0" max-vertical-offset="666">
           <folding />
         </state>
       </provider>
