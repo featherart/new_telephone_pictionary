@@ -8,7 +8,7 @@
       </a>
       <a class="brand" href="<%= root_path %>">TelephonePictionary</a>
       <div class="container-fluid nav-collapse">
-        <ul class="nav">
+        <ul class="nav navbar-nav">
           <% if current_user %>
             <li><%= link_to "Hello #{current_user.name}", "#" %></li>
             <li><%= link_to "Sign out", signout_path %></li>
@@ -22,3 +22,4 @@
     </div>
   </div>
 </div>
+

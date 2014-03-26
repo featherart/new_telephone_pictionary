@@ -13,7 +13,10 @@ gem 'omniauth-facebook'
 gem 'twilio-ruby'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
+#gem "twitter-bootstrap-rails"
+#gem "bootstrap-sass"
+gem 'bootstrap-sass', '3.0.3.0'
+gem 'font-awesome-rails'
 # gem 'backbone-on-rails' # one thing at a time...
 
 group :development, :test do

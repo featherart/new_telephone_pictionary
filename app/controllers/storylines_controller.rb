@@ -37,9 +37,9 @@ class StorylinesController < ApplicationController
 
     @player = Player.create(params[:player])
     @player.email = params[:email]
-
+    binding.pry
     #@player.phone_number = params[:player][:phone_number]
-    text = "Hello #{@player.name}! #{current_user.name} has invited you to play Telephone Pictionary."
+    #text = "Hello #{@player.name}! #{current_user.name} has invited you to play Telephone Pictionary."
     #binding.pry
     #@player.send_text(text)
 
@@ -50,16 +50,11 @@ class StorylinesController < ApplicationController
     end
   end
   
-  # will need this if we are displaying stories!
   # do an ajax call then render the partial that displays a story
   def show 
   	@storyline = Storyline.find(params[:id])
 
     render partial: 'show_storyline'
-
-  	# respond_to do |format|
-  	#   format.js
-  	# end
   end
 
 end
